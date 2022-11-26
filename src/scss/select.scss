@@ -1,0 +1,35 @@
+.select {
+	position: relative;
+	&__header {
+		cursor: pointer;
+		position: relative;
+		display: flex;
+		align-items: center;
+	}
+	&__current {
+		margin: 0 10px 0 0;
+	}
+	&__body {
+		border: 1px solid rgba(253, 253, 253, 0.32);
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 100%;
+		opacity: 0;
+		visibility: hidden;
+		transition: .3s;
+	}
+	&__item {
+		cursor: pointer;
+		font-size: 11px;
+		line-height: 24px;
+		padding: 8px 12px;
+		&:hover {
+			background-color: rgba(253, 253, 253, 0.2);	
+		}
+	}
+	&._active .select__body {
+		opacity: 1;
+		visibility: visible;
+	}
+}
