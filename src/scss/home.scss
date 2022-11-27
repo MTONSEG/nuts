@@ -1,0 +1,34 @@
+.hero {
+	background: url('@img/main-hero.jpg') 0 0/100% 100% no-repeat;
+	&__row {
+		padding: 195px 0 139px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__title {
+		margin-bottom: 30px;
+	}
+	&__text {
+		margin-bottom: 38px;
+	}
+}
+
+@media (max-width: 991px) {
+	.hero {
+		background: url('@img/main-hero_mob.jpg') 0 0/100% 100% no-repeat;
+		min-height: auto;
+		&__row {
+			padding: 120px 0 100px;
+		}
+		&__title {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.hero {
+		background: url('@img/main-hero_mob-l.jpg') 0 0/100% 100% no-repeat;
+	}
+}

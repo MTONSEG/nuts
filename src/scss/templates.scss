@@ -14,6 +14,41 @@ body._lock {
 	margin: 0 auto;
 }
 
+.title,
+.title-text {
+	text-align: center;
+	color: #fff;
+	letter-spacing: 0.01em;
+}
+.title {
+	font-weight: 800;
+	font-size: 62px;
+	line-height: 73px;
+}
+.title-text {
+	font-weight: 600;
+	font-size: 25px;
+	line-height: 32px;
+	max-width: 552px;
+}
+
+.play {
+	display: block;
+	width: 61px;
+	height: 61px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	img {
+		margin: 0 0 0 3px;
+	}
+	&:hover {
+		box-shadow: 0 0 7px #fff;
+	}
+}
+
 .btn {
 	display: block;
 	background: #337D5A;
@@ -35,5 +70,25 @@ body._lock {
 @media (max-width: 991px) {
 	.container {
 		padding: 0 12px;
+	}
+
+	.title {
+		font-size: 45px;
+		line-height: 55px;
+	}
+	.title-text {
+		font-size: 20px;
+		line-height: 25px;
+	}
+}
+
+@media (max-width: 575px) {
+	.title {
+		font-size: 32px;
+		line-height: 38px;
+	}
+	.title-text {
+		font-size: 18px;
+		line-height: 22px;
 	}
 }
