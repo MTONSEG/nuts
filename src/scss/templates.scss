@@ -6,10 +6,141 @@ body._lock {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	max-width: 2560px;
+	margin: 0 auto;
 }
 
 .container {
 	max-width: 1330px;
 	padding: 0 20px;
 	margin: 0 auto;
+}
+
+
+.title-wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title,
+.text-title,
+.title-block,
+.text-block {
+	text-align: center;
+	letter-spacing: 0.01em;
+}
+
+.title {
+	font-size: 62px;
+	line-height: 73px;
+	color: #fff;
+}
+.text-title {
+	font-weight: 600;
+	font-size: 25px;
+	line-height: 32px;
+	max-width: 552px;
+	color: #fff;
+}
+
+.title-block {
+	font-size: 45px;
+	line-height: 117%;
+}
+
+.text-block {
+	font-size: 18px;
+	line-height: 151%;
+	text-align: center;
+	font-weight: 500;
+	max-width: 610px;
+}
+
+.play {
+	display: block;
+	width: 61px;
+	height: 61px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	img {
+		margin: 0 0 0 3px;
+	}
+	&:hover {
+		box-shadow: 0 0 7px #fff;
+	}
+}
+
+.btn {
+	display: block;
+	background: #337D5A;
+	text-align: center;
+	color: #fff;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 15px;
+	letter-spacing: 0.02em;
+	padding: 13px 21px 12px;
+	border: 1px solid transparent;
+	&._buy {
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 16px;
+	}
+	&._go {
+		font-weight: 700;
+		font-size: 15px;
+		line-height: 18px;
+		color: #337D5A;
+		border-color: #337D5A;
+		background-color: #fff;
+		padding: 15px 21px 16px;
+		&:hover {
+			color: #fff;
+			background: #337D5A;
+		}
+	}
+	&:hover {
+		border-color: #337D5A;
+		background: #fff;
+		color: #337D5A;
+	}
+}
+
+@media (max-width: 991px) {
+	.container {
+		padding: 0 12px;
+	}
+
+	.title {
+		font-size: 45px;
+		line-height: 55px;
+	}
+	.text-title {
+		font-size: 20px;
+		line-height: 25px;
+	}
+	.title-block {
+		font-size: 35px;
+	}
+}
+
+@media (max-width: 575px) {
+	.title {
+		font-size: 32px;
+		line-height: 38px;
+	}
+	.text-title {
+		font-size: 18px;
+		line-height: 22px;
+	}
+	.title-block {
+		font-size: 28px;
+	}
+	.text-block {
+		font-size: 16px;
+	}
 }
