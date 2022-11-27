@@ -1,0 +1,14 @@
+$base-color: #1A2F3F;
+$dark-green: #337D5A;
+$light-green: #93B474;
+$grey-color: #8A8A8A;
+
+@mixin Montserrat {
+	font-family: 'Montserrat';
+}
+
+@mixin base-color {
+	color: #1A2F3F;
+}
+
+

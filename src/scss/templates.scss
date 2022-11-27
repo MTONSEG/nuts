@@ -13,3 +13,27 @@ body._lock {
 	padding: 0 20px;
 	margin: 0 auto;
 }
+
+.btn {
+	display: block;
+	background: #337D5A;
+	text-align: center;
+	color: #fff;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 15px;
+	letter-spacing: 0.02em;
+	padding: 13px 21px 12px;
+	border: 1px solid transparent;
+	&:hover {
+		border-color: #337D5A;
+		background: #fff;
+		color: #337D5A;
+	}
+}
+
+@media (max-width: 991px) {
+	.container {
+		padding: 0 12px;
+	}
+}
