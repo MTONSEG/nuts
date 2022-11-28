@@ -306,6 +306,49 @@
 	}
 }
 
+.stat {
+	&__row {
+		padding: 79px 0 81px;
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 20px;
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: 13px;
+	}
+	&__top {
+		display: flex;
+		align-items: flex-start;
+		position: relative;
+	}
+	&__num  {
+		@include libs.Montserrat;
+		font-weight: 800;
+		font-size: 72px;
+		letter-spacing: 0.01em;
+	}
+	&__type {
+		position: absolute;
+		top: 9px;
+		right: -23px;
+		font-weight: 900;
+		font-size: 18px;
+		letter-spacing: 0.05em;
+	}
+	&__text {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 21px;
+	}
+}
+
 @media (max-width: 1220px) {
 	.item-body {
 		&__price {
@@ -400,6 +443,22 @@
 		max-width: 500px;
 		width: 100%;
 	}
+
+	.stat {
+		&__row {
+			padding: 40px 0;
+		}
+		&__list {
+			grid-template-columns: 1fr 1fr;
+		}
+		&__num {
+			font-size: 62px;
+		}
+		&__text {
+			font-size: 16px;
+			line-height: 18px;
+		}
+	}
 }
 
 @media (max-width: 575px) {
@@ -409,5 +468,11 @@
 	.products__button,
 	.info__button {
 		width: 90%;
+	}
+
+	.stat {
+		&__list {
+			grid-template-columns: 1fr;
+		}
 	}
 }
