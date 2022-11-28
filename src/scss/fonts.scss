@@ -71,13 +71,6 @@
 @font-face {
 	font-family: Raleway;
 	font-display: swap;
-	src: url("../fonts/Raleway-Medium-Italic.woff2") format("woff2"), url("../fonts/Raleway-Medium-Italic.woff") format("woff");
-	font-weight: 500;
-	font-style: italic;
-}
-@font-face {
-	font-family: Raleway;
-	font-display: swap;
 	src: url("../fonts/Raleway-Medium.woff2") format("woff2"), url("../fonts/Raleway-Medium.woff") format("woff");
 	font-weight: 500;
 	font-style: normal;
@@ -92,14 +85,22 @@
 @font-face {
 	font-family: Raleway;
 	font-display: swap;
-	src: url("../fonts/Raleway-SemiBold-Italic.woff2") format("woff2"), url("../fonts/Raleway-SemiBold-Italic.woff") format("woff");
+	src: url("../fonts/Raleway-SemiBold.woff2") format("woff2"), url("../fonts/Raleway-SemiBold.woff") format("woff");
 	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway-Italic';
+	font-display: swap;
+	src: url("../fonts/Raleway-Medium-Italic.woff2") format("woff2"), url("../fonts/Raleway-Medium-Italic.woff") format("woff");
+	font-weight: 500;
 	font-style: italic;
 }
 @font-face {
-	font-family: Raleway;
+	font-family: 'Raleway-Italic';
 	font-display: swap;
-	src: url("../fonts/Raleway-SemiBold.woff2") format("woff2"), url("../fonts/Raleway-SemiBold.woff") format("woff");
+	src: url("../fonts/Raleway-SemiBold-Italic.woff2") format("woff2"), url("../fonts/Raleway-SemiBold-Italic.woff") format("woff");
 	font-weight: 600;
 	font-style: normal;
 }
