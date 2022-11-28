@@ -30,3 +30,29 @@ const imageSlider = new Swiper('.image-slider', {
 		prevEl: '.image-slider__prev',
 	},
 })
+
+const productsSliderBody = document.querySelectorAll('.slider-products__slide');
+
+if (productsSliderBody) {
+	for (let item of productsSliderBody) {
+		let imageSliderBody = item.querySelector('.image-slider');
+		let imageSliderNextBtn = item.querySelector('.image-slider__next');
+		let imageSliderPrevBtn = item.querySelector('.image-slider__prev');
+		let imageSliderZoomBtn = item.querySelector('.image-slider__zoom')
+
+		imageSliderBody.addEventListener('mouseenter', event => {
+			toggleClass(imageSliderNextBtn, '_active');
+			toggleClass(imageSliderPrevBtn, '_active');
+			toggleClass(imageSliderZoomBtn, '_active');
+		})
+		imageSliderBody.addEventListener('mouseleave', event => {
+			toggleClass(imageSliderNextBtn, '_active');
+			toggleClass(imageSliderPrevBtn, '_active');
+			toggleClass(imageSliderZoomBtn, '_active');
+		})
+	}
+}
+
+function toggleClass(elem, nameClass) {
+	elem.classList.toggle(`${nameClass}`);
+}
