@@ -1307,6 +1307,50 @@ body._lock {
   letter-spacing: 0.01em;
 }
 
+.benefit__row {
+  padding: 84px 0 90px;
+}
+.benefit__title {
+  margin-bottom: 27px;
+}
+.benefit__text {
+  max-width: 585px;
+  margin-bottom: 64px;
+}
+.benefit__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 410px);
+  gap: 30px;
+}
+.benefit__item {
+  height: 525px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+.benefit__item:nth-child(1) {
+  background: url("../img/benefit-img-1.jpg") 0 0/cover no-repeat;
+}
+.benefit__item:nth-child(2) {
+  background: url("../img/benefit-img-2.jpg") 0 0/cover no-repeat;
+}
+.benefit__item:nth-child(3) {
+  background: url("../img/benefit-img-3.jpg") 0 0/cover no-repeat;
+}
+.benefit__item-title {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.01em;
+}
+.benefit__item-icon {
+  margin-bottom: 20px;
+  display: block;
+}
+
 @media (max-width: 1220px) {
   .item-body__price {
     flex-direction: column;

@@ -109,8 +109,6 @@
 	}
 }
 
-
-
 .item-body {
 	&__header {
 		padding: 19px 22px 17px 22px;
@@ -375,6 +373,53 @@
 		letter-spacing: 0.01em;
 	}
 }
+
+.benefit{
+	&__row {
+		padding: 84px 0 90px;
+	}
+	&__title {
+		margin-bottom: 27px;
+	}
+	&__text {
+		max-width: 585px;
+		margin-bottom: 64px;
+	}
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 410px);
+		gap: 30px;
+	}
+	&__item {
+		height: 525px;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		color: #fff;
+		&:nth-child(1) {
+			background: url('@img/benefit-img-1.jpg')0 0/cover no-repeat;
+		}
+		&:nth-child(2) {
+			background: url('@img/benefit-img-2.jpg')0 0/cover no-repeat;
+		}
+		&:nth-child(3) {
+			background: url('@img/benefit-img-3.jpg')0 0/cover no-repeat;
+		}
+	}
+	&__item-title {
+		font-weight: 800;
+		font-size: 40px;
+		line-height: 47px;
+		letter-spacing: 0.01em;
+	}
+	&__item-icon {
+		margin-bottom: 20px;
+		display: block;
+	}
+}
+
 @media (max-width: 1220px) {
 	.item-body {
 		&__price {
