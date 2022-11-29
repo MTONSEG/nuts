@@ -538,7 +538,7 @@
 	}
 	&__button {
 		width: 225px;
-		margin: 69px auto;
+		margin: 69px auto 0;
 	}
 }
 .news-slider {
@@ -549,6 +549,13 @@
 	&__image-wrapper {
 		height: 270px;
 		width: 100%;
+		position: relative;
+	}
+	&__play {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 	}
 	&__image {
 		display: block;
