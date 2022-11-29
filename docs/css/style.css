@@ -1308,7 +1308,7 @@ body._lock {
 }
 
 .benefit__row {
-  padding: 84px 0 90px;
+  padding: 84px 0 100px;
 }
 .benefit__title {
   margin-bottom: 27px;
@@ -1320,6 +1320,7 @@ body._lock {
 .benefit__list {
   display: grid;
   grid-template-columns: repeat(auto-fit, 410px);
+  justify-content: center;
   gap: 30px;
 }
 .benefit__item {
@@ -1330,6 +1331,8 @@ body._lock {
   justify-content: center;
   flex-direction: column;
   color: #fff;
+  overflow: hidden;
+  cursor: pointer;
 }
 .benefit__item:nth-child(1) {
   background: url("../img/benefit-img-1.jpg") 0 0/cover no-repeat;
@@ -1350,6 +1353,182 @@ body._lock {
   margin-bottom: 20px;
   display: block;
 }
+.benefit__article {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 125, 90, 0.96);
+  padding: 103px 37px 20px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.benefit__article .benefit__item-title {
+  margin-bottom: 20px;
+}
+.benefit__article .benefit__item-icon {
+  margin-bottom: 17px;
+}
+.benefit__item-text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+  margin-bottom: 17px;
+}
+.benefit__item-text:last-child {
+  margin: 0;
+}
+.benefit__item-hover {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 2;
+}
+.benefit__item-hover:hover ~ .benefit__article {
+  top: 0;
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+
+.eco {
+  background: url("../img/home-fullwidth-img-2.jpg") 0 0/100% 100% no-repeat;
+}
+.eco__row {
+  padding: 224px 0 260px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+.eco__icon {
+  margin-bottom: 47px;
+}
+.eco__title {
+  margin-bottom: 17px;
+}
+.eco__text {
+  font-size: 22px;
+  line-height: 32px;
+  max-width: 680px;
+}
+
+.news {
+  background: rgba(249, 249, 249, 0.7);
+  padding: 87px 0 90px;
+}
+.news__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 62px;
+}
+.news__title {
+  text-align: left;
+  margin-bottom: 32px;
+}
+.news__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+.news__nav {
+  width: 141px;
+  height: 58px;
+  position: relative;
+  background: #337D5A;
+  margin: 6px 0 0 0;
+}
+.news__nav .swiper-button-disabled {
+  opacity: 0.5;
+}
+.news__next, .news__prev {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.news__next {
+  right: 26px;
+}
+.news__prev {
+  left: 26px;
+}
+.news__button {
+  width: 225px;
+  margin: 69px auto;
+}
+
+.news-slider {
+  overflow: hidden;
+}
+
+.news-item {
+  border: 1px solid transparent;
+}
+.news-item__image-wrapper {
+  height: 270px;
+  width: 100%;
+}
+.news-item__image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.news-item__body {
+  background: #fff;
+  padding: 22px 24px 29px;
+}
+.news-item__date {
+  font-family: "Montserrat";
+  display: block;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: #8A8A8A;
+  margin-bottom: 11px;
+}
+.news-item__title {
+  font-weight: 700;
+  font-size: 15.7px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+  margin-bottom: 10px;
+}
+.news-item__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  max-width: 349px;
+  margin-bottom: 23px;
+}
+.news-item__link {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #1A2F3F;
+}
+.news-item__link:hover {
+  color: #337D5A;
+}
 
 @media (max-width: 1220px) {
   .item-body__price {
@@ -1363,6 +1542,32 @@ body._lock {
   }
   .purpose__row {
     padding: 160px 0 150px;
+  }
+  .benefit__list {
+    gap: 20px;
+  }
+  .benefit__item {
+    height: 400px;
+  }
+  .benefit__item:nth-child(1), .benefit__item:nth-child(2), .benefit__item:nth-child(3) {
+    background: #fff;
+  }
+  .benefit__article {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    top: 0;
+    padding: 20px;
+    justify-content: center;
+  }
+  .benefit__item-hover {
+    display: none;
+  }
+  .benefit__item-title {
+    font-size: 32px;
+  }
+  .benefit__item-text {
+    font-size: 16px;
   }
 }
 @media (max-width: 991px) {
@@ -1395,10 +1600,24 @@ body._lock {
   .purpose__text {
     font-size: 18px;
   }
+  .eco {
+    background-image: url("../img/home-fullwidth-img-2_tab.jpg");
+  }
+  .eco__row {
+    padding: 100px 0 70px;
+  }
+  .eco__icon {
+    margin-bottom: 40px;
+  }
+  .eco__text {
+    font-size: 18px;
+    line-height: 130%;
+  }
 }
 @media (max-width: 767px) {
   .products__button,
-  .info__button {
+  .info__button,
+  .news__button {
     width: 50%;
     margin: 0 auto;
   }
@@ -1449,13 +1668,57 @@ body._lock {
     font-size: 16px;
     line-height: 18px;
   }
+  .benefit__row {
+    padding: 63px 0 40px;
+  }
+  .benefit__title {
+    margin-bottom: 20px;
+  }
+  .benefit__text {
+    margin-bottom: 30px;
+  }
+  .benefit__list {
+    grid-template-columns: minmax(280px, 410px);
+  }
+  .benefit__item {
+    height: auto;
+    min-height: 340px;
+  }
+  .benefit__item-title {
+    font-size: 28px;
+    line-height: 1;
+  }
+  .benefit__item-text {
+    font-size: 14px;
+    line-height: 120%;
+    margin-bottom: 10px;
+  }
+  .news {
+    padding: 63px 0 40px;
+  }
+  .news__row {
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  .news__title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .news__nav {
+    height: 40px;
+  }
+  .news__button {
+    margin-top: 40px;
+  }
 }
 @media (max-width: 575px) {
   .hero {
     background: url("../img/main-hero_mob-l.jpg") 0 0/100% 100% no-repeat;
   }
   .products__button,
-  .info__button {
+  .info__button,
+  .news__button {
     width: 90%;
   }
   .stat__list {
@@ -1469,5 +1732,17 @@ body._lock {
   }
   .purpose__title {
     margin-bottom: 40px;
+  }
+  .eco {
+    background-image: url("../img/home-fullwidth-img-2_mob.jpg");
+  }
+  .eco__row {
+    padding: 63px 0 40px;
+  }
+  .eco__icon {
+    margin-bottom: 30px;
+  }
+  .news__button {
+    margin-top: 10px;
   }
 }
