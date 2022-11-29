@@ -1425,6 +1425,111 @@ body._lock {
   max-width: 680px;
 }
 
+.news {
+  background: rgba(249, 249, 249, 0.7);
+  padding: 87px 0 90px;
+}
+.news__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 62px;
+}
+.news__title {
+  text-align: left;
+  margin-bottom: 32px;
+}
+.news__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+.news__nav {
+  width: 141px;
+  height: 58px;
+  position: relative;
+  background: #337D5A;
+  margin: 6px 0 0 0;
+}
+.news__nav .swiper-button-disabled {
+  opacity: 0.5;
+}
+.news__next, .news__prev {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.news__next {
+  right: 26px;
+}
+.news__prev {
+  left: 26px;
+}
+.news__button {
+  width: 225px;
+  margin: 69px auto;
+}
+
+.news-slider {
+  overflow: hidden;
+}
+
+.news-item {
+  border: 1px solid transparent;
+}
+.news-item__image-wrapper {
+  height: 270px;
+  width: 100%;
+}
+.news-item__image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.news-item__body {
+  background: #fff;
+  padding: 22px 24px 29px;
+}
+.news-item__date {
+  font-family: "Montserrat";
+  display: block;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: #8A8A8A;
+  margin-bottom: 11px;
+}
+.news-item__title {
+  font-weight: 700;
+  font-size: 15.7px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+  margin-bottom: 10px;
+}
+.news-item__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  max-width: 349px;
+  margin-bottom: 23px;
+}
+.news-item__link {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #1A2F3F;
+}
+.news-item__link:hover {
+  color: #337D5A;
+}
+
 @media (max-width: 1220px) {
   .item-body__price {
     flex-direction: column;
@@ -1511,7 +1616,8 @@ body._lock {
 }
 @media (max-width: 767px) {
   .products__button,
-  .info__button {
+  .info__button,
+  .news__button {
     width: 50%;
     margin: 0 auto;
   }
@@ -1587,13 +1693,32 @@ body._lock {
     line-height: 120%;
     margin-bottom: 10px;
   }
+  .news {
+    padding: 63px 0 40px;
+  }
+  .news__row {
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  .news__title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .news__nav {
+    height: 40px;
+  }
+  .news__button {
+    margin-top: 40px;
+  }
 }
 @media (max-width: 575px) {
   .hero {
     background: url("../img/main-hero_mob-l.jpg") 0 0/100% 100% no-repeat;
   }
   .products__button,
-  .info__button {
+  .info__button,
+  .news__button {
     width: 90%;
   }
   .stat__list {
@@ -1616,5 +1741,8 @@ body._lock {
   }
   .eco__icon {
     margin-bottom: 30px;
+  }
+  .news__button {
+    margin-top: 10px;
   }
 }

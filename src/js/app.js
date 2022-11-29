@@ -21,8 +21,26 @@ const prodSlider = new Swiper('.slider-products', {
 			slidesPerView: 3,
 			spaceBetween: 30,
 		}
-	}
+	},
 });
+
+const newsSlider = new Swiper('.news-slider', {
+	slidesPerView: 1,
+	spaceBetween: 15,
+	navigation: {
+		nextEl: '.news__next',
+		prevEl: '.news__prev',
+	},
+	breakpoints: {
+		600: {
+			slidesPerView: 2,
+		},
+		991: {
+			slidesPerView: 3,
+			spaceBetween: 30
+		}
+	}
+})
 
 const imageSlider = new Swiper('.image-slider', {
 	navigation: {
