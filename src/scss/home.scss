@@ -376,7 +376,7 @@
 
 .benefit{
 	&__row {
-		padding: 84px 0 90px;
+		padding: 84px 0 100px;
 	}
 	&__title {
 		margin-bottom: 27px;
@@ -472,6 +472,28 @@
 	}
 }
 
+.eco {
+	background: url('@img/home-fullwidth-img-2.jpg') 0 0/100% 100% no-repeat;
+	&__row {
+		padding: 224px 0 260px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		color: #fff;
+	}
+	&__icon {
+		margin-bottom: 47px;
+	}
+	&__title {
+		margin-bottom: 17px;
+	}
+	&__text {
+		font-size: 22px;
+		line-height: 32px;
+		max-width: 680px;
+	}
+}
+
 @media (max-width: 1220px) {
 	.item-body {
 		&__price {
@@ -559,6 +581,20 @@
 		}
 		&__text {
 			font-size: 18px;
+		}
+	}
+
+	.eco {
+		background-image: url('@img/home-fullwidth-img-2_tab.jpg');
+		&__row {
+			padding: 100px 0 70px;
+		}
+		&__icon {
+			margin-bottom: 40px;
+		}
+		&__text {
+			font-size: 18px;
+			line-height: 130%;
 		}
 	}
 }
@@ -681,6 +717,16 @@
 		}
 		&__title {
 			margin-bottom: 40px;
+		}
+	}
+
+	.eco {
+		background-image: url('@img/home-fullwidth-img-2_mob.jpg');
+		&__row {
+			padding: 63px 0 40px;
+		}
+		&__icon {
+			margin-bottom: 30px;
 		}
 	}
 }
