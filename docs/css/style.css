@@ -1320,6 +1320,7 @@ body._lock {
 .benefit__list {
   display: grid;
   grid-template-columns: repeat(auto-fit, 410px);
+  justify-content: center;
   gap: 30px;
 }
 .benefit__item {
@@ -1330,6 +1331,8 @@ body._lock {
   justify-content: center;
   flex-direction: column;
   color: #fff;
+  overflow: hidden;
+  cursor: pointer;
 }
 .benefit__item:nth-child(1) {
   background: url("../img/benefit-img-1.jpg") 0 0/cover no-repeat;
@@ -1350,6 +1353,55 @@ body._lock {
   margin-bottom: 20px;
   display: block;
 }
+.benefit__article {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 125, 90, 0.96);
+  padding: 103px 37px 20px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.benefit__article .benefit__item-title {
+  margin-bottom: 20px;
+}
+.benefit__article .benefit__item-icon {
+  margin-bottom: 17px;
+}
+.benefit__item-text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+  margin-bottom: 17px;
+}
+.benefit__item-text:last-child {
+  margin: 0;
+}
+.benefit__item-hover {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 2;
+}
+.benefit__item-hover:hover ~ .benefit__article {
+  top: 0;
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
 
 @media (max-width: 1220px) {
   .item-body__price {
@@ -1363,6 +1415,32 @@ body._lock {
   }
   .purpose__row {
     padding: 160px 0 150px;
+  }
+  .benefit__list {
+    gap: 20px;
+  }
+  .benefit__item {
+    height: 400px;
+  }
+  .benefit__item:nth-child(1), .benefit__item:nth-child(2), .benefit__item:nth-child(3) {
+    background: #fff;
+  }
+  .benefit__article {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    top: 0;
+    padding: 20px;
+    justify-content: center;
+  }
+  .benefit__item-hover {
+    display: none;
+  }
+  .benefit__item-title {
+    font-size: 32px;
+  }
+  .benefit__item-text {
+    font-size: 16px;
   }
 }
 @media (max-width: 991px) {
@@ -1448,6 +1526,31 @@ body._lock {
   .stat__text {
     font-size: 16px;
     line-height: 18px;
+  }
+  .benefit__row {
+    padding: 63px 0 40px;
+  }
+  .benefit__title {
+    margin-bottom: 20px;
+  }
+  .benefit__text {
+    margin-bottom: 30px;
+  }
+  .benefit__list {
+    grid-template-columns: minmax(280px, 410px);
+  }
+  .benefit__item {
+    height: auto;
+    min-height: 340px;
+  }
+  .benefit__item-title {
+    font-size: 28px;
+    line-height: 1;
+  }
+  .benefit__item-text {
+    font-size: 14px;
+    line-height: 120%;
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 575px) {
