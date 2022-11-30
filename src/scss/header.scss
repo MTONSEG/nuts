@@ -176,6 +176,9 @@
 	}
 	&__image {
 		width: 100%;
+		&._mobile {
+			display: none;
+		}
 	}
 	&__text {
 		font-weight: 800;
@@ -357,6 +360,10 @@
 		}
 		&__image {
 			width: 100%;
+			display: none;
+			&._mobile {
+				display: block;
+			}
 		}
 		&__text {
 			font-size: 11px;
