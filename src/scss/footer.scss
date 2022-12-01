@@ -98,6 +98,18 @@
 			box-shadow: 0 0 5px libs.$dark-green;
 		}
 	}
+	&__mess-icon {
+		aspect-ratio: 1/1;
+		&._viber {
+			width: 16px;
+		}
+		&._telegram {
+			width: 14px;
+		}
+		&._whatsup {
+			width: 15px;
+		}
+	}
 	&__address-title {
 		font-weight: 800;
 		font-size: 17px;
@@ -116,6 +128,9 @@
 			width: 100%;
 			height: 100%;
 		}
+	}
+	&__mess-icon {
+
 	}
 }
 

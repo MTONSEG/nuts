@@ -43,6 +43,24 @@
 		&:hover {
 			transform: scale(1.1);
 		}
+		&:nth-child(1){
+			img {
+				width: 7px;
+				aspect-ratio: 7/13;
+			}
+		}
+		&:nth-child(2){
+			img{
+				width: 10px;
+				aspect-ratio: 1/1;
+			}
+		}
+		&:nth-child(3){
+			img{
+				width: 16px;
+				aspect-ratio: 1/1;
+			}
+		}
 	}
 	&__sale {
 		color: #337D5A;
@@ -150,6 +168,7 @@
 	}
 	&__cart-icon {
 		width: 22.16px;
+		aspect-ratio: 22/24;
 	}
 	&__cart-amount {
 		justify-content: center;
@@ -176,9 +195,7 @@
 	}
 	&__image {
 		width: 100%;
-		&._mobile {
-			display: none;
-		}
+		aspect-ratio: 54/53;
 	}
 	&__text {
 		font-weight: 800;
@@ -214,6 +231,10 @@
 
 .burger {
 	display: none;
+	&__icon {
+		width: 19px;
+		aspect-ratio: 19/17;
+	}
 }
 
 .burger-menu {
@@ -252,9 +273,10 @@
 		&__sale {
 			margin: 0;
 			text-align: center;
-			padding: 8px 10px 9px;
+			padding: 8Apx 10px 9px;
 			font-size: 13px;
 			line-height: 16px;
+			display: none;
 		}
 		&__enter,
 		&__socials {
@@ -331,6 +353,7 @@
 			justify-content: flex-start;
 			padding: 0;
 			background: #fff;
+			display: none;
 		}
 		&__item {
 			width: 100%;
@@ -360,10 +383,6 @@
 		}
 		&__image {
 			width: 100%;
-			display: none;
-			&._mobile {
-				display: block;
-			}
 		}
 		&__text {
 			font-size: 11px;
@@ -387,6 +406,9 @@
 			opacity: 1;
 			visibility: visible;
 			z-index: 10;
+			& .bottom-header__list {
+				display: flex;
+			}
 		}
 		& .logo {
 			flex-direction: row;
@@ -418,6 +440,10 @@
 		&__body {
 			min-height: 200px;
 			overflow: auto;
+		}
+		&__close-icon {
+			width: 16px;
+			aspect-ratio: 1/1;
 		}
 	}
 }
