@@ -4,7 +4,7 @@ flsFunctions.isWebp();
 import * as select from './modules/select.js';
 import * as burger from './modules/burgerMenu.js';
 import * as dynamicAdaptive from './modules/dynamicAdapt.js';
-import Swiper from 'swiper/bundle';
+import Swiper, {Navigation} from 'swiper';
 
 const prodSlider = new Swiper('.slider-products', {
 	slidesPerView: 1,
@@ -25,12 +25,13 @@ const prodSlider = new Swiper('.slider-products', {
 });
 
 const newsSlider = new Swiper('.news-slider', {
-	slidesPerView: 1,
-	spaceBetween: 15,
+	modules:  [Navigation],
 	navigation: {
 		nextEl: '.news__next',
 		prevEl: '.news__prev',
 	},
+	slidesPerView: 1,
+	spaceBetween: 15,
 	breakpoints: {
 		600: {
 			slidesPerView: 2,
@@ -43,6 +44,7 @@ const newsSlider = new Swiper('.news-slider', {
 })
 
 const imageSlider = new Swiper('.image-slider', {
+	modules:  [Navigation],
 	navigation: {
 		nextEl: '.image-slider__next',
 		prevEl: '.image-slider__prev',

@@ -13,6 +13,8 @@
 		display: block;
 		transition: .3s;
 		margin: 5px 0 0 0;
+		width: 10px;
+		aspect-ratio: 10/6.25;
 	}
 	&__body {
 		border: 1px solid rgba(0, 0, 0, 0.08);
