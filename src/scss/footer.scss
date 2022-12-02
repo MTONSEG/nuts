@@ -2,6 +2,10 @@
 
 .contacts {
 	background: #fff;
+	&._color {
+		background: #FBFBFB;
+		margin-bottom: 54px;
+	}
 	&__link,
 	&__address-text {
 		@include libs.Montserrat;
