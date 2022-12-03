@@ -40,7 +40,7 @@
 }
 
 .slider-products {
-	margin-bottom: 50px;
+	margin-bottom: 51px;
 	&__slide {
 		border: 1px solid rgba(0, 0, 0, 0.08);
 		transition: .3s;
@@ -73,8 +73,6 @@
 		top: 20px;
 		left: 0;
 		z-index: 2;
-		height: auto;
-		width: 82px;
 	}
 	&__next,
 	&__prev,
@@ -139,9 +137,9 @@
 	}
 	&__title {
 		font-weight: 700;
-		font-size: 18px;
+		font-size: 17px;
 		line-height: 21px;
-		margin-bottom: 7px;
+		margin: 0px 0 7px -2px;
 	}
 	&__art {
 		font-weight: 500;
@@ -153,10 +151,10 @@
 	}
 	&__text {
 		font-weight: 600;
-		font-size: 16px;
-		line-height: 17px;
+		font-size: 15.8px;
+		line-height: 18px;
 		color: #000;
-		margin-bottom: 20px;
+		margin-bottom: 18px;
 		max-width: 240px;
 	}
 	&__info,
@@ -193,7 +191,7 @@
 		}
 	}
 	&__footer {
-		padding: 12px 23px 13px 22px;
+		padding: 13px 23px 12px 22px;
 		align-items: center;
 	}
 	&__price {
@@ -249,7 +247,7 @@
 		padding: 29px 0 0 0;
 	}
 	&__title {
-		margin-bottom: 41px;
+		margin-bottom: 43px;
 		text-align: left;
 	}
 	&__text-wrap {
@@ -257,7 +255,7 @@
 	}
 	&__text {
 		font-weight: 500;
-		font-size: 16px;
+		font-size: 15.6px;
 		line-height: 25.78px;
 		letter-spacing: 0.01em;
 		margin-bottom: 26px;
@@ -328,7 +326,7 @@
 
 .stat {
 	&__row {
-		padding: 79px 0 86px;
+		padding: 81px 0 86px;
 	}
 	&__list {
 		display: grid;
@@ -381,7 +379,7 @@
 	}
 	&__title {
 		max-width: 1057px;
-		margin-bottom: 70px;
+		margin-bottom: 72px;
 	}
 	&__play {
 		margin-bottom: 28px;
@@ -397,7 +395,7 @@
 
 .benefit{
 	&__row {
-		padding: 84px 0 100px;
+		padding: 84px 0 101px;
 	}
 	&__title {
 		margin-bottom: 27px;
@@ -509,7 +507,7 @@
 .eco {
 	background: url('@img/home-fullwidth-img-2.jpg') 0 0/100% 100% no-repeat;
 	&__row {
-		padding: 224px 0 260px;
+		padding: 224px 0 262px;
 		display: flex;
 		align-items: center;
 		flex-direction: column;
@@ -545,7 +543,7 @@
 	}
 	&__text {
 		font-weight: 500;
-		font-size: 18px;
+		font-size: 17.6px;
 		line-height: 22px;
 		text-align: center;
 		letter-spacing: 0.01em;
@@ -621,14 +619,14 @@
 	}
 	&__title {
 		font-weight: 700;
-		font-size: 15.7px;
+		font-size: 15.4px;
 		line-height: 23px;
 		letter-spacing: 0.01em;
 		margin-bottom: 10px;
 	}
 	&__text {
 		font-weight: 500;
-		font-size: 14px;
+		font-size: 13.7px;
 		line-height: 20px;
 		letter-spacing: 0.01em;
 		max-width: 349px;
