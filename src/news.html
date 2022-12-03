@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{"title":"Орехи Причерноморья"})
+
+<body>
+	<div class="wrapper">
+		@@include('./html/header.html',{})
+		<div class="breadcrumbs-wrapper">
+			<div class="container">
+				<div class="breadcrumbs _grey">
+					<div class="breadcrumbs__item">
+						<a href="#" class="breadcrumbs__link">Главная</a>
+					</div>
+					<div class="breadcrumbs__item">
+						<a href="#" class="breadcrumbs__link">Новости и статьи
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="news-block">
+			<div class="news-head">
+				<div class="container">
+					<div class="news-head__row">
+						<h1 class="news-head__title title-block">
+							Новости и статьи
+						</h1>
+						<p class="news-head__text text-block">
+							Свежие новости и полезная информация
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="news-card">
+				<div class="container">
+					<div class="news-card__row">
+						<div class="news-card__image-wrap">
+							<picture>
+								<source media="(max-width: 575px)" srcset="@img/news-card_img_mob.jpg">
+								<img src="@img/news-card_img.jpg" alt="Центр поддержки экспорта, в студии Павел Тулба" class="news-card__image">
+							</picture>
+						</div>
+						<div class="news-card__body">
+							<date class="news-card__date">
+								12.04.2019
+							</date>
+							<h2 class="news-card__item-title">
+								Центр поддержки экспорта,<br>
+								в студии Павел Тулба
+							</h2>
+							<div class="news-card__text-wrap">
+								<p class="news-card__item-text">
+									Сельскохозяйственный обслуживающий кооператив
+									“Орех Причерноморья” предлагает своим клиентам
+									выгодные условия сотрудничества.
+								</p>
+								<p class="news-card__item-text">
+									Ореховый бизнес – один из наиболее перспективных
+									в Украине. Ежегодная нехватка продукта в Европе составляет 100 000 тонн. У Вас есть
+									возможность
+									зарабатывать десятки тысяч долларов в год всего
+									на нескольких гектарах земли.
+								</p>
+							</div>
+							<a href="#" class="news-card__btn">Читать <span>&#10230;</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="news-other">
+			@@include('./html/component-news.html',{})
+		</section>
+		<section class="news-project">
+			<div class="container">
+				@@include('./html/component-fw-gallery.html',{})
+				<a href="#" class="news-project__button btn _go">Посмотреть еще</a>
+			</div>
+		</section>
+		@@include('./html/footer-color.html',{})
+	</div>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

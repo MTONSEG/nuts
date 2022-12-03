@@ -1,0 +1,140 @@
+@use 'libs';
+
+.news-head {
+	&__row {
+		padding: 13px 0 0;
+	}
+	&__title {
+		margin-bottom: 16px;
+	}
+	&__text {
+		margin: 0px auto 63px;
+	}
+}
+
+.news-card {
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		gap: 15px;
+		margin-bottom: 60px;
+	}
+	&__image-wrap {
+		width: 64.269%;
+		aspect-ratio: 829/526;
+	}
+	&__image {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	&__body {
+		max-width: 423px;
+		padding: 71px 0 0;
+	}
+	&__date {
+		display: block;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 22px;
+		letter-spacing: 0.01em;
+		color: #8A8A8A;
+		margin: 0 0 19px 11px;
+	}
+	&__item-title {
+		font-weight: 700;
+		font-size: 21.6px;
+		line-height: 26px;
+		letter-spacing: 0.01em;
+		margin-bottom: 31px;
+	}
+	&__text-wrap {
+		margin-bottom: 24px;
+	}
+	&__item-text {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 25px;
+		margin-bottom: 15px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__btn {
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 143%;
+		letter-spacing: 0.01em;
+		color: #1A2F3F;
+		margin: 0 0 0 11px;
+		&:hover {
+			color: libs.$dark-green;
+		}
+	}
+}
+
+.news-other {
+	margin-bottom: 30px;
+	& .news {
+		background: #fff;
+		padding: 0;
+		&__row {
+			display: none;
+		}
+		&__button {
+			display: none;
+		}
+	}
+	& .news-item {
+		&__body {
+			padding: 22px 0;
+		}
+		&__date {
+			margin-bottom: 9px;
+		}
+		&__title {
+			font-size: 15.459px;
+			margin-bottom: 12px;
+		}
+		&__text {
+			font-size: 13.7px;
+		}
+	}
+}
+
+.news-project__button {
+	margin: 40px auto 30px;
+}
+
+
+@media (max-width: 767px) {
+	.news-card {
+		&__row {
+			flex-direction: column;
+			align-items: center;
+		}
+		&__image-wrap {
+			width: 100%;
+		}
+		&__body {
+			padding: 0;
+			max-width: 100%;
+		}
+	}
+}
+
+@media (min-width: 575px) {
+	.news-project__button {
+		width: 50%;
+	}
+}
+
+@media (min-width: 991px) {
+	.news-project__button {
+		width: 199px;
+		margin: 71px auto 92px;
+	}
+}

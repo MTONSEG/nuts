@@ -154,44 +154,185 @@
 			<div class="burger-menu__body"></div>
 	</div>
 </header>
-
-		<section class="gallery-hero">
+		<div class="breadcrumbs-wrapper">
 			<div class="container">
-				<div class="breadcrumbs">
+				<div class="breadcrumbs _grey">
 					<div class="breadcrumbs__item">
 						<a href="#" class="breadcrumbs__link">Главная</a>
 					</div>
 					<div class="breadcrumbs__item">
-						<a href="#" class="breadcrumbs__link">Галерея</a>
+						<a href="#" class="breadcrumbs__link">Новости и статьи
+						</a>
 					</div>
 				</div>
-				<div class="gallery-hero__row">
-					<h1 class="gallery-hero__title title">Галерея</h1>
-					<p class="gallery-hero__text text-title">Кадры социальной активности компании</p>
+			</div>
+		</div>
+
+		<section class="news-block">
+			<div class="news-head">
+				<div class="container">
+					<div class="news-head__row">
+						<h1 class="news-head__title title-block">
+							Новости и статьи
+						</h1>
+						<p class="news-head__text text-block">
+							Свежие новости и полезная информация
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="news-card">
+				<div class="container">
+					<div class="news-card__row">
+						<div class="news-card__image-wrap">
+							<picture>
+								<source media="(max-width: 575px)" srcset="img/news-card_img_mob.jpg">
+								<img src="img/news-card_img.jpg" alt="Центр поддержки экспорта, в студии Павел Тулба" class="news-card__image">
+							</picture>
+						</div>
+						<div class="news-card__body">
+							<date class="news-card__date">
+								12.04.2019
+							</date>
+							<h2 class="news-card__item-title">
+								Центр поддержки экспорта,<br>
+								в студии Павел Тулба
+							</h2>
+							<div class="news-card__text-wrap">
+								<p class="news-card__item-text">
+									Сельскохозяйственный обслуживающий кооператив
+									“Орех Причерноморья” предлагает своим клиентам
+									выгодные условия сотрудничества.
+								</p>
+								<p class="news-card__item-text">
+									Ореховый бизнес – один из наиболее перспективных
+									в Украине. Ежегодная нехватка продукта в Европе составляет 100 000 тонн. У Вас есть
+									возможность
+									зарабатывать десятки тысяч долларов в год всего
+									на нескольких гектарах земли.
+								</p>
+							</div>
+							<a href="#" class="news-card__btn">Читать <span>&#10230;</span></a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
+		<section class="news-other">
+			<section class="news">
+	<div class="container">
+		<div class="news__row">
+			<div class="news__head">
+				<h2 class="news__title title-block">Новости</h2>
+				<p class="news__text">
+					Свежие новости и полезная информация
+				</p>
+			</div>
+			<div class="news__nav">
+				<div class="news__next">
+					<img src="img/icons/arr-r.svg" alt="Next Slide" class="news__next-icon">
+				</div>
+				<div class="news__prev">
+					<img src="img/icons/arr-l.svg" alt="Preview Slide" class="news__prev-icon">
+				</div>
+			</div>
+		</div>
+	</div>
 
-		<section class="gallery">
+	<div class="container">
+		<div class="news-slider">
+			<div class="news-slider__wrapper swiper-wrapper">
+				<div class="news-slider__slide news-item swiper-slide">
+					<div class="news-item__image-wrapper">
+						<picture><source srcset="img/news-img-1.webp" type="image/webp"><img loading="lazy" src="img/news-img-1.jpg" alt="Центр поддержки экспорта" class="news-item__image"></picture>
+					</div>
+					<div class="news-item__body">
+						<date class="news-item__date">
+							12.04.2019
+						</date>
+						<h3 class="news-item__title">
+							Центр поддержки экспорта, в студии<br>
+							Павел Тулба
+						</h3>
+						<p class="news-item__text">
+							Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших
+							садоводов, не смотря на большой спрос в Европе и отличную...
+						</p>
+						<a href="#" class="news-item__link">Читать <span>&#10230;</span></a>
+					</div>
+				</div>
+				<div class="news-slider__slide news-item swiper-slide">
+					<div class="news-item__image-wrapper">
+						<picture><source srcset="img/news-img-2.webp" type="image/webp"><img loading="lazy" src="img/news-img-2.jpg" alt="Экспортный форум" class="news-item__image"></picture>
+						<a href="#" class="news-item__play play">
+							<img loading="lazy" src="img/icons/play.svg" alt="Play" class="hero__icon-play">
+						</a>
+					</div>
+					<div class="news-item__body">
+						<date class="news-item__date">
+							12.04.2019
+						</date>
+						<h3 class="news-item__title">
+							В Одесской области состоялся масштабный
+							торгово - экспортный форум
+						</h3>
+						<p class="news-item__text">
+							Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших
+							садоводов, не смотря на большой спрос в Европе
+							и отличную...
+						</p>
+						<a href="#" class="news-item__link">Читать <span>&#10230;</span></a>
+					</div>
+				</div>
+				<div class="news-slider__slide news-item swiper-slide">
+					<div class="news-item__image-wrapper">
+						<img loading="lazy" src="img/news-img-3.jpg" alt="Сертификация органического
+						производителя" class="news-item__image">
+					</div>
+					<div class="news-item__body">
+						<date class="news-item__date">
+							12.04.2019
+						</date>
+						<h3 class="news-item__title">
+							Сертификация органического
+							производителя
+						</h3>
+						<p class="news-item__text">
+							Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших садоводов, не смотря на большой спрос в Европе 
+							и отличную...
+						</p>
+						<a href="#" class="news-item__link">Читать <span>&#10230;</span></a>
+					</div>
+				</div>
+				<div class="news-slider__slide news-item swiper-slide">
+					<div class="news-item__image-wrapper">
+						<picture><source srcset="img/news-img-1.webp" type="image/webp"><img loading="lazy" src="img/news-img-1.jpg" alt="Центр поддержки экспорта" class="news-item__image"></picture>
+					</div>
+					<div class="news-item__body">
+						<date class="news-item__date">
+							12.04.2019
+						</date>
+						<h3 class="news-item__title">
+							Центр поддержки экспорта, в студии
+							Павел Тулба
+						</h3>
+						<p class="news-item__text">
+							Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших
+							садоводов, не смотря на большой спрос в Европе и отличную...
+						</p>
+						<a href="#" class="news-item__link">Читать <span>&#10230;</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a href="#" class="news__button btn _go">Смотреть все новости</a>
+	</div>
+</section>
+		</section>
+		<section class="news-project">
 			<div class="container">
-				<div class="gallery__row">
-					<div class="gallery__top top-gallery">
-						<div class="top-gallery__item">
-							<picture><source srcset="img/gallery-top_1.webp" type="image/webp"><img src="img/gallery-top_1.jpg" alt="SIAL Paris 2018" class="top-gallery__image"></picture>
-						</div>
-						<div class="top-gallery__article">
-							<h3 class="top-gallery__item-title">
-								SIAL Paris 2018
-							</h3>
-							<p class="top-gallery__item-text">
-								В этом Году при поддержке проекта International<br> Trade Centre Ukraine, и финансировании<br>
-								правительства Швеции, мы побывали<br>
-								на крупнейшей продовольственной выставке Европы <span>SIAL Paris 2018</span>
-							</p>
-						</div>
-					</div>
-
-					<div class="fw-gallery">
+				<div class="fw-gallery">
 	<a href="#" class="fw-gallery__play play">
 		<img src="img/icons/play.svg" alt="Play">
 	</a>
@@ -202,78 +343,9 @@
 		от мировых специалистов!
 	</p>
 </div>
-
-					<div class="gallery__bottom bt-gallery">
-						<div class="bt-gallery__item">
-							<picture><source srcset="img/gallery-bt-1.webp" type="image/webp"><img src="img/gallery-bt-1.jpg" alt="Image 1" class="bt-gallery__image"></picture>
-						</div>
-						<div class="bt-gallery__item">
-							<picture><source srcset="img/gallery-bt-2.webp" type="image/webp"><img src="img/gallery-bt-2.jpg" alt="Image 2" class="bt-gallery__image"></picture>
-						</div>
-						<div class="bt-gallery__item">
-							<picture><source srcset="img/gallery-bt-3.webp" type="image/webp"><img src="img/gallery-bt-3.jpg" alt="Image 3" class="bt-gallery__image"></picture>
-							<div class="fw-gallery _no-bg">
-								<a href="#" class="fw-gallery__play play">
-									<img src="img/icons/play.svg" alt="Play">
-								</a>
-								<h2 class="fw-gallery__title">Проект UBHDP</h2>
-								<p class="fw-gallery__text">
-									Вчера к нам приезжал американский агроном<br> Рон, спасибо Мельнику Евгению и проекту UBHDP за возможность получить консультацию 
-									от мировых специалистов!
-								</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="gallery__top top-gallery top-gallery_reverse">
-						<div class="top-gallery__item">
-							<picture><source srcset="img/gallery-top_1.webp" type="image/webp"><img src="img/gallery-top_1.jpg" alt="SIAL Paris 2018" class="top-gallery__image"></picture>
-						</div>
-						<div class="top-gallery__item _small">
-							<picture><source srcset="img/gallery-top_2.webp" type="image/webp"><img src="img/gallery-top_2.jpg" alt="Image Top" class="top-gallery__image"></picture>
-						</div>
-					</div>
-
-					<div class="fw-gallery">
-	<a href="#" class="fw-gallery__play play">
-		<img src="img/icons/play.svg" alt="Play">
-	</a>
-	<h2 class="fw-gallery__title">Проект UBHDP</h2>
-	<p class="fw-gallery__text">
-		Вчера к нам приезжал американский агроном Рон , спасибо Мельнику Евгению и проекту UBHDP за
-		возможность получить консультацию<br>
-		от мировых специалистов!
-	</p>
-</div>
-
-					<div class="gallery__bottom bt-gallery">
-						<div class="bt-gallery__item">
-							<picture><source srcset="img/gallery-bt-1.webp" type="image/webp"><img src="img/gallery-bt-1.jpg" alt="Image 1" class="bt-gallery__image"></picture>
-						</div>
-						<div class="bt-gallery__item">
-							<picture><source srcset="img/gallery-bt-2.webp" type="image/webp"><img src="img/gallery-bt-2.jpg" alt="Image 2" class="bt-gallery__image"></picture>
-						</div>
-						<div class="bt-gallery__item">
-							<picture><source srcset="img/gallery-bt-3.webp" type="image/webp"><img src="img/gallery-bt-3.jpg" alt="Image 3" class="bt-gallery__image"></picture>
-							<div class="fw-gallery _no-bg">
-								<a href="#" class="fw-gallery__play play">
-									<img src="img/icons/play.svg" alt="Play">
-								</a>
-								<h2 class="fw-gallery__title">Проект UBHDP</h2>
-								<p class="fw-gallery__text">
-									Вчера к нам приезжал американский агроном Рон , спасибо Мельнику Евгению и проекту UBHDP за
-									возможность получить консультацию<br>
-									от мировых специалистов!
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<a href="#" class="gallery__button btn _go">Посмотреть еще</a>
+				<a href="#" class="news-project__button btn _go">Посмотреть еще</a>
 			</div>
 		</section>
-
-
 		<section class="contacts _color">
 	<div class="container">
 		<div class="contacts__row">
