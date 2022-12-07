@@ -14,6 +14,12 @@
 	&__text {
 		margin-bottom: 38px;
 	}
+	&_company {
+		background-image: url('@img/hero-company.jpg');
+		& .hero__row {
+			padding: 142px 0 139px;
+		}
+	}
 }
 
 .products {
@@ -236,6 +242,9 @@
 
 .info {
 	background: #FBFBFB;
+	&_bg-white {
+		background: #fff;
+	}
 	&__row {
 		padding: 100px 0 90px;
 		display: flex;
@@ -709,12 +718,18 @@
 		&__title {
 			margin-bottom: 30px;
 		}
+		&_company {
+			background-image: url('@img/hero-company_tab.jpg');
+		}
 	}
 
 	.info {
 		&__article {
 			margin: 0;
 			padding: 40px 0 0 0;
+		}
+		&__text-wrap {
+			margin: 0;
 		}
 		&__title {
 			margin-bottom: 30px;
@@ -866,6 +881,9 @@
 @media (max-width: 575px) {
 	.hero {
 		background: url('@img/main-hero_mob-l.jpg') 0 0/100% 100% no-repeat;
+		&_company {
+			background-image: url('@img/hero-company_mob.jpg');
+		}
 	}
 	.products__button,
 	.info__button,

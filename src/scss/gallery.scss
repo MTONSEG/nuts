@@ -48,6 +48,7 @@
 	&__item {
 		color: #fff;
 		aspect-ratio: 185/139;
+		position: relative;
 		&._small {
 			aspect-ratio: 519/55;
 		}
@@ -72,8 +73,8 @@
 	}
 	&__item-text {
 		font-weight: 500;
-		font-size: 15px;
-		line-height: 22px;
+		font-size: 13px;
+		line-height: 18px;
 		span {
 			font-weight: 700;
 		}
@@ -232,6 +233,11 @@
 		}
 		&__item-title {
 			margin-bottom: 23px;
+		}
+		&__item-text {
+			font-size: 15px;
+			line-height: 22px;
+			max-width: 485px;
 		}
 	}
 	.fw-gallery {
