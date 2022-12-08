@@ -3,6 +3,9 @@
 	&__row {
 		padding: 67px 0 108px;
 	}
+	&.catalog {
+		background-image: url('@img/catalog-hero.jpg');
+	}
 }
 
 .delivery-tabs {
@@ -123,6 +126,11 @@
 	}
 }
 @media (max-width: 991px){
+	.delivery-hero {
+		&.catalog {
+			background-image: url('@img/catalog-hero_tab.jpg');
+		}
+	}
 	.delivery-tabs {
 		&__content-info {
 			max-width: 100%;
@@ -168,6 +176,14 @@
 		}
 		&__content-item {
 			margin-bottom: 20px;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.delivery-hero {
+		&.catalog {
+			background-image: url('@img/catalog-hero_mob.jpg');
 		}
 	}
 }
