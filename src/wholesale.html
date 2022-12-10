@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{"title":"Оптовым покупателям"})
+
+<body>
+	<div class="wrapper">
+		@@include('./html/header.html',{})
+
+		<section class="hero hero_wholesale">
+			<div class="container">
+				<div class="breadcrumbs">
+					<div class="breadcrumbs__item">
+						<a href="#" href="#" class="breadcrumbs__link">Главная</a>
+					</div>
+					<div class="breadcrumbs__item">
+						<a href="#" class="breadcrumbs__link">
+							Оптовым и корпоративным клиентам
+						</a>
+					</div>
+				</div>
+
+				<div class="hero__row">
+					<h1 class="hero__title title">
+						Орех Причерноморья
+					</h1>
+					<p class="hero__text text-title">
+						Единственный в Украине сад совместного
+						выращивание фундука и грецкого ореха
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="wholesale">
+			<div class="container">
+				<div class="wholesale__row">
+					<h2 class="wholesale__title title-block">
+						Оптовым и корпоративным клиентам
+					</h2>
+					<div class="wholesale__text-wrapper">
+						<div class="wholesale__text-item">
+							<p class="wholesale__text">
+								Сельскохозяйственный обслуживающий кооператив “Орех Причерноморья”
+								предлагает своим клиентам
+								выгодные условия сотрудничества.
+							</p>
+							<p class="wholesale__text">
+								Особые условия подготовлены для <span>розничных магазинов, компаний HoReCa, спорт -
+									клубов.</span>
+							</p>
+						</div>
+						<div class="wholesale__text-item">
+							<p class="wholesale__text">
+								Мы готовы рассмотреть особые условия для оптовых покупателей, с готовностью идем на встречу
+								любому предложению.
+							</p>
+							<p class="wholesale__text">
+								Если вы заинтересованы в нашей продукции, пишите, или звоните в наш главный офис - мы всегда
+								пойдем вам
+								на встречу!
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="tabs">
+			<div class="tabs__head">
+				<div class="container">
+					<div class="tabs__buttons">
+						<a data-tab="#tab_1" href="#" class="tabs__btn">
+							<div class="tabs__btn-icon icon-supermarket"></div>
+							<p class="tabs__btn-text">
+								Крупные<br>
+								супермаркеты
+							</p>
+						</a>
+						<a data-tab="#tab_2" href="#" class="tabs__btn">
+							<div class="tabs__btn-icon icon-shop"></div>
+							<p class="tabs__btn-text">
+								Розничные<br>
+								магазины
+							</p>
+						</a>
+						<a data-tab="#tab_3" href="#" class="tabs__btn">
+							<div class="tabs__btn-icon icon-table"></div>
+							<p class="tabs__btn-text">
+								Компании<br>
+								HoReCa
+							</p>
+						</a>
+						<a data-tab="#tab_4" href="#" class="tabs__btn">
+							<div class="tabs__btn-icon icon-dumbbell"></div>
+							<p class="tabs__btn-text">
+								Фитнес<br>
+								и спорт клубы
+							</p>
+						</a>
+						<a data-tab="#tab_5" href="#" class="tabs__btn">
+							<div class="tabs__btn-icon icon-cake"></div>
+							<p class="tabs__btn-text">
+								Кондитерские<br>
+								и пекарни
+							</p>
+						</a>
+						<div class="tabs__indicator"></div>
+					</div>
+				</div>
+			</div>
+			<div class="tabs__body">
+				<div class="container">
+					<div id="tab_1" class="tabs__slide tab-slide">
+						<div class="tab-slide__row">
+							<div class="tab-slide__body">
+								<div class="tab-slide__text-wrapper">
+									<p class="tab-slide__text">
+										СОК "Орех Причерноморья" предлагает своим клиентам
+										выгодные условия сорудничества.
+									</p>
+									<p class="tab-slide__text">
+										Мы готовы рассмотреть особые
+										условия для оптовых покупателей, с готовностью идем на встречу
+										к любому предложению.
+									</p>
+									<p class="tab-slide__text">
+										Особые условия подготовленны для розничных магазинов.
+										компаний HoReCa, спорт-клубов.
+									</p>
+									<p class="tab-slide__text">
+										Если вы заинтересованы в нашей продукции, пишите
+										или звоните
+										в наш главный офис, мы всегда пойдем
+										вам на встречу.
+									</p>
+								</div>
+								<a href="#" class="tab-slide__button btn">Написать нам</a>
+							</div>
+							<div class="tab-slide__image-wrapper">
+								<img src="@img/wholesale_tab-img.jpg" alt="Cart" class="tab-slide__image">
+							</div>
+						</div>
+					</div>
+					<div id="tab_2" class="tabs__slide tab-slide">
+						<span>Розничные
+							магазины</span>
+					</div>
+					<div id="tab_3" class="tabs__slide tab-slide">
+						Компании
+						HoReCa
+						<span></span>
+					</div>
+					<div id="tab_4" class="tabs__slide tab-slide">
+						Фитнес
+						и спорт клубы
+						<span></span>
+					</div>
+					<div id="tab_5" class="tabs__slide tab-slide">
+						Кондитерские
+						и пекарни
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		@@include('./html/component-stat.html',{})
+
+		<div class="wholesale-eco">
+			@@include('./html/component-eco.html',{})
+		</div>
+		@@include('./html/footer.html',{})
+	</div>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

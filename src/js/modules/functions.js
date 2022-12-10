@@ -13,4 +13,19 @@ export function isWebp() {
 		let className = support === true ? 'webp' : 'no-webp';
 		document.documentElement.classList.add(className);
 	});
+};
+
+
+export function removeClass(elem, nameClass) {
+	elem.classList.remove(`${nameClass}`);
 }
+
+export function addClass(elem, nameClass) {
+	elem.classList.add(`${nameClass}`);
+}
+
+
+export function toggleClass(elem, nameClass) {
+	elem.classList.toggle(`${nameClass}`);
+}
+
