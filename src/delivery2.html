@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{"title":"Оплата и доставка"})
+
+<body>
+	<div class="wrapper">
+		@@include('./html/header.html',{})
+
+		<section class="delivery-hero">
+			<div class="container">
+				<div class="breadcrumbs">
+					<div class="breadcrumbs__item">
+						<a href="#" class="breadcrumbs__link">Главная</a>
+					</div>
+					<div class="breadcrumbs__item">
+						<a href="#" class="breadcrumbs__link">
+							Оплата и доставка
+						</a>
+					</div>
+				</div>
+				<div class="delivery-hero__row">
+					<h1 class="delivery-hero__title title">
+						Оплата и доставка
+					</h1>
+				</div>
+			</div>
+		</section>
+
+		<section class="delivery-tabs">
+			<div class="delivery-tabs__row">
+				<nav class="delivery-tabs__buttons">
+					<div class="delivery-tabs__buttons-wrapper">
+						<button data-tab="#tab_1" class="delivery-tabs__btn">
+							<img src="@img/icons/wallet.svg" alt="wallet" class="delivery-tabs__icon">
+							<span>Оплата заказа</span>
+						</button>
+						<button data-tab="#tab_2" class="delivery-tabs__btn">
+							<img src="@img/icons/lorry.svg" alt="lorry" class="delivery-tabs__icon">
+							<span>Доставка партии</span>
+						</button>
+						<button data-tab="#tab_3" class="delivery-tabs__btn">
+							<img src="@img/icons/package.svg" alt="package" class="delivery-tabs__icon">
+							<span>Возврат товара</span>
+						</button>
+					</div>
+				</nav>
+				<div class="container">
+					<div class="delivery-tabs__body">
+						<div id="tab_1" class="delivery-tabs__content">
+							<div class="delivery-tabs__content-body">
+								<div class="delivery-tabs__content-info">
+									<h2 class="delivery-tabs__content-title">
+										Способы оплаты
+									</h2>
+									<ul class="delivery-tabs__content-list">
+										<li class="delivery-tabs__content-item">
+											<h3 class="delivery-tabs__item-title">
+												<img src="@img/icons/museum.png" alt="Cashless" class="delivery-tabs__item-icon">
+												<span>
+													Безналичный расчет
+												</span>
+											</h3>
+											<p class="delivery-tabs__item-text">
+												Вы можете выбрать “получить реквизиты”<br>
+												для дальнейшей оплаты на карту, или в терминалах.
+											</p>
+										</li>
+										<li class="delivery-tabs__content-item">
+											<h3 class="delivery-tabs__item-title">
+												<img src="@img/icons/bank-card.png" alt="Bank Card" class="delivery-tabs__item-icon">
+												<span>
+													Оплата с помощью банковской карты
+												</span>
+											</h3>
+											<p class="delivery-tabs__item-text">
+												Оплатите Ваш заказ картой любого банка онлайн<br>(LiqPay/Приват24)
+											</p>
+										</li>
+										<li class="delivery-tabs__content-item">
+											<h3 class="delivery-tabs__item-title">
+												<img src="@img/icons/wallet.png" alt="Cash" class="delivery-tabs__item-icon">
+												<span>
+													Наличный расчет
+												</span>
+											</h3>
+											<p class="delivery-tabs__item-text">
+												Оплата заказов наложенным платежом в отделении Новой Почты, или наличными курьерами
+											</p>
+										</li>
+									</ul>
+								</div>
+								<div class="delivery-tabs__content-image-wrap">
+									<picture>
+										<source srcset="@img/delivery_img-1_mob.jpg" media="(max-width: 575px)">
+										<img src="@img/delivery_img-1.jpg" alt="Payments Order"
+											class="delivery-tabs__content-image">
+									</picture>
+								</div>
+							</div>
+						</div>
+						<div id="tab_2" class="delivery-tabs__content">
+							Hello, I'm second
+						</div>
+						<div id="tab_3" class="delivery-tabs__content">
+							Hello, I'm third
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		@@include('./html/component-stat.html',{})
+		@@include('./html/component-purpose.html',{})
+		@@include('./html/footer.html',{})
+	</div>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

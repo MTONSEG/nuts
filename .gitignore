@@ -2,4 +2,7 @@
 /package-lock.json
 /gulp/config/ftp.js
 /src/html/header-2.html
+/src/html/delivery-2.html
+/src/scss/delivery-2.scss
 /src/scss/header-2.scss
+/dist

@@ -15,10 +15,20 @@
 		margin-bottom: 38px;
 	}
 	&_company {
-		background-image: url('@img/hero-company.jpg');
 		& .hero__row {
 			padding: 142px 0 139px;
 		}
+	}
+	&_wholesale {
+		& .hero__row {
+			padding: 189px 0 155px;
+		}
+	}
+	&_company {
+		background-image: url('@img/hero-company.jpg');
+	}
+	&_wholesale {
+		background-image: url('@img/wholesale-hero.jpg');
 	}
 }
 
@@ -721,6 +731,9 @@
 		&_company {
 			background-image: url('@img/hero-company_tab.jpg');
 		}
+		&_wholesale {
+			background-image: url('@img/wholesale-hero_tab.jpg');
+		}
 	}
 
 	.info {
@@ -883,6 +896,9 @@
 		background: url('@img/main-hero_mob-l.jpg') 0 0/100% 100% no-repeat;
 		&_company {
 			background-image: url('@img/hero-company_mob.jpg');
+		}
+		&_wholesale {
+			background-image: url('@img/wholesale-hero_mob.jpg');
 		}
 	}
 	.products__button,
