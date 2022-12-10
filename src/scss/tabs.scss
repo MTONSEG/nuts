@@ -16,6 +16,10 @@
 		position: relative;
 		overflow: hidden;
 		overflow-x: auto;
+		&_card {
+			max-width: 850px;
+			margin: 0 auto;
+		}
 	}
 	&__btn {
 		width: calc(100% / var(--amount-tab));
@@ -37,6 +41,15 @@
 		}
 		&._active {
 			color: #337D5A;
+		}
+		&_card {
+			color: #5B5B5B;
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 21px;
+			&._active {
+				color: #1A2F3F;
+			}
 		}
 	}
 	&__indicator {
@@ -175,9 +188,14 @@
 }
 @media (max-width: 680px) {
 	.tabs {
-	&__indicator {
-		display: none;
-	}
+		&__indicator {
+			display: none;
+		}
+		&__btn {
+			&_card._active {
+				color: #337D5A;
+			}
+		}
 }
 }
 @media (max-width: 575px) { 
