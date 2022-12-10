@@ -107,7 +107,103 @@
 			</div>
 		</section>
 
-		@@include('./html/footer.html',{})
+
+		<section class="tabs">
+			<div class="tabs__head">
+				<div class="container">
+					<div class="tabs__buttons tabs__buttons_card">
+						<a data-tab="#tab_1" href="#" class="tabs__btn tabs__btn_card">
+							Описание
+						</a>
+						<a data-tab="#tab_2" href="#" class="tabs__btn tabs__btn_card">
+							Упаковка
+						</a>
+						<a data-tab="#tab_3" href="#" class="tabs__btn tabs__btn_card">
+							Оплата
+						</a>
+						<a data-tab="#tab_4" href="#" class="tabs__btn tabs__btn_card">
+							Доставка
+						</a>
+						<div class="tabs__indicator"></div>
+					</div>
+				</div>
+			</div>
+			<div class="tabs__body">
+				<div class="container">
+					<div id="tab_1" class="tabs__slide tab-card">
+						<div class="tab-card__row">
+							<div class="tab-card__image-wrapper">
+								<img src="@img/card-tab_img.jpg" alt="Nuts" class="tab-card__image">
+							</div>
+							<article class="tab-card__body">
+								<div class="tab-card__text-wrapper">
+									<p class="tab-card__text">
+										Уже 4000 лет люди питаются ценными <span>грецкими орехами</span>. Они особенно
+										полезны послеоперационным больным,
+										детям, кормящим, беременным женщинам. Чтобы вернуть силы, укрепить иммунитет, одолеть
+										туберкулез, кашель;
+										грецкий орех очищенный, отборный нужно истолочь, смешать с медом (2:1) и чайную ложку
+										целебной смеси
+										употреблять перед едой.
+									</p>
+									<p class="tab-card__text">
+										В белке грецких орехов много (15 %) аргинина. Он особенно нужен детям, больным, пожилым
+										людям,
+										в организме
+										которых аминокислота плохо синтезируется. Аргинин помогает сосудам регенерировать,
+										а всему организму –
+										победить воспаления.
+									</p>
+								</div>
+								<h4 class="tab-card__title">Другие полезные вещества грецких орехов:</h4>
+								<ul class="tab-card__list">
+									<li class="tab-card__item">
+										Антиоксиданты защищают печень от повреждений
+									</li>
+									<li class="tab-card__item">
+										Полифенолы не дают образоваться сосудистым тромбам
+									</li>
+									<li class="tab-card__item">
+										Нейропротекторы улучшают работу мозга, отодвигают старость
+									</li>
+								</ul>
+								<h4 class="tab-card__title">Нужно систематически есть грецкие орехи, чтобы:</h4>
+								<ul class="tab-card__list">
+									<li class="tab-card__item">
+										На 30–40 % снизить риск заболевания раком простаты
+									</li>
+									<li class="tab-card__item">
+										На 50 % – раком молочной железы
+									</li>
+									<li class="tab-card__item">
+										Предотвратить дегенерацию глазной макулы, а значит, улучшить зрение
+									</li>
+									<li class="tab-card__item">
+										Отрегулировать обмен веществ, выработку инсулина; понизить количество сахара в крови
+									</li>
+								</ul>
+							</article>
+						</div>
+					</div>
+					<div id="tab_2" class="tabs__slide tab-card">
+						<span>Розничные
+							магазины</span>
+					</div>
+					<div id="tab_3" class="tabs__slide tab-card">
+						Компании
+						HoReCa
+						<span></span>
+					</div>
+					<div id="tab_4" class="tabs__slide tab-card">
+						Компании
+						HoReCa
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		@@include('./html/footer-color.html',{})
 	</div>
 	<script src="js/app.min.js"></script>
 </body>
