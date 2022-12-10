@@ -1,3 +1,6 @@
+import { addClass } from "./functions.js";
+import { removeClass } from "./functions.js";
+
 const tabsBtn = document.querySelectorAll('.delivery-tabs__btn');
 const tabsBody = document.querySelectorAll('.delivery-tabs__content');
 
@@ -27,13 +30,6 @@ if (tabsBtn) {
 	let firstTab = document.querySelector('.delivery-tabs__btn');
 
 	if (firstTab) firstTab.click();
-}
-
-function removeClass(elem, className) {
-	elem.classList.remove(className);
-}
-function addClass(elem, className) {
-	elem.classList.add(className);
 }
 
 

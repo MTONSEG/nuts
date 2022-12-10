@@ -1,11 +1,14 @@
-import * as flsFunctions from "./modules/functions.js";
-flsFunctions.isWebp();
-
+import { isWebp, toggleClass } from "./modules/functions.js";
 import * as select from './modules/select.js';
 import * as burger from './modules/burgerMenu.js';
-import * as tabs from './modules/tabs.js';
+// import * as tabs from './modules/tabs.js';
 import * as dynamicAdaptive from './modules/dynamicAdapt.js';
-import Swiper, {Navigation} from 'swiper';
+import Swiper, { Navigation } from 'swiper';
+import * as tabs2 from "./modules/tabs2.js";
+
+isWebp();
+// tabFunction();
+
 
 const prodSlider = new Swiper('.slider-products', {
 	slidesPerView: 1,
@@ -26,7 +29,7 @@ const prodSlider = new Swiper('.slider-products', {
 });
 
 const newsSlider = new Swiper('.news-slider', {
-	modules:  [Navigation],
+	modules: [Navigation],
 	navigation: {
 		nextEl: '.news__next',
 		prevEl: '.news__prev',
@@ -45,7 +48,7 @@ const newsSlider = new Swiper('.news-slider', {
 })
 
 const imageSlider = new Swiper('.image-slider', {
-	modules:  [Navigation],
+	modules: [Navigation],
 	navigation: {
 		nextEl: '.image-slider__next',
 		prevEl: '.image-slider__prev',
@@ -72,8 +75,4 @@ if (productsSliderBody) {
 			toggleClass(imageSliderZoomBtn, '_active');
 		})
 	}
-}
-
-function toggleClass(elem, nameClass) {
-	elem.classList.toggle(`${nameClass}`);
 }

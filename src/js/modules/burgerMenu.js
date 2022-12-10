@@ -1,19 +1,23 @@
+import { addClass } from "./functions.js";
+import { removeClass } from "./functions.js";
+
 const iconBurger = document.querySelector('.burger__icon');
 const menuBurger = document.querySelector('.burger-menu');
 const closeBtn = document.querySelector('.burger-menu__close-btn');
+const body = document.querySelector('body');
 
 if (iconBurger) {
 	iconBurger.addEventListener('click', event => {
-		iconBurger.classList.add('_active');
-		menuBurger.classList.add('_active');
-		document.body.classList.add('_lock');
+		addClass(iconBurger, '_active');
+		addClass(menuBurger, '_active');
+		addClass(body, '_lock');
 	})
 }
 
 if (closeBtn) {
 	closeBtn.addEventListener('click', event => {
-		iconBurger.classList.remove('_active');
-		menuBurger.classList.remove('_active');
-		document.body.classList.remove('_lock');
+		removeClass(iconBurger, '_active');
+		removeClass(menuBurger, '_active');
+		removeClass(body, '_lock');
 	})
 }
