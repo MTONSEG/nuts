@@ -317,6 +317,9 @@
 	}
 	.middle-header {
 		padding: 10px 0 8.55px;
+		&__row {
+			align-items: center;
+		}
 		&__messengers {
 			display: none;
 		}
