@@ -9,7 +9,8 @@
 		"build": "gulp build --build",
 		"zip": "gulp deployZIP --build",
 		"deploy": "gulp deployFTP --build",
-		"svgSprive": "gulp svgSprive"
+		"svgSprive": "gulp svgSprive",
+		"criticalAPI": "gulp criticalAPI"
 	},
 	"author": "FLS",
 	"license": "ISC",

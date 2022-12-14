@@ -16,6 +16,8 @@
 		position: relative;
 		overflow: hidden;
 		overflow-x: auto;
+		scroll-behavior: smooth;
+		-webkit-overflow-scrolling: touch;
 		&_card {
 			max-width: 850px;
 			margin: 0 auto;

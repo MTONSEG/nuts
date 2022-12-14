@@ -16,7 +16,7 @@ if (tabBody) {
 
 		let firstElement = document.querySelector('.tabs__buttons').firstElementChild;
 
-		tabButtons.forEach(elem => {
+		for (let elem of tabButtons) {
 			elem.addEventListener('click', (e) => {
 				let currentBtn = e.target.closest('.tabs__btn');
 				let tabId = currentBtn.getAttribute('data-tab');
@@ -24,13 +24,13 @@ if (tabBody) {
 				let activeTab = currentBtn.classList.contains('_active');
 
 				if (!activeTab) {
-					tabButtons.forEach(item => {
+					for (let item of tabButtons) {
 						removeClass(item, '_active');
-					});
+					};
 
-					tabSlides.forEach(item => {
+					for (let item of tabSlides) {
 						removeClass(item, '_active');
-					});
+					};
 				}
 
 				addClass(currentBtn, '_active');
@@ -41,7 +41,7 @@ if (tabBody) {
 			})
 
 			firstElement.click();
-		})
+		}
 
 		function changeIndicator(btn) {
 			let indexBtn = tabButtons.indexOf(btn);

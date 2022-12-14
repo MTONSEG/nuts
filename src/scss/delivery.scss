@@ -1,3 +1,7 @@
+@use 'libs';
+
+@include libs.iconfonts;
+
 .delivery-hero {
 	background: url('@img/delivery_hero.jpg') center/cover no-repeat;
 	&__row {
@@ -64,6 +68,9 @@
 		}
 	}
 	.delivery-tabs {
+		&__content-body {
+			flex-direction: column-reverse;
+		}
 		&__content-info {
 			max-width: 100%;
 		}
@@ -73,7 +80,7 @@
 			gap: 0 20px;
 		}
 		&__content-image-wrap {
-			display: none;
+			max-width: 100%;
 		}
 		&__item-title {
 			line-height: 120%;

@@ -679,9 +679,7 @@
 		}
 	}
 	.image-slider {
-		&__next,
-		&__prev,
-		&__zoom {
+		&__nav {
 			opacity: 1;
 			z-index: 1;
 			visibility: visible;

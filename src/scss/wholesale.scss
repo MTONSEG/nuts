@@ -1,3 +1,6 @@
+@use 'libs';
+@include libs.iconfonts;
+
 .wholesale {
 	background: #fff;
 	&__row,
