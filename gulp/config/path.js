@@ -2,7 +2,7 @@
 import * as nodePath from 'path';
 const rootFolder = nodePath.basename(nodePath.resolve());
 
-const buildFolder = `./dist`;
+const buildFolder = `./docs`;
 const srcFolder = `./src`;
 
 export const path = {
@@ -10,12 +10,15 @@ export const path = {
 		js: `${buildFolder}/js/`,
 		css: `${buildFolder}/css/`,
 		html: `${buildFolder}/`,
+		htmlFiles: `${srcFolder}/*.html`, //.pug
 		images: `${buildFolder}/img/`,
 		fonts: `${buildFolder}/fonts/`,
 		files: `${buildFolder}/files/`
 	},
 	src: {
 		js: `${srcFolder}/js/app.js`,
+		jsSwiper: `${srcFolder}/js/components/swiper.js`,
+		jsTabs: `${srcFolder}/js/components/tabs.js`,
 		images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
 		svg: `${srcFolder}/img/**/*.svg`,
 		scss: `${srcFolder}/scss/style.scss`,

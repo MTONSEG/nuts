@@ -30,7 +30,7 @@
 			<div class="tabs__head">
 				<div class="container">
 					<div class="tabs__buttons">
-						<a data-tab="#tab_1" href="#" class="tabs__btn">
+						<a data-tab="#tab_1" href="#" class="tabs__btn _active">
 							<div class="tabs__btn-icon icon-wallet"></div>
 							<p class="tabs__btn-text">
 								Оплата заказа
@@ -98,10 +98,6 @@
 								</ul>
 							</div>
 							<div class="delivery-tabs__content-image-wrap">
-								<!-- <picture>
-									<source srcset="@img/delivery_img-1_mob.jpg" media="(max-width: 575px)">
-									<img src="@img/delivery_img-1.jpg" alt="Payments Order" class="delivery-tabs__content-image">
-								</picture> -->
 								<img src="@img/delivery_img-1.jpg" alt="Payments Order" class="delivery-tabs__content-image">
 							</div>
 						</div>
@@ -150,10 +146,6 @@
 								</ul>
 							</div>
 							<div class="delivery-tabs__content-image-wrap">
-								<!-- <picture>
-									<source srcset="@img/delivery_img-1_mob.webp" media="(max-width: 575px)">
-									<img src="@img/delivery_img-1.jpg" alt="Payments Order" class="delivery-tabs__content-image">
-								</picture> -->
 								<img src="@img/delivery_img-1.jpg" alt="Payments Order" class="delivery-tabs__content-image">
 							</div>
 						</div>
@@ -213,10 +205,6 @@
 								</ul>
 							</div>
 							<div class="delivery-tabs__content-image-wrap">
-								<!-- <picture>
-									<source srcset="@img/delivery_img-1_mob.jpg" media="(max-width: 575px)">
-									<img src="@img/delivery_img-1.jpg" alt="Payments Order" class="delivery-tabs__content-image">
-								</picture> -->
 								<img src="@img/delivery_img-1.jpg" alt="Payments Order" class="delivery-tabs__content-image">
 							</div>
 						</div>
@@ -229,7 +217,8 @@
 		@@include('./html/component-purpose.html',{})
 		@@include('./html/footer.html',{})
 	</div>
-	<script src="js/app.min.js"></script>
+	<script src="js/app.min.js" type="module"></script>
+	<script src="js/tabs.js" type="module"></script>
 </body>
 
 </html>
