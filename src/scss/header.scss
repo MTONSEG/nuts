@@ -189,6 +189,7 @@
 		font-weight: 700;
 		font-size: 8px;
 		line-height: 10px;
+		padding: 3px 0 0 0;
 	}
 }
 
@@ -317,6 +318,9 @@
 	}
 	.middle-header {
 		padding: 10px 0 8.55px;
+		&__row {
+			align-items: center;
+		}
 		&__messengers {
 			display: none;
 		}
@@ -336,6 +340,7 @@
 			display: none;
 		}
 		&__contacts {
+			align-items: center;
 			margin: 0 25px 0 0;
 		}
 		&__request {
@@ -346,7 +351,8 @@
 			color: libs.$dark-green;
 			border-bottom: 1px solid libs.$dark-green;
 			padding: 2px 0 2px 0;
-			font-size: 13.4px;
+			font-size: 13px;
+			max-width: 113px;
 		}
 		&__cart-wrap {
 			margin: 0 3px 6px 0;
@@ -450,6 +456,23 @@
 		&__close-icon {
 			width: 16px;
 			aspect-ratio: 1/1;
+		}
+	}
+}
+
+@media (max-width: 374px) {
+	.middle-header {
+		&__contacts {
+			margin: 0 10px 0 0;
+		}
+		&__number-link {
+			font-size: 12px;
+			&::before {
+				display: none;
+			}
+		}
+		&__request-btn {
+			font-size: 12px;
 		}
 	}
 }

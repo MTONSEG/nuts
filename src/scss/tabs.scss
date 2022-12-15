@@ -16,6 +16,8 @@
 		position: relative;
 		overflow: hidden;
 		overflow-x: auto;
+		scroll-behavior: smooth;
+		-webkit-overflow-scrolling: touch;
 		&_card {
 			max-width: 850px;
 			margin: 0 auto;
@@ -23,7 +25,7 @@
 	}
 	&__btn {
 		width: calc(100% / var(--amount-tab));
-		min-width: 130px;
+		min-width: 124px;
 		background: #fff;
 		padding: 19px 5px 18px;
 		color: #C4C4C4;
@@ -65,8 +67,11 @@
 	&__slide {
 		display: none;
 		&._active {
-			display: flex;
+			display: block;
 		}
+	}
+	&_delivery {
+		padding: 60px 0 0;
 	}
 }
 
@@ -103,7 +108,7 @@
 		}
 	}
 	&__button {
-		width: 150px;
+		width: 188px;
 		font-weight: 700;
 		font-size: 14px;
 		line-height: 16px;
@@ -195,6 +200,9 @@
 			&_card._active {
 				color: #337D5A;
 			}
+		}
+		&_delivery {
+			padding: 20px 0 0;
 		}
 }
 }

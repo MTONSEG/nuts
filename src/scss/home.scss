@@ -90,20 +90,27 @@
 		left: 0;
 		z-index: 2;
 	}
-	&__next,
-	&__prev,
-	&__zoom {
+	&__nav {
 		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
 		opacity: 0;
 		visibility: hidden;
 		z-index: -1;
-		cursor: pointer;
-		transition: .3s;
 		&._active {
 			opacity: 1;
 			visibility: visible;
 			z-index: 1;
 		}
+	}
+	&__next,
+	&__prev,
+	&__zoom {
+		position: absolute;
+		cursor: pointer;
+		transition: .3s;
 	}
 	&__next,
 	&__prev {
@@ -153,7 +160,7 @@
 	}
 	&__title {
 		font-weight: 700;
-		font-size: 17px;
+		font-size: 17.3px;
 		line-height: 21px;
 		margin: 0px 0 7px -2px;
 	}
@@ -219,7 +226,7 @@
 	&__price-name {
 		font-size: 15px;
 		line-height: 18px;
-		margin: 0 6.5px 0px 0;
+		margin: 0 8px 0px 0;
 	}
 	&__price-value {
 		font-size: 20px;
@@ -266,7 +273,7 @@
 		padding: 29px 0 0 0;
 	}
 	&__title {
-		margin-bottom: 43px;
+		margin-bottom: 39px;
 		text-align: left;
 	}
 	&__text-wrap {
@@ -274,7 +281,7 @@
 	}
 	&__text {
 		font-weight: 500;
-		font-size: 15.6px;
+		font-size: 16px;
 		line-height: 25.78px;
 		letter-spacing: 0.01em;
 		margin-bottom: 26px;
@@ -345,7 +352,7 @@
 
 .stat {
 	&__row {
-		padding: 81px 0 86px;
+		padding: 81px 0 84px;
 	}
 	&__list {
 		display: grid;
@@ -398,7 +405,7 @@
 	}
 	&__title {
 		max-width: 1057px;
-		margin-bottom: 72px;
+		margin-bottom: 70px;
 	}
 	&__play {
 		margin-bottom: 28px;
@@ -558,11 +565,11 @@
 	}
 	&__title {
 		text-align: left;
-		margin-bottom: 32px;
+		margin-bottom: 28px;
 	}
 	&__text {
 		font-weight: 500;
-		font-size: 17.6px;
+		font-size: 18px;
 		line-height: 22px;
 		text-align: center;
 		letter-spacing: 0.01em;
@@ -638,14 +645,14 @@
 	}
 	&__title {
 		font-weight: 700;
-		font-size: 15.4px;
+		font-size: 15.7px;
 		line-height: 23px;
 		letter-spacing: 0.01em;
-		margin-bottom: 10px;
+		margin-bottom: 12px;
 	}
 	&__text {
 		font-weight: 500;
-		font-size: 13.7px;
+		font-size: 13.9px;
 		line-height: 20px;
 		letter-spacing: 0.01em;
 		max-width: 349px;
@@ -672,9 +679,7 @@
 		}
 	}
 	.image-slider {
-		&__next,
-		&__prev,
-		&__zoom {
+		&__nav {
 			opacity: 1;
 			z-index: 1;
 			visibility: visible;

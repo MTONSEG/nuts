@@ -1,3 +1,6 @@
+@use 'libs';
+@include libs.iconfonts;
+
 .wholesale {
 	background: #fff;
 	&__row,
@@ -6,7 +9,7 @@
 		justify-content: space-between;
 	}
 	&__row {
-		padding: 81px 0 87px;
+		padding: 81px 0 90px;
 	}
 	&__title {
 		max-width: 440px;

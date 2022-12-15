@@ -1,27 +1,30 @@
+import { toggleClass, removeClass } from "./functions.js";
+
 const selectHeader = document.querySelectorAll('.select__header');
 const selectItem = document.querySelectorAll('.select__item');
 
 if (selectHeader) {
-	selectHeader.forEach(item => {
+	for (let item of selectHeader) {
 		item.addEventListener('click', selectToggle)
-	});
+	};
 }
 
 if (selectItem) {
-	selectItem.forEach(item => {
+	for (let item of selectItem) {
 		item.addEventListener('click', selectChoose)
-	});
+	};
 }
 
 function selectToggle() {
-	this.parentElement.classList.toggle('_active');
+	toggleClass(this.parentElement, '_active');
 }
 
-function selectChoose() {
-	let text = this.innerText,
-		select = this.closest('.select'),
-		currentText = select.querySelector('.select__current');
+function selectChoose(e) {
+	let text = this.innerText;
+	let select = this.closest('.select');
+	let currentText = select.querySelector('.select__current');
+
 	currentText.innerText = text;
-	select.classList.remove('_active');
+	removeClass(select, '_active');
 }
 

@@ -1,35 +1,56 @@
 import { addClass } from "./functions.js";
 import { removeClass } from "./functions.js";
 
-const tabsBtn = document.querySelectorAll('.delivery-tabs__btn');
-const tabsBody = document.querySelectorAll('.delivery-tabs__content');
+const tabBody = document.querySelector('.tabs')
 
-if (tabsBtn) {
-	tabsBtn.forEach(item => {
-		item.addEventListener('click', e => {
-			let currentBtn = item;
-			let tabId = currentBtn.getAttribute("data-tab");
-			let currentTab = document.querySelector(tabId);
+if (tabBody) {
+	const tabButtons = Array.from(tabBody.querySelectorAll('.tabs__btn'));
+	const tabSlides = Array.from(tabBody.querySelectorAll('.tabs__slide'));
+	const tabIndicator = tabBody.querySelector('.tabs__indicator');
+	const amountVar = document.querySelector(':root');
 
-			if (!currentBtn.classList.contains('_active')) {
+	function tabFunc() {
+		let numTabs = tabButtons.length;
 
-				tabsBtn.forEach(item => {
-					removeClass(item, '_active');
-				});
+		amountVar.style.setProperty("--amount-tab", numTabs);
 
-				tabsBody.forEach(item => {
-					removeClass(item, '_active');
-				});
-			}
+		let firstElement = document.querySelector('.tabs__buttons').firstElementChild;
 
-			addClass(currentBtn, '_active');
-			addClass(currentTab, '_active');
-		})
-	})
+		for (let elem of tabButtons) {
+			elem.addEventListener('click', (e) => {
+				let currentBtn = e.target.closest('.tabs__btn');
+				let tabId = currentBtn.getAttribute('data-tab');
+				let currentTab = document.querySelector(tabId);
+				let activeTab = currentBtn.classList.contains('_active');
 
-	let firstTab = document.querySelector('.delivery-tabs__btn');
+				if (!activeTab) {
+					for (let item of tabButtons) {
+						removeClass(item, '_active');
+					};
 
-	if (firstTab) firstTab.click();
+					for (let item of tabSlides) {
+						removeClass(item, '_active');
+					};
+				}
+
+				addClass(currentBtn, '_active');
+				addClass(currentTab, '_active');
+
+				changeIndicator(currentBtn);
+				e.preventDefault()
+			})
+
+			firstElement.click();
+		}
+
+		function changeIndicator(btn) {
+			let indexBtn = tabButtons.indexOf(btn);
+			tabIndicator.style.left = `calc(${indexBtn} * 100% / ${numTabs})`;
+		}
+	}
+
+	tabFunc();
 }
+
 
 
