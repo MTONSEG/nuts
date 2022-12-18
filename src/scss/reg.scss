@@ -1,0 +1,68 @@
+@use 'libs';
+
+.reg {
+	&__title {
+		font-weight: 800;
+		font-size: 32px;
+		letter-spacing: 0.01em;
+		line-height: 32px;
+		margin-bottom: 18px;
+	}
+	&__subtitle {
+		font-weight: 700;
+		font-size: 17px;
+		line-height: 188%;
+		letter-spacing: 0.01em;
+		margin-bottom: 33px;
+	}
+}
+
+.left-reg,
+.right-reg {
+	max-width: 474px;
+	font-family: 'Montserrat';
+}
+
+.left-reg {
+	& .tabs {
+		&__head {
+			margin-bottom: 42px;
+		}
+		&__btn {
+			font-weight: 700;
+			font-size: 15px;
+			line-height: 17px;
+			color: rgba(0, 0, 0, 0.5);
+			&._active {
+				color: #000;
+			}
+		}
+	}
+}
+
+.form {
+	&__inputs {
+		margin-bottom: 47px;
+	}
+	&__input {
+		display: flex;
+		justify-content: space-between;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 17px;
+		width: 100%;
+		border: 0.5px solid rgba(0, 0, 0, 0.15);
+		transition: .3s;
+		padding: 16px 17px 15px;
+		margin-bottom: 15px;
+		&::placeholder {
+			color: libs.$base-color;
+		}
+		&:focus {
+			border-color: libs.$dark-green;
+		}
+		&:hover {
+			box-shadow: 0 0 3px libs.$dark-green;
+		}
+	}
+}

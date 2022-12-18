@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{"title":"Галерея"})
+
+<body>
+	<div class="wrapper">
+		@@include('./html/header.html',{})
+
+		<section class="breadcrumbs">
+			<div class="breadcrumbs__item">
+				<a href="#" class="breadcrumbs__link">Главная</a>
+			</div>
+			<div class="breadcrumbs__item">
+				<a href="#" class="breadcrumbs__link">Галерея</a>
+			</div>
+		</section>
+
+		<section class="reg">
+			<div class="container">
+				<form action="#" class="reg__form form">
+					<h1 class="reg__title">Регистрация</h1>
+					<div class="reg__left left-reg">
+						<h2 class="reg__subtitle">
+							1. Контактные данные
+						</h2>
+						<div class="left-reg__tabs tabs">
+							<div class="tabs__head">
+								<div class="tabs__buttons">
+									<a data-tab="#tab_1" href="#" class="tabs__btn">Физическое лицо</a>
+									<a data-tab="#tab_2" href="#" class="tabs__btn">Юридическое лицо</a>
+									<div class="tabs__indicator"></div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div id="tab_1" class="tabs__slide">
+									<div class="form__inputs">
+										<div class="form__input-wrapper">
+											<input type="text" class="form__input" name="Name" tabindex="1" placeholder="ФИО*">
+										</div>
+										<div class="form__input-wrapper">
+											<input type="email" class="form__input" name="Email" tabindex="2" placeholder="Email*">
+										</div>
+										<div class="form__input-wrapper">
+											<input type="tel" class="form__input" name="Phone" tabindex="3" placeholder="Телефон*">
+										</div>
+									</div>
+								</div>
+								<div id="tab_2" class="tabs__slide">
+									<div class="form__inputs">
+										<div class="form__input-wrapper">
+											<input type="text" class="form__input" name="Name" tabindex="1" placeholder="ФИО*">
+										</div>
+										<div class="form__input-wrapper">
+											<input type="email" class="form__input" name="Email" tabindex="2" placeholder="Email*">
+										</div>
+										<div class="form__input-wrapper">
+											<input type="tel" class="form__input" name="Phone" tabindex="3" placeholder="Телефон*">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<h2 class="reg__subtitle">
+							2. Адрес
+						</h2>
+
+						<div class="form__inputs">
+							<div class="form__select select">
+								<div class="select__header form__input">
+									<div class="select__current">Страна</div>
+									<img loading="lazy" src="@img/icons/lang-arr.svg" alt="icon" class="select__icon">
+								</div>
+								<ul class="select__body">
+									<li class="select__item">
+										<span>Украина</span>
+									</li>
+									<li class="select__item">
+										<span>Литва</span>
+									</li>
+									<li class="select__item">
+										<span>Польша</span>
+									</li>
+								</ul>
+							</div>
+							<div class="form__select select">
+								<div class="select__header form__input">
+									<div class="select__current">Область</div>
+									<img loading="lazy" src="@img/icons/lang-arr.svg" alt="icon" class="select__icon">
+								</div>
+								<ul class="select__body">
+									<li class="select__item">
+										<span>Днепропетровская</span>
+									</li>
+									<li class="select__item">
+										<span>Киевская</span>
+									</li>
+									<li class="select__item">
+										<span>Одесская</span>
+									</li>
+								</ul>
+							</div>
+							<div class="form__input-wrapper">
+								<input type="tel" class="form__input" name="Phone" tabindex="6" placeholder="Город*">
+							</div>
+							<div class="form__input-wrapper">
+								<input type="tel" class="form__input" name="Phone" tabindex="7" placeholder="Адрес">
+							</div>
+						</div>
+
+						<h2 class="reg__subtitle">
+							3. Пароль
+						</h2>
+
+						<div class="form__inputs">
+							<div class="form__input-wrapper">
+								<input type="text" class="form__input" name="password" tabindex="8" placeholder="Пароль*">
+							</div>
+							<div class="form__input-wrapper">
+								<input type="email" class="form__input" name="password" tabindex="9" placeholder="Подтвердите пароль*">
+							</div>
+						</div>
+
+					</div>
+					<div class="reg__right right-reg">
+
+					</div>
+				</form>
+			</div>
+		</section>
+		@@include('./html/footer-color.html',{})
+	</div>
+	<script src="js/app.min.js"></script>
+	<script src="js/tabs.js"></script>
+</body>
+
+</html>

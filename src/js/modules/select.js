@@ -15,7 +15,7 @@ if (selectItem) {
 	};
 }
 
-function selectToggle() {
+function selectToggle(e) {
 	toggleClass(this.parentElement, '_active');
 }
 

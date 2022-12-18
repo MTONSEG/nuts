@@ -14,7 +14,7 @@ if (tabBody) {
 
 		amountVar.style.setProperty("--amount-tab", numTabs);
 
-		// let firstElement = document.querySelector('.tabs__buttons').firstElementChild;
+		let firstElement = document.querySelector('.tabs__buttons').firstElementChild;
 
 		for (let elem of tabButtons) {
 			elem.addEventListener('click', (e) => {
@@ -40,7 +40,7 @@ if (tabBody) {
 				e.preventDefault()
 			})
 
-			// firstElement.click();
+			firstElement.click();
 		}
 
 		function changeIndicator(btn) {

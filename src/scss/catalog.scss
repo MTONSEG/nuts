@@ -24,6 +24,10 @@
 		margin: 0 69px 0 0;
 		cursor: pointer;
 	}
+	&__icon {
+		width: 22px;
+		height: 22px;
+	}
 	&__selects {
 		margin: 0 51px 0 0;
 	}
@@ -63,7 +67,12 @@
 			&:last-child {
 				margin: 0;
 			}
+			img {
+				width: 13px;
+				height: 15px;
+			}
 		}
+		
 	}
 	&__reset {
 		gap: 7px;

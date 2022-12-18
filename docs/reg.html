@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link type="image/png" sizes="16x16" rel="icon" href="./img/favicon.png">
 	<link media="all" rel="stylesheet" type="text/css" href="./css/style.min.css">
-	<title>Новости и статьи</title>
+	<title>Галерея</title>
 </head>
 
 <body>
@@ -154,196 +154,127 @@
 			<div class="burger-menu__body"></div>
 	</div>
 </header>
-		<div class="breadcrumbs-wrapper">
+
+		<section class="breadcrumbs">
+			<div class="breadcrumbs__item">
+				<a href="#" class="breadcrumbs__link">Главная</a>
+			</div>
+			<div class="breadcrumbs__item">
+				<a href="#" class="breadcrumbs__link">Галерея</a>
+			</div>
+		</section>
+
+		<section class="reg">
 			<div class="container">
-				<div class="breadcrumbs _grey">
-					<div class="breadcrumbs__item">
-						<a href="#" class="breadcrumbs__link">Главная</a>
-					</div>
-					<div class="breadcrumbs__item">
-						<a href="#" class="breadcrumbs__link">Новости и статьи
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<section class="news-block">
-			<div class="news-head">
-				<div class="container">
-					<div class="news-head__row">
-						<h1 class="news-head__title title-block">
-							Новости и статьи
-						</h1>
-						<p class="news-head__text text-block">
-							Свежие новости и полезная информация
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="news-card">
-				<div class="container">
-					<div class="news-card__row">
-						<div class="news-card__image-wrap">
-							<picture>
-								<source media="(max-width: 575px)" srcset="img/news-card_img_mob.jpg">
-								<img src="img/news-card_img.jpg" alt="Центр поддержки экспорта, в студии Павел Тулба" class="news-card__image">
-							</picture>
-						</div>
-						<div class="news-card__body">
-							<date class="news-card__date">
-								12.04.2019
-							</date>
-							<h2 class="news-card__item-title">
-								Центр поддержки экспорта,<br>
-								в студии Павел Тулба
-							</h2>
-							<div class="news-card__text-wrap">
-								<p class="news-card__item-text">
-									Сельскохозяйственный обслуживающий кооператив
-									“Орех Причерноморья” предлагает своим клиентам
-									выгодные условия сотрудничества.
-								</p>
-								<p class="news-card__item-text">
-									Ореховый бизнес – один из наиболее перспективных
-									в Украине. Ежегодная нехватка продукта в Европе составляет 100 000 тонн. У Вас есть
-									возможность
-									зарабатывать десятки тысяч долларов в год всего
-									на нескольких гектарах земли.
-								</p>
+				<form action="#" class="reg__form form">
+					<h1 class="reg__title">Регистрация</h1>
+					<div class="reg__left left-reg">
+						<h2 class="reg__subtitle">
+							1. Контактные данные
+						</h2>
+						<div class="left-reg__tabs tabs">
+							<div class="tabs__head">
+								<div class="tabs__buttons">
+									<a data-tab="#tab_1" href="#" class="tabs__btn">Физическое лицо</a>
+									<a data-tab="#tab_2" href="#" class="tabs__btn">Юридическое лицо</a>
+									<div class="tabs__indicator"></div>
+								</div>
 							</div>
-							<a href="#" class="news-card__btn">Читать <span>&#10230;</span></a>
+							<div class="tabs__body">
+								<div id="tab_1" class="tabs__slide">
+									<div class="form__inputs">
+										<div class="form__input-wrapper">
+											<input type="text" class="form__input" name="Name" tabindex="1" placeholder="ФИО*">
+										</div>
+										<div class="form__input-wrapper">
+											<input type="email" class="form__input" name="Email" tabindex="2" placeholder="Email*">
+										</div>
+										<div class="form__input-wrapper">
+											<input type="tel" class="form__input" name="Phone" tabindex="3" placeholder="Телефон*">
+										</div>
+									</div>
+								</div>
+								<div id="tab_2" class="tabs__slide">
+									<div class="form__inputs">
+										<div class="form__input-wrapper">
+											<input type="text" class="form__input" name="Name" tabindex="1" placeholder="ФИО*">
+										</div>
+										<div class="form__input-wrapper">
+											<input type="email" class="form__input" name="Email" tabindex="2" placeholder="Email*">
+										</div>
+										<div class="form__input-wrapper">
+											<input type="tel" class="form__input" name="Phone" tabindex="3" placeholder="Телефон*">
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="news-other">
-			<section class="news">
-	<div class="container">
-		<div class="news__row">
-			<div class="news__head">
-				<h2 class="news__title title-block">Новости</h2>
-				<p class="news__text">
-					Свежие новости и полезная информация
-				</p>
-			</div>
-			<div class="news__nav">
-				<div class="news__next">
-					<img src="img/icons/arr-r.svg" alt="Next Slide" class="news__next-icon">
-				</div>
-				<div class="news__prev">
-					<img src="img/icons/arr-l.svg" alt="Preview Slide" class="news__prev-icon">
-				</div>
-			</div>
-		</div>
-	</div>
 
-	<div class="container">
-		<div class="news-slider">
-			<div class="news-slider__wrapper swiper-wrapper">
-				<div class="news-slider__slide news-item swiper-slide">
-					<div class="news-item__image-wrapper">
-						<img loading="lazy" src="img/news-img-1.jpg" alt="Центр поддержки экспорта" class="news-item__image">
+						<h2 class="reg__subtitle">
+							2. Адрес
+						</h2>
+
+						<div class="form__inputs">
+							<div class="form__select select">
+								<div class="select__header form__input">
+									<div class="select__current">Страна</div>
+									<img loading="lazy" src="img/icons/lang-arr.svg" alt="icon" class="select__icon">
+								</div>
+								<ul class="select__body">
+									<li class="select__item">
+										<span>Украина</span>
+									</li>
+									<li class="select__item">
+										<span>Литва</span>
+									</li>
+									<li class="select__item">
+										<span>Польша</span>
+									</li>
+								</ul>
+							</div>
+							<div class="form__select select">
+								<div class="select__header form__input">
+									<div class="select__current">Область</div>
+									<img loading="lazy" src="img/icons/lang-arr.svg" alt="icon" class="select__icon">
+								</div>
+								<ul class="select__body">
+									<li class="select__item">
+										<span>Днепропетровская</span>
+									</li>
+									<li class="select__item">
+										<span>Киевская</span>
+									</li>
+									<li class="select__item">
+										<span>Одесская</span>
+									</li>
+								</ul>
+							</div>
+							<div class="form__input-wrapper">
+								<input type="tel" class="form__input" name="Phone" tabindex="6" placeholder="Город*">
+							</div>
+							<div class="form__input-wrapper">
+								<input type="tel" class="form__input" name="Phone" tabindex="7" placeholder="Адрес">
+							</div>
+						</div>
+
+						<h2 class="reg__subtitle">
+							3. Пароль
+						</h2>
+
+						<div class="form__inputs">
+							<div class="form__input-wrapper">
+								<input type="text" class="form__input" name="password" tabindex="8" placeholder="Пароль*">
+							</div>
+							<div class="form__input-wrapper">
+								<input type="email" class="form__input" name="password" tabindex="9" placeholder="Подтвердите пароль*">
+							</div>
+						</div>
+
 					</div>
-					<div class="news-item__body">
-						<date class="news-item__date">
-							12.04.2019
-						</date>
-						<h3 class="news-item__title">
-							Центр поддержки экспорта, в студии<br>
-							Павел Тулба
-						</h3>
-						<p class="news-item__text">
-							Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших
-							садоводов, не смотря на большой спрос в Европе и отличную...
-						</p>
-						<a href="#" class="news-item__link">Читать <span>&#10230;</span></a>
+					<div class="reg__right right-reg">
+
 					</div>
-				</div>
-				<div class="news-slider__slide news-item swiper-slide">
-					<div class="news-item__image-wrapper">
-						<img loading="lazy" src="img/news-img-2.jpg" alt="Экспортный форум" class="news-item__image">
-						<a href="#" class="news-item__play play">
-							<img loading="lazy" src="img/icons/play.svg" alt="Play" class="hero__icon-play">
-						</a>
-					</div>
-					<div class="news-item__body">
-						<date class="news-item__date">
-							12.04.2019
-						</date>
-						<h3 class="news-item__title">
-							В Одесской области состоялся масштабный
-							торгово - экспортный форум
-						</h3>
-						<p class="news-item__text">
-							Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших
-							садоводов, не смотря на большой спрос в Европе
-							и отличную...
-						</p>
-						<a href="#" class="news-item__link">Читать <span>&#10230;</span></a>
-					</div>
-				</div>
-				<div class="news-slider__slide news-item swiper-slide">
-					<div class="news-item__image-wrapper">
-						<img loading="lazy" src="img/news-img-3.jpg" alt="Сертификация органического
-						производителя" class="news-item__image">
-					</div>
-					<div class="news-item__body">
-						<date class="news-item__date">
-							12.04.2019
-						</date>
-						<h3 class="news-item__title">
-							Сертификация органического
-							производителя
-						</h3>
-						<p class="news-item__text">
-							Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших садоводов, не смотря на большой спрос в Европе 
-							и отличную...
-						</p>
-						<a href="#" class="news-item__link">Читать <span>&#10230;</span></a>
-					</div>
-				</div>
-				<div class="news-slider__slide news-item swiper-slide">
-					<div class="news-item__image-wrapper">
-						<img loading="lazy" src="img/news-img-1.jpg" alt="Центр поддержки экспорта" class="news-item__image">
-					</div>
-					<div class="news-item__body">
-						<date class="news-item__date">
-							12.04.2019
-						</date>
-						<h3 class="news-item__title">
-							Центр поддержки экспорта, в студии
-							Павел Тулба
-						</h3>
-						<p class="news-item__text">
-							Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших
-							садоводов, не смотря на большой спрос в Европе и отличную...
-						</p>
-						<a href="#" class="news-item__link">Читать <span>&#10230;</span></a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<a href="#" class="news__button btn _go">Смотреть все новости</a>
-	</div>
-</section>
-		</section>
-		<section class="news-project">
-			<div class="container">
-				<div class="fw-gallery">
-	<a href="#" class="fw-gallery__play play">
-		<img src="img/icons/play.svg" alt="Play">
-	</a>
-	<h2 class="fw-gallery__title">Проект UBHDP</h2>
-	<p class="fw-gallery__text">
-		Вчера к нам приезжал американский агроном Рон , спасибо Мельнику Евгению и проекту UBHDP за
-		возможность получить консультацию<br>
-		от мировых специалистов!
-	</p>
-</div>
-				<a href="#" class="news-project__button btn _go">Посмотреть еще</a>
+				</form>
 			</div>
 		</section>
 		<section class="contacts _color">
@@ -465,8 +396,8 @@
 	</div>
 </footer>
 	</div>
-	<script src="js/app.min.js" type="module"></script>
-	<script src="js/swiper.js" type="module"></script>
+	<script src="js/app.min.js"></script>
+	<script src="js/tabs.js"></script>
 </body>
 
 </html>

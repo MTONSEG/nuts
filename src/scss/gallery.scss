@@ -49,6 +49,7 @@
 		color: #fff;
 		aspect-ratio: 185/139;
 		position: relative;
+		margin-bottom: 15px;
 		&._small {
 			aspect-ratio: 519/55;
 		}
@@ -147,6 +148,9 @@
 		}
 	}
 	.top-gallery {
+		&__item {
+			margin-bottom: 0;
+		}
 		&_reverse {
 			flex-direction: row-reverse;
 		}
