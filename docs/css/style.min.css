@@ -3864,16 +3864,33 @@ body._lock {
   margin-bottom: 56px;
 }
 
+.password {
+  padding: 58px 0 101px;
+}
+.password__title {
+  text-align: center;
+  margin-bottom: 41px;
+}
+.password__form {
+  margin: 0 auto;
+  max-width: 410px;
+}
+.password .form__inputs {
+  margin-bottom: 15px;
+}
+
 @media (max-width: 1220px) {
   .form {
     padding: 0;
   }
 }
 @media (max-width: 767px) {
-  .reg {
+  .reg,
+  .password {
     padding: 27px 0;
   }
-  .reg__title {
+  .reg__title,
+  .password__title {
     margin-bottom: 40px;
   }
   .form {
@@ -3886,6 +3903,9 @@ body._lock {
   }
   .right-reg__radios {
     margin-bottom: 30px;
+  }
+  .password__form {
+    max-width: 100%;
   }
 }
 @media (max-width: 767px) {

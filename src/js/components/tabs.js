@@ -51,6 +51,3 @@ if (tabBody) {
 
 	tabFunc();
 }
-
-
-
