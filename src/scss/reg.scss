@@ -181,6 +181,10 @@
 		font-size: 14.3px;
 		line-height: 17px;
 		padding: 17px 10px 15px;
+		&._recovery {
+			width: 245px;
+			margin: 0 auto;
+		}
 	}
 }
 
@@ -214,9 +218,41 @@
 
 .password {
 	padding: 58px 0 101px;
+	&__block {
+		margin-bottom: 48px;
+	}
 	&__title {
 		text-align: center;
 		margin-bottom: 41px;
+		&._recovery {
+			margin-bottom: 24px;
+		}
+	}
+	&__subtitle {
+		font-weight: 600;
+		font-size: 18px;
+		letter-spacing: 0.01em;
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		margin: 0 0 14px 8px;
+		img {
+			width: 15.48px;
+			height: 19px;
+			margin: 0 11px 2px 0; 
+		}
+	}
+	&__text {
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 20px;
+		color: #8A8A8A;
+		text-align: center;
+		letter-spacing: 0.01em;
+		margin-bottom: 16px;
+		span {
+			color: #1A2F3F;
+		}
 	}
 	&__form {
 		margin: 0 auto;
@@ -243,6 +279,12 @@
 	}
 	.form {
 		flex-direction: column-reverse;
+		&__btn {
+			&._recovery {
+				width: 100%;
+				margin: 0 auto;
+			}
+		}
 	}
 	.right-reg,
 	.left-reg {
