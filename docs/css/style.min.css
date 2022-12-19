@@ -3666,6 +3666,9 @@ body._lock {
     padding: 40px 0 20px;
   }
 }
+.reg {
+  padding: 48px 0 90px;
+}
 .reg__title {
   font-weight: 800;
   font-size: 32px;
@@ -3675,33 +3678,52 @@ body._lock {
 }
 .reg__subtitle {
   font-weight: 700;
-  font-size: 17px;
+  font-size: 17.2px;
   line-height: 188%;
   letter-spacing: 0.01em;
-  margin-bottom: 33px;
+  margin-bottom: 20px;
+}
+.reg .tabs__head {
+  margin-bottom: 42px;
+}
+.reg .tabs__btn {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 14px 5px 13px;
+  text-align: center;
+}
+.reg .tabs__btn._active {
+  color: #000;
 }
 
 .left-reg,
 .right-reg {
+  width: 100%;
   max-width: 474px;
   font-family: "Montserrat";
 }
 
-.left-reg .tabs__head {
-  margin-bottom: 42px;
+.form {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 77px 0 0;
 }
-.left-reg .tabs__btn {
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 17px;
-  color: rgba(0, 0, 0, 0.5);
+.form__slide {
+  display: flex;
 }
-.left-reg .tabs__btn._active {
-  color: #000;
-}
-
 .form__inputs {
   margin-bottom: 47px;
+}
+.form__inputs_last {
+  margin-bottom: 28px;
+}
+.form__input-wrapper {
+  margin-bottom: 16px;
+}
+.form__input-wrapper:last-child {
+  margin-bottom: 0;
 }
 .form__input {
   display: flex;
@@ -3712,8 +3734,8 @@ body._lock {
   width: 100%;
   border: 0.5px solid rgba(0, 0, 0, 0.15);
   transition: 0.3s;
-  padding: 16px 17px 15px;
-  margin-bottom: 15px;
+  transition: 0.3s;
+  padding: 15px 17px 12px;
 }
 .form__input::placeholder {
   color: #1A2F3F;
@@ -3724,7 +3746,153 @@ body._lock {
 .form__input:hover {
   box-shadow: 0 0 3px #337D5A;
 }
+.form__select {
+  margin-bottom: 16px;
+}
+.form__radio-wrapper {
+  margin-bottom: 8px;
+}
+.form__radio-label, .form__checkbox {
+  position: relative;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #8A8A8A;
+}
+.form__radio-label {
+  padding: 0 0 0 27px;
+}
+.form__radio-label::before, .form__radio-label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+.form__radio-label::before {
+  top: calc(50% - 7.5px);
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #337D5A;
+}
+.form__radio-label::after {
+  top: calc(50% - 3.5px);
+  left: 4px;
+  width: 7px;
+  height: 7px;
+  background: #337D5A;
+  opacity: 1;
+  transform: scale(1);
+}
+.form__checkbox-wrapper {
+  margin-bottom: 26px;
+}
+.form__checkbox {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 24px;
+}
+.form__checkbox::before, .form__checkbox::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+.form__checkbox::before {
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border: 1.5px solid #337D5A;
+  z-index: 1;
+}
+.form__checkbox::after {
+  left: 0;
+  width: 100%;
+  height: 100%;
+  width: 14px;
+  height: 14px;
+  background: #337D5A;
+  border: 3px solid #fff;
+  transition: 0.2s;
+}
+.form__radio-input, .form__checkbox-input {
+  display: none;
+}
+.form__radio-input:not(:checked) + label::after, .form__checkbox-input:not(:checked) + label::after {
+  opacity: 0;
+  transform: scale(0);
+}
+.form__checkbox-link {
+  margin: 0 0 0 4px;
+  font-weight: 600;
+  color: #337D5A;
+}
+.form__btn {
+  display: block;
+  width: 100%;
+  font-size: 14.3px;
+  line-height: 17px;
+  padding: 17px 10px 15px;
+}
 
+.right-reg {
+  margin: 66px 0 0 40px;
+}
+.right-reg__photo-input {
+  display: none;
+}
+.right-reg__photo-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/reg-photo.jpg") 0 0/cover no-repeat;
+  width: 131px;
+  height: 170px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 17px;
+  color: #fff;
+  margin-bottom: 18px;
+}
+.right-reg__photo-label span {
+  display: inline-block;
+  border-bottom: 2px dashed #fff;
+  padding: 0 0 2px 0;
+}
+.right-reg__radios {
+  margin-bottom: 56px;
+}
+
+@media (max-width: 1220px) {
+  .form {
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  .reg {
+    padding: 27px 0;
+  }
+  .reg__title {
+    margin-bottom: 40px;
+  }
+  .form {
+    flex-direction: column-reverse;
+  }
+  .right-reg,
+  .left-reg {
+    margin: 0;
+    max-width: 100%;
+  }
+  .right-reg__radios {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .reg .tabs__indicator {
+    display: block;
+  }
+}
 .contacts {
   background: #fff;
 }
