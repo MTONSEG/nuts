@@ -3839,6 +3839,22 @@ body._lock {
   width: 245px;
   margin: 0 auto;
 }
+.form__forgot-link {
+  display: block;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: #337D5A;
+  margin: 0 auto 15px;
+  text-align: center;
+}
+.form__forgot-link._reg {
+  width: 92px;
+  border-bottom: 1.5px solid #337D5A;
+  margin: 15px auto 0;
+}
 
 .right-reg {
   margin: 66px 0 0 40px;
@@ -3921,6 +3937,10 @@ body._lock {
   }
 }
 @media (max-width: 767px) {
+  .reg__title {
+    font-size: 28px;
+    line-height: 110%;
+  }
   .reg,
   .password {
     padding: 27px 0;

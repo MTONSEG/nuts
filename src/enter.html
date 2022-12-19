@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{"title":"Изменить пароль"})
+
+<body>
+	<div class="wrapper">
+		@@include('./html/header.html',{})
+
+		<div class="breadcrumbs-wrapper">
+			<div class="container">
+				<div class="breadcrumbs _grey">
+					<div class="breadcrumbs__item">
+						<a href="#" class="breadcrumbs__link">Главная</a>
+					</div>
+					<div class="breadcrumbs__item">
+						<a href="#" class="breadcrumbs__link">Вход
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="password">
+			<div class="container">
+				<form action="#" class="password__form">
+					<h1 class="password__title reg__title">
+						Войти в личный кабинет
+					</h1>
+					<div class="form__inputs">
+						<div class="form__input-wrapper">
+							<input type="email" class="form__input" name="Email" tabindex="1" placeholder="Email">
+						</div>
+						<div class="form__input-wrapper">
+							<input type="password" class="form__input" name="password" tabindex="2" placeholder="Пароль">
+						</div>
+					</div>
+					<a href="change-password.html" class="form__forgot-link"> Забыли пароль?</a>
+					<button type="submit" class="form__btn btn">Войти</button>
+					<a href="reg.html" class="form__forgot-link _reg">Регистрация</a>
+				</form>
+			</div>
+		</section>
+
+
+		@@include('./html/footer-color.html',{})
+	</div>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
