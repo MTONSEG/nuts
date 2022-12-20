@@ -90,6 +90,13 @@
   font-style: italic;
   font-display: swap;
 }
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway"), url("../fonts/Raleway-Bold.woff") format("woff"), url("../fonts/Raleway-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 .swiper-wrapper {
   position: relative;
   width: 100%;
@@ -2440,8 +2447,8 @@ body._lock {
 }
 @font-face {
   font-family: "iconfonts";
-  src: url("../fonts/iconfonts.eot?l3w73p");
-  src: url("../fonts/iconfonts.eot?l3w73p#iefix") format("embedded-opentype"), url("../fonts/iconfonts.ttf?l3w73p") format("truetype"), url("../fonts/iconfonts.woff?l3w73p") format("woff"), url("../fonts/iconfonts.svg?l3w73p#iconfonts") format("svg");
+  src: url("../fonts/iconfonts.eot?pyxqa7");
+  src: url("../fonts/iconfonts.eot?pyxqa7#iefix") format("embedded-opentype"), url("../fonts/iconfonts.ttf?pyxqa7") format("truetype"), url("../fonts/iconfonts.woff?pyxqa7") format("woff"), url("../fonts/iconfonts.svg?pyxqa7#iconfonts") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -2458,6 +2465,18 @@ body._lock {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-copy:before {
+  content: "\e908";
+  color: #8a8a8a;
+  font-size: 21px;
+}
+
+.icon-eye:before {
+  content: "\e909";
+  color: #8a8a8a;
+  font-size: 16px;
 }
 
 .icon-cake:before {
@@ -3329,8 +3348,8 @@ body._lock {
 }
 @font-face {
   font-family: "iconfonts";
-  src: url("../fonts/iconfonts.eot?l3w73p");
-  src: url("../fonts/iconfonts.eot?l3w73p#iefix") format("embedded-opentype"), url("../fonts/iconfonts.ttf?l3w73p") format("truetype"), url("../fonts/iconfonts.woff?l3w73p") format("woff"), url("../fonts/iconfonts.svg?l3w73p#iconfonts") format("svg");
+  src: url("../fonts/iconfonts.eot?pyxqa7");
+  src: url("../fonts/iconfonts.eot?pyxqa7#iefix") format("embedded-opentype"), url("../fonts/iconfonts.ttf?pyxqa7") format("truetype"), url("../fonts/iconfonts.woff?pyxqa7") format("woff"), url("../fonts/iconfonts.svg?pyxqa7#iconfonts") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -3347,6 +3366,18 @@ body._lock {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-copy:before {
+  content: "\e908";
+  color: #8a8a8a;
+  font-size: 21px;
+}
+
+.icon-eye:before {
+  content: "\e909";
+  color: #8a8a8a;
+  font-size: 16px;
 }
 
 .icon-cake:before {
@@ -3981,7 +4012,7 @@ body._lock {
 }
 .user-menu__navbar {
   max-width: 250px;
-  margin: 0px 117px 0 0;
+  margin: 0px 84.74px 0 0;
 }
 .user-menu__title {
   font-weight: 700;
@@ -4035,6 +4066,7 @@ body._lock {
 .user-menu__form {
   width: 100%;
   max-width: 474px;
+  margin: 0 0 0 32px;
 }
 .user-menu__banner {
   background: url("../img/acc-banner.jpg") 0 0/cover no-repeat;
@@ -4093,6 +4125,112 @@ body._lock {
   width: 18px;
   height: 18px;
 }
+.user-menu .password__form {
+  margin: 0 0 0 38px;
+}
+
+.table__head, .table__block, .table__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+.table__item-title, .table__item {
+  width: 16.6666%;
+}
+.table__block {
+  width: 33.3332%;
+}
+.table__block .table__item, .table__block .table__item-title {
+  width: 50%;
+}
+.table__head {
+  background: #FBFBFB;
+  padding: 24px 0 24.82px;
+}
+.table__item-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.table__item-title img {
+  margin: 0px 0 4px 4px;
+  width: 10px;
+  height: 6.4px;
+}
+.table__content {
+  padding: 20px 0 21px;
+  background: #fff;
+}
+.table__content._panding {
+  background: rgba(51, 125, 90, 0.1);
+}
+.table__item {
+  font-family: "Montserrat";
+  font-weight: 500;
+  line-height: 120%;
+}
+.table__item._func {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.table__link {
+  position: relative;
+  margin: 0 13px 0 0;
+}
+.table__link:last-child {
+  margin: 0;
+}
+.table__link span:hover::before {
+  color: #337D5A;
+}
+.table__tooltip {
+  position: absolute;
+  bottom: calc(100% + 15px);
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: #337D5A;
+  color: #fff;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 14px;
+  text-align: center;
+  padding: 8px;
+  opacity: 0;
+  visibility: visible;
+  pointer-events: none;
+  transition: 0.4s;
+}
+.table__tooltip::after {
+  content: url("../img/icons/tooltip.svg");
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.table__link span:hover ~ .table__tooltip {
+  bottom: calc(100% + 8px);
+  opacity: 1;
+  visibility: visible;
+}
+
+.table-history .table__item, .table-history .table__item-title {
+  width: 33.333%;
+  max-width: 165px;
+}
+.table-history .table__item:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table-history .icon {
+  margin: 3px 0 0 10px;
+}
 
 @media (max-width: 1220px) {
   .form {
@@ -4105,7 +4243,52 @@ body._lock {
   .user-menu {
     justify-content: flex-start;
   }
+  .user-menu__form {
+    margin: 0;
+  }
   .user-menu__banner {
+    display: none;
+  }
+  .user-menu .password__form {
+    margin: 0;
+  }
+}
+@media (max-width: 991px) {
+  .table__head {
+    display: none;
+  }
+  .table__body {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .table__content {
+    padding: 20px 15px 20px;
+  }
+  .table__item {
+    width: 25%;
+  }
+  .table__item._num::before {
+    content: "№";
+  }
+  .table__item._amount {
+    width: 15%;
+  }
+  .table__item._amount::after {
+    content: "шт.";
+  }
+  .table__block {
+    flex-direction: column;
+    gap: 5px;
+    width: 25%;
+  }
+  .table__block._date {
+    text-align: left;
+    align-items: flex-start;
+    width: 22%;
+  }
+  .table__block .table__item, .table__block .table__item-title {
+    width: 100%;
+  }
+  .table__tooltip {
     display: none;
   }
 }
@@ -4113,6 +4296,9 @@ body._lock {
   .reg__title {
     font-size: 28px;
     line-height: 110%;
+  }
+  .reg .tabs__indicator {
+    display: block;
   }
   .reg,
   .password {
@@ -4140,6 +4326,9 @@ body._lock {
   .password__form {
     max-width: 100%;
   }
+  .account {
+    padding: 40px 0 50px;
+  }
   .account__head {
     flex-direction: column;
     text-align: center;
@@ -4147,21 +4336,11 @@ body._lock {
   .account__text {
     margin: 0;
   }
-  .user-menu__navbar {
-    margin: 0px 30px 0 0;
-  }
-}
-@media (max-width: 767px) {
-  .reg .tabs__indicator {
-    display: block;
-  }
-  .account {
-    padding: 40px 0 50px;
-  }
   .user-menu {
     flex-direction: column;
   }
   .user-menu__navbar {
+    margin: 0px 30px 0 0;
     position: fixed;
     top: -70px;
     left: -100%;
@@ -4190,6 +4369,38 @@ body._lock {
   }
   .user-menu__open, .user-menu__close {
     display: flex;
+  }
+}
+@media (max-width: 575px) {
+  .table__item {
+    font-size: 12px;
+  }
+  .table-history .table__item {
+    width: 25%;
+  }
+  .table-history .table__item:last-child {
+    width: 45%;
+  }
+}
+@media (max-width: 374px) {
+  .table__block {
+    width: 45%;
+  }
+  .table__block._date {
+    width: 30%;
+  }
+  .table__content {
+    padding: 15px 10px;
+  }
+  .table__item._func {
+    width: 25px;
+  }
+  .table__link {
+    margin: 0;
+  }
+  .table__link._copy {
+    display: none;
+    margin: 0;
   }
 }
 .contacts {
