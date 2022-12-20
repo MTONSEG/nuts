@@ -3944,7 +3944,7 @@ body._lock {
 }
 .account__head {
   display: flex;
-  margin-bottom: 45px;
+  margin-bottom: 44px;
 }
 .account__text {
   font-weight: 500;
@@ -3981,17 +3981,17 @@ body._lock {
 }
 .user-menu__navbar {
   max-width: 250px;
-  margin: 0px 91px 0 0;
+  margin: 0px 117px 0 0;
 }
 .user-menu__title {
   font-weight: 700;
   font-size: 17.7px;
   line-height: 188%;
   letter-spacing: 0.01em;
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 }
 .user-menu__list {
-  margin-bottom: 32px;
+  margin-bottom: 31px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -4019,13 +4019,22 @@ body._lock {
   border-color: #337D5A;
 }
 .user-menu__body {
-  width: 474px;
+  width: 100%;
 }
 .user-menu__content {
   display: none;
 }
 .user-menu__content._active {
   display: block;
+}
+.user-menu__content._address._active {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.user-menu__form {
+  width: 100%;
+  max-width: 474px;
 }
 .user-menu__banner {
   background: url("../img/acc-banner.jpg") 0 0/cover no-repeat;
@@ -4152,9 +4161,6 @@ body._lock {
   .user-menu {
     flex-direction: column;
   }
-  .user-menu__body {
-    width: 100%;
-  }
   .user-menu__navbar {
     position: fixed;
     top: -70px;
@@ -4178,6 +4184,9 @@ body._lock {
     display: flex;
     flex-direction: column;
     overflow-y: auto;
+  }
+  .user-menu__form {
+    max-width: 100%;
   }
   .user-menu__open, .user-menu__close {
     display: flex;

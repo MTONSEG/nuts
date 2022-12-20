@@ -30,6 +30,7 @@ if (userMenu) {
 			addClass(currentLink, '_active');
 			addClass(currentBody, '_active');
 			removeClass(navbar, '_active');
+			removeClass(body, '_lock');
 		})
 	})
 
