@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link type="image/png" sizes="16x16" rel="icon" href="./img/favicon.png">
 	<link media="all" rel="stylesheet" type="text/css" href="./css/style.min.css">
-	<title>Изменить пароль</title>
+	<title>Учетная запись</title>
 </head>
 
 <body>
@@ -162,56 +162,187 @@
 						<a href="#" class="breadcrumbs__link">Главная</a>
 					</div>
 					<div class="breadcrumbs__item">
-						<a href="#" class="breadcrumbs__link">Пароль
+						<a href="#" class="breadcrumbs__link">Учетная запись
 						</a>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<section class="password">
+		<section class="account">
 			<div class="container">
-				<form action="#" class="password__form">
-					<div class="password__block">
-						<h1 class="password__title reg__title">
-							Восстановление пароля
-						</h1>
-						<p class="password__subtitle">
-							<img src="img/" alt="" class="password__icon">
-							<span>Забыли пароль?</span>
-						</p>
-						<p class="password__text">
-							Введите Email Вашего аккаунта, Вам будет выслана
-							ссылка для восстановления пароля.
-						</p>
+				<div class="account__head">
+					<h1 class="account__title reg__title">
+						Учетная запись
+					</h1>
+					<p class="account__text">
+						<span>Ваш личный менеджер Олег</span>
+						<a href="tel:380677771412" class="account__number">
+							<img src="img/icons/acc-phone.svg" alt="phone" class="account__icon-phone">
+							+38 067 777 14 12
+						</a>
+					</p>
+				</div>
 
-						<div class="form__inputs">
-							<div class="form__input-wrapper">
-								<input type="email" class="form__input" name="Email" tabindex="1" placeholder="Email*">
-							</div>
-							<button type="submit" class="form__btn-send btn">Отправить ссылку</button>
+				<div class="account__menu user-menu">
+					<div class="user-menu__open">
+						<img src="img/icons/menu.svg" alt="icon"> Меню
+					</div>
+
+					<nav class="user-menu__navbar">
+						<div class="user-menu__close">
+							<img src="img/icons/close.svg" alt="close">
+						</div>
+						<h3 class="user-menu__title">
+							Мои заказы
+						</h3>
+						<ul class="user-menu__list">
+							<li data-link="#item_1" class="user-menu__item">История заказов</li>
+							<li data-link="#item_2" class="user-menu__item">История транзакций</li>
+						</ul>
+
+						<h3 class="user-menu__title">
+							Моя учетная запись
+						</h3>
+						<ul class="user-menu__list">
+							<li data-link="#item_3" class="user-menu__item">Контактная информация</li>
+							<li data-link="#item_4" class="user-menu__item ">Пароль</li>
+							<li data-link="#item_5" class="user-menu__item _active">Адрес реквизиты</li>
+						</ul>
+					</nav>
+					<div class="user-menu__body">
+						<div id="item_1" class="user-menu__content">
+							Hello, World!
+						</div>
+						<div id="item_2" class="user-menu__content">
+							LOL
+						</div>
+						<div id="item_3" class="user-menu__content">
+							wOW
+						</div>
+						<div id="item_4" class="user-menu__content"></div>
+						<div id="item_5" class="user-menu__content _active">
+							<form action="" class="user-menu__form">
+								<h2 class="reg__subtitle">
+									1. Реквизиты
+								</h2>
+								<div class="form__inputs">
+									<div class="form__input-wrapper">
+										<input type="text" class="form__input" name="Name" tabindex="1" placeholder="ОКПО">
+									</div>
+								</div>
+								<h2 class="reg__subtitle">
+									2. Адрес
+								</h2>
+								<div class="form__inputs">
+									<div class="form__select select">
+										<div class="select__header form__input" tabindex="2">
+											<div class="select__current">Страна</div>
+											<img loading="lazy" src="img/icons/lang-arr.svg" alt="icon" class="select__icon">
+										</div>
+										<ul class="select__body">
+											<li class="select__item">
+												<span>Украина</span>
+											</li>
+											<li class="select__item">
+												<span>Литва</span>
+											</li>
+											<li class="select__item">
+												<span>Польша</span>
+											</li>
+										</ul>
+									</div>
+									<div class="form__select select">
+										<div class="select__header form__input" tabindex="3">
+											<div class="select__current">Область</div>
+											<img loading="lazy" src="img/icons/lang-arr.svg" alt="icon" class="select__icon">
+										</div>
+										<ul class="select__body">
+											<li class="select__item">
+												<span>Днепропетровская</span>
+											</li>
+											<li class="select__item">
+												<span>Киевская</span>
+											</li>
+											<li class="select__item">
+												<span>Одесская</span>
+											</li>
+										</ul>
+									</div>
+									<div class="form__input-wrapper">
+										<input type="tel" class="form__input" name="Phone" tabindex="4" placeholder="Город*">
+									</div>
+									<div class="form__input-wrapper">
+										<input type="tel" class="form__input" name="Phone" tabindex="5" placeholder="Адрес">
+									</div>
+								</div>
+								<h2 class="reg__subtitle">
+									2. Юридический адрес
+								</h2>
+								<div class="form__inputs form__inputs_last-acc">
+									<div class="form__select select">
+										<div class="select__header form__input" tabindex="6">
+											<div class="select__current">Страна</div>
+											<img loading="lazy" src="img/icons/lang-arr.svg" alt="icon" class="select__icon">
+										</div>
+										<ul class="select__body">
+											<li class="select__item">
+												<span>Украина</span>
+											</li>
+											<li class="select__item">
+												<span>Литва</span>
+											</li>
+											<li class="select__item">
+												<span>Польша</span>
+											</li>
+										</ul>
+									</div>
+									<div class="form__select select">
+										<div class="select__header form__input" tabindex="7">
+											<div class="select__current">Область</div>
+											<img loading="lazy" src="img/icons/lang-arr.svg" alt="icon" class="select__icon">
+										</div>
+										<ul class="select__body">
+											<li class="select__item">
+												<span>Днепропетровская</span>
+											</li>
+											<li class="select__item">
+												<span>Киевская</span>
+											</li>
+											<li class="select__item">
+												<span>Одесская</span>
+											</li>
+										</ul>
+									</div>
+									<div class="form__input-wrapper">
+										<input type="tel" class="form__input" name="Phone" tabindex="8" placeholder="Город*">
+									</div>
+									<div class="form__input-wrapper">
+										<input type="tel" class="form__input" name="Phone" tabindex="9" placeholder="Адрес">
+									</div>
+									<div class="form__input-wrapper">
+										<input type="tel" class="form__input" name="Phone" tabindex="10" placeholder="Индекс">
+									</div>
+								</div>
+
+								<button type="submit" class="form__btn btn _save">Сохранить</button>
+							</form>
 						</div>
 					</div>
-					<div class="password__block">
-						<p class="password__subtitle">
-							<img src="img/" alt="" class="password__icon">
-							<span>Восстановление пароля</span>
+					<div class="user-menu__banner">
+						<h2 class="user-menu__banner-title">
+							Орех
+							Причерноморья
+						</h2>
+						<p class="user-menu__banner-text">
+							Единственный в Украине сад
+							совместного выращивания
+							фундука и грецкого ореха
 						</p>
-						<p class="password__text">
-							Введите новый пароль для Email <span>example@gmail.com</span> 
-						</p>
-
-						<div class="form__inputs">
-							<div class="form__input-wrapper">
-								<input type="email" class="form__input" name="Email" tabindex="1" placeholder="Email*">
-							</div>
-							<button type="submit" class="form__btn-send btn">Отправить ссылку</button>
-						</div>
 					</div>
-				</form>
+				</div>
 			</div>
 		</section>
-
 
 		<section class="contacts _color">
 	<div class="container">

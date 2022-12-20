@@ -10,6 +10,7 @@
 		margin-bottom: 18px;
 	}
 	&__subtitle {
+		font-family: 'Montserrat';
 		font-weight: 700;
 		font-size: 17.2px;
 		line-height: 188%;
@@ -58,6 +59,9 @@
 		margin-bottom: 47px;
 		&_last {
 			margin-bottom: 28px;
+		}
+		&_last-acc {
+			margin-bottom: 18px;
 		}
 	}
 	&__input-wrapper {
@@ -185,6 +189,10 @@
 			width: 245px;
 			margin: 0 auto;
 		}
+		&._save {
+			width: 229px;
+			margin: 0 0 0 auto;
+		}
 	}
 
 	&__forgot-link {
@@ -280,9 +288,170 @@
 	}
 }
 
+.account {
+	padding: 47px 0 100px;
+	&__head {
+		display: flex;
+		margin-bottom: 45px;
+	}
+	&__text {
+		font-weight: 500;
+		line-height: 140%;
+		letter-spacing: 0.01em;
+		position: relative;
+		font-size: 16px;
+		margin: 5px 0 0 76px;
+	}
+	&__number {
+		font-family: 'Montserrat';
+		display: block;
+		font-weight: 600;
+		font-size: 14.2px;
+		line-height: 140%;
+		letter-spacing: 0.01em;
+		color: #337D5A;
+		padding: 5px 0 0;
+		&:hover {
+			color: rgba(51, 125, 90, 0.7);
+		}
+	}
+	&__icon-phone {
+		display: inline-block;
+		width: 12px;
+		height: 12px;
+		margin: 3px 4px 0 0;
+	}
+}
+
+.user-menu {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	&__navbar {
+		max-width: 250px;
+		margin: 0px 91px 0 0;
+	}
+	&__title {
+		font-weight: 700;
+		font-size: 17.7px;
+		line-height: 188%;
+		letter-spacing: 0.01em;
+		margin-bottom: 9px;
+	}
+	&__list {
+		margin-bottom: 32px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	&__item {
+		cursor: pointer;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 150%;
+		letter-spacing: 0.01em;
+		width: max-content;
+		border-bottom: 2px solid transparent;
+		margin: 0 0 2px 0;
+		transition: .3s;
+		&:last-child{
+			margin: 0;
+		}
+		&:hover {
+			color: #337D5A;
+		}
+		&._active {
+			color: #337D5A;
+			position: relative;
+			border-color: #337D5A;
+		}
+	}
+	&__body {
+		width: 474px;
+	}
+
+	&__content {
+		display: none;
+		&._active {
+			display: block;
+		}
+	}
+	&__banner {
+		background: url('@img/acc-banner.jpg') 0 0/cover no-repeat;
+		width: 440px;
+		height: 852px;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		flex-direction: column;
+		text-align: center;
+		color: #fff;
+		margin: 40px 0 0;
+		padding: 0 10px;
+		&-title {
+			font-weight: 800;
+			font-size: 42px;
+			line-height: 44px;
+			letter-spacing: 0.01em;
+			margin: 0 0 22px 0;
+		}
+		&-text {
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 25px;
+			letter-spacing: 0.01em;
+			max-width: 300px;
+			margin: 0 auto 20px;
+		}
+	}
+	&__open,
+	&__close {
+		display: none;
+	}
+	&__open {
+		align-items: center;
+		color: #fff;
+		background: #337D5A;
+		width: 90px;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 120%;
+		padding: 3px;
+		border-radius: 3px;
+		img {
+			width: 25px;
+			height: 25px;
+			margin: 0 5px 0 0;
+		}
+	}
+	&__close {
+		position: absolute;
+		top: 15px;
+		right: 10px;
+		padding: 5px;
+		img {
+			width: 18px;
+			height: 18px;
+		}
+	}
+}
+
 @media (max-width: 1220px) {
 	.form {
 		padding: 0;
+		align-items: flex-end;
+		&__btn {
+			&._save {
+				width: 100%;
+			}
+		}
+	}
+
+	.user-menu {
+		justify-content: flex-start;
+		&__banner {
+			display: none;
+		}
 	}
 }
 
@@ -325,6 +494,21 @@
 		max-width: 100%;
 		}
 	}
+
+	.account {
+		&__head {
+			flex-direction: column;
+			text-align: center;
+		}
+		&__text {
+			margin: 0;
+		}
+	}
+	.user-menu {
+		&__navbar {
+			margin: 0px 30px 0 0;
+		}
+	}
 }
 
 @media (max-width: 767px) {
@@ -333,4 +517,47 @@
 			display: block;
 		}
 	}
+
+	.account {
+		padding: 40px 0 50px;
+	}
+
+	.user-menu {
+		flex-direction: column;
+		&__body {
+			width: 100%;
+		}
+		&__navbar {
+			position: fixed;
+			top: -70px;
+			left: -100%;
+			padding: 30px 15px 70px 15px;
+			transform: translateY(70px);
+			z-index: 2;
+			height: calc(100% );
+			width: 90%;
+			max-width: 290px;
+			background: #fff;
+			box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+			opacity: 0;
+			visibility: visible;
+			transition: .3s;
+			&._active {
+				left: 0;
+				visibility: visible;
+				opacity: 1;
+				display: flex;
+				flex-direction: column;
+				overflow-y: auto;
+			}
+		}
+		&__open,
+		&__close {
+			display: flex;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+
 }
