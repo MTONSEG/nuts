@@ -224,10 +224,14 @@
 		line-height: 17px;
 		color: #fff;
 		margin-bottom: 18px;
+		cursor: pointer;
 		span {
 			display: inline-block;
 			border-bottom: 2px dashed #fff;
 			padding: 0 0 2px 0;
+		}
+		&._contacts {
+			background-image: url('@img/user-photo.jpg');
 		}
 	}
 	&__radios {
@@ -376,8 +380,20 @@
 	}
 	&__form {
 		width: 100%;
+		&._addr {
+			max-width: 474px;
+		}
+		&._contacts {
+			display: flex;
+		}
+	}
+	&__form-body {
 		max-width: 474px;
 		margin: 0 0 0 32px;
+		&._contacts {
+			width: 100%;
+			margin-right: 29px;
+		}
 	}
 	&__banner {
 		background: url('@img/acc-banner.jpg') 0 0/cover no-repeat;
@@ -530,6 +546,9 @@
 			transform: translate(-50%, 0);
 		}
 	}
+	&__price {
+		margin: 0 10px 0 0;
+	}
 }
 
 .table__link span:hover ~ .table__tooltip {
@@ -552,7 +571,7 @@
 		}
 	}
 	& .icon {
-		margin: 3px 0 0 10px;
+		margin: 3px 0 0;
 	}
 }
 
@@ -569,7 +588,7 @@
 
 	.user-menu {
 		justify-content: flex-start;
-		&__form {
+		&__form-body {
 			margin: 0;
 		}
 		&__banner {
@@ -623,7 +642,19 @@
 			display: none;
 		}
 	}
+
+	.user-menu {
+		&__navbar {
+			margin: 0 20px 0 0;
+		}
+		&__form {
+			&._contacts {
+				flex-direction: column-reverse;
+			}
+		}
+	}
 }
+
 @media (max-width: 767px) {
 	.reg {
 		&__title {
@@ -705,7 +736,8 @@
 				overflow-y: auto;
 			}
 		}
-		&__form {
+		&__form-body,
+		&__form._addr {
 			max-width: 100%;
 		}
 		&__open,

@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link type="image/png" sizes="16x16" rel="icon" href="./img/favicon.png">
-	<link media="all" rel="stylesheet" type="text/css" href="./css/style.min.css">
+	<link media="all" rel="stylesheet" type="text/css" href="./css/style.min.css?_v=20221221183357">
 	<title>Учетная запись</title>
 </head>
 
@@ -62,7 +62,7 @@
 				</div>
 				<div class="middle-header__logo logo">
 					<div class="logo__image-wrap">
-						<img loading="lazy" src="img/icons/logo.png" alt="Logo" class="logo__image">
+						<picture><source srcset="img/icons/logo.webp" type="image/webp"><img loading="lazy" src="img/icons/logo.png" alt="Logo" class="logo__image"></picture>
 					</div>
 					<p class="logo__text">
 						ОРЕХ<br>
@@ -138,7 +138,7 @@
 			<div class="burger-menu__header">
 				<div class="logo">
 					<div class="logo__image-wrap">
-						<img loading="lazy" src="img/icons/logo.png" alt="Logo" class="logo__image">
+						<picture><source srcset="img/icons/logo.webp" type="image/webp"><img loading="lazy" src="img/icons/logo.png" alt="Logo" class="logo__image"></picture>
 					</div>
 					<p class="logo__text">
 						ОРЕХ<br>
@@ -162,8 +162,7 @@
 						<a href="#" class="breadcrumbs__link">Главная</a>
 					</div>
 					<div class="breadcrumbs__item">
-						<a href="#" class="breadcrumbs__link">Учетная запись
-						</a>
+						<a href="#" class="breadcrumbs__link">Личный кабинет</a>
 					</div>
 				</div>
 			</div>
@@ -305,7 +304,7 @@
 
 							</div>
 						</div>
-						<div id="item_2" class="user-menu__content _active">
+						<div id="item_2" class="user-menu__content">
 							<div class="user-menu__table table table-history">
 
 								<div class="table__head">
@@ -353,132 +352,157 @@
 							</div>
 						</div>
 						<div id="item_3" class="user-menu__content">
-							wOW
+							<form action="" class="user-menu__form _contacts">
+								<div class="user-menu__form-body _contacts">
+									<div class="form__inputs form__inputs_last-acc">
+										<div class="form__input-wrapper">
+											<input type="text" class="form__input" name="Name" tabindex="1" placeholder="ФИО*">
+										</div>
+										<div class="form__input-wrapper">
+											<input type="email" class="form__input" name="Email" tabindex="2" placeholder="Email*">
+										</div>
+										<div class="form__input-wrapper">
+											<input type="tel" class="form__input" name="Phone" tabindex="3" placeholder="Телефон*">
+										</div>
+									</div>
+
+									<button type="submit" class="form__btn btn _save">Сохранить</button>
+								</div>
+								<div class="right-reg__photo-wrapper">
+									<input type="file" name="Photo" id="reg_photo" class="right-reg__photo-input">
+									<label for="reg_photo" class="right-reg__photo-label _contacts">
+										<span>Изменить фото</span>
+									</label>
+								</div>
+							</form>
 						</div>
 						<div id="item_4" class="user-menu__content">
-							<form action="#" class="password__form">
-								<div class="form__inputs">
-									<div class="form__input-wrapper">
-										<input type="text" class="form__input" name="current password" tabindex="1"
-											placeholder="Текущий пароль*">
+							<form action="#" class="user-menu__form">
+								<div class="user-menu__form-body">
+									<div class="form__inputs form__inputs_last-acc">
+										<div class="form__input-wrapper">
+											<input type="text" class="form__input" name="current password" tabindex="1"
+												placeholder="Текущий пароль*">
+										</div>
+										<div class="form__input-wrapper">
+											<input type="email" class="form__input" name="new password" tabindex="2"
+												placeholder="Новый пароль*">
+										</div>
+										<div class="form__input-wrapper">
+											<input type="tel" class="form__input" name="confirm password" tabindex="3"
+												placeholder="Подтвердить пароль*">
+										</div>
 									</div>
-									<div class="form__input-wrapper">
-										<input type="email" class="form__input" name="new password" tabindex="2"
-											placeholder="Новый пароль*">
-									</div>
-									<div class="form__input-wrapper">
-										<input type="tel" class="form__input" name="confirm password" tabindex="3"
-											placeholder="Подтвердить пароль*">
-									</div>
+									<button type="submit" class="form__btn btn _save">Изменить</button>
 								</div>
-								<button type="submit" class="form__btn btn">Продолжить</button>
 							</form>
 						</div>
 						<div id="item_5" class="user-menu__content _address">
-							<form action="" class="user-menu__form">
-								<h2 class="reg__subtitle">
-									1. Реквизиты
-								</h2>
-								<div class="form__inputs">
-									<div class="form__input-wrapper">
-										<input type="text" class="form__input" name="Name" tabindex="1" placeholder="ОКПО">
+							<form action="" class="user-menu__form _addr">
+								<div class="user-menu__form-body">
+									<h2 class="reg__subtitle">
+										1. Реквизиты
+									</h2>
+									<div class="form__inputs">
+										<div class="form__input-wrapper">
+											<input type="text" class="form__input" name="Name" tabindex="1" placeholder="ОКПО">
+										</div>
 									</div>
+									<h2 class="reg__subtitle">
+										2. Адрес
+									</h2>
+									<div class="form__inputs">
+										<div class="form__select select">
+											<div class="select__header form__input" tabindex="2">
+												<div class="select__current">Страна</div>
+												<img loading="lazy" src="img/icons/lang-arr.svg" alt="icon" class="select__icon">
+											</div>
+											<ul class="select__body">
+												<li class="select__item">
+													<span>Украина</span>
+												</li>
+												<li class="select__item">
+													<span>Литва</span>
+												</li>
+												<li class="select__item">
+													<span>Польша</span>
+												</li>
+											</ul>
+										</div>
+										<div class="form__select select">
+											<div class="select__header form__input" tabindex="3">
+												<div class="select__current">Область</div>
+												<img loading="lazy" src="img/icons/lang-arr.svg" alt="icon" class="select__icon">
+											</div>
+											<ul class="select__body">
+												<li class="select__item">
+													<span>Днепропетровская</span>
+												</li>
+												<li class="select__item">
+													<span>Киевская</span>
+												</li>
+												<li class="select__item">
+													<span>Одесская</span>
+												</li>
+											</ul>
+										</div>
+										<div class="form__input-wrapper">
+											<input type="tel" class="form__input" name="Phone" tabindex="4" placeholder="Город*">
+										</div>
+										<div class="form__input-wrapper">
+											<input type="tel" class="form__input" name="Phone" tabindex="5" placeholder="Адрес">
+										</div>
+									</div>
+									<h2 class="reg__subtitle">
+										2. Юридический адрес
+									</h2>
+									<div class="form__inputs form__inputs_last-acc">
+										<div class="form__select select">
+											<div class="select__header form__input" tabindex="6">
+												<div class="select__current">Страна</div>
+												<img loading="lazy" src="img/icons/lang-arr.svg" alt="icon" class="select__icon">
+											</div>
+											<ul class="select__body">
+												<li class="select__item">
+													<span>Украина</span>
+												</li>
+												<li class="select__item">
+													<span>Литва</span>
+												</li>
+												<li class="select__item">
+													<span>Польша</span>
+												</li>
+											</ul>
+										</div>
+										<div class="form__select select">
+											<div class="select__header form__input" tabindex="7">
+												<div class="select__current">Область</div>
+												<img loading="lazy" src="img/icons/lang-arr.svg" alt="icon" class="select__icon">
+											</div>
+											<ul class="select__body">
+												<li class="select__item">
+													<span>Днепропетровская</span>
+												</li>
+												<li class="select__item">
+													<span>Киевская</span>
+												</li>
+												<li class="select__item">
+													<span>Одесская</span>
+												</li>
+											</ul>
+										</div>
+										<div class="form__input-wrapper">
+											<input type="tel" class="form__input" name="Phone" tabindex="8" placeholder="Город*">
+										</div>
+										<div class="form__input-wrapper">
+											<input type="tel" class="form__input" name="Phone" tabindex="9" placeholder="Адрес">
+										</div>
+										<div class="form__input-wrapper">
+											<input type="tel" class="form__input" name="Phone" tabindex="10" placeholder="Индекс">
+										</div>
+									</div>
+									<button type="submit" class="form__btn btn _save">Сохранить</button>
 								</div>
-								<h2 class="reg__subtitle">
-									2. Адрес
-								</h2>
-								<div class="form__inputs">
-									<div class="form__select select">
-										<div class="select__header form__input" tabindex="2">
-											<div class="select__current">Страна</div>
-											<img loading="lazy" src="img/icons/lang-arr.svg" alt="icon" class="select__icon">
-										</div>
-										<ul class="select__body">
-											<li class="select__item">
-												<span>Украина</span>
-											</li>
-											<li class="select__item">
-												<span>Литва</span>
-											</li>
-											<li class="select__item">
-												<span>Польша</span>
-											</li>
-										</ul>
-									</div>
-									<div class="form__select select">
-										<div class="select__header form__input" tabindex="3">
-											<div class="select__current">Область</div>
-											<img loading="lazy" src="img/icons/lang-arr.svg" alt="icon" class="select__icon">
-										</div>
-										<ul class="select__body">
-											<li class="select__item">
-												<span>Днепропетровская</span>
-											</li>
-											<li class="select__item">
-												<span>Киевская</span>
-											</li>
-											<li class="select__item">
-												<span>Одесская</span>
-											</li>
-										</ul>
-									</div>
-									<div class="form__input-wrapper">
-										<input type="tel" class="form__input" name="Phone" tabindex="4" placeholder="Город*">
-									</div>
-									<div class="form__input-wrapper">
-										<input type="tel" class="form__input" name="Phone" tabindex="5" placeholder="Адрес">
-									</div>
-								</div>
-								<h2 class="reg__subtitle">
-									2. Юридический адрес
-								</h2>
-								<div class="form__inputs form__inputs_last-acc">
-									<div class="form__select select">
-										<div class="select__header form__input" tabindex="6">
-											<div class="select__current">Страна</div>
-											<img loading="lazy" src="img/icons/lang-arr.svg" alt="icon" class="select__icon">
-										</div>
-										<ul class="select__body">
-											<li class="select__item">
-												<span>Украина</span>
-											</li>
-											<li class="select__item">
-												<span>Литва</span>
-											</li>
-											<li class="select__item">
-												<span>Польша</span>
-											</li>
-										</ul>
-									</div>
-									<div class="form__select select">
-										<div class="select__header form__input" tabindex="7">
-											<div class="select__current">Область</div>
-											<img loading="lazy" src="img/icons/lang-arr.svg" alt="icon" class="select__icon">
-										</div>
-										<ul class="select__body">
-											<li class="select__item">
-												<span>Днепропетровская</span>
-											</li>
-											<li class="select__item">
-												<span>Киевская</span>
-											</li>
-											<li class="select__item">
-												<span>Одесская</span>
-											</li>
-										</ul>
-									</div>
-									<div class="form__input-wrapper">
-										<input type="tel" class="form__input" name="Phone" tabindex="8" placeholder="Город*">
-									</div>
-									<div class="form__input-wrapper">
-										<input type="tel" class="form__input" name="Phone" tabindex="9" placeholder="Адрес">
-									</div>
-									<div class="form__input-wrapper">
-										<input type="tel" class="form__input" name="Phone" tabindex="10" placeholder="Индекс">
-									</div>
-								</div>
-
-								<button type="submit" class="form__btn btn _save">Сохранить</button>
 							</form>
 							<div class="user-menu__banner">
 								<h2 class="user-menu__banner-title">
@@ -561,7 +585,7 @@
 			<div class="top-footer__row">
 				<div class="logo">
 					<div class="logo__image-wrap">
-						<img loading="lazy" src="img/icons/logo.png" alt="Logo" class="logo__image">
+						<picture><source srcset="img/icons/logo.webp" type="image/webp"><img loading="lazy" src="img/icons/logo.png" alt="Logo" class="logo__image"></picture>
 					</div>
 					<p class="logo__text">
 						ОРЕХ<br>
@@ -617,7 +641,7 @@
 	</div>
 </footer>
 	</div>
-	<script src="js/app.min.js"></script>
+	<script src="js/app.min.js?_v=20221221183357"></script>
 </body>
 
 </html>
