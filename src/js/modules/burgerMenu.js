@@ -1,5 +1,4 @@
-import { addClass } from "./functions.js";
-import { removeClass } from "./functions.js";
+import { addClass,removeClass} from "./functions.js";
 
 const iconBurger = document.querySelector('.burger__icon');
 const menuBurger = document.querySelector('.burger-menu');
