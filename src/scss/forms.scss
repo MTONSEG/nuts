@@ -575,6 +575,106 @@
 	}
 }
 
+.table-cart {
+
+}
+
+.popup-cart {
+	position: absolute;
+	right: 0;
+	top: calc(100% + 32px);
+	background: #FFFFFF;
+	border: 1.5px solid #337D5A;
+	padding: 25px 31px;
+	width: 468px;
+	pointer-events: none;
+	opacity: 0;
+	visibility: hidden;
+	transition: .3s ease-in-out;
+	z-index: -1;
+	&._active {
+		pointer-events:stroke;
+		opacity: 1;
+		visibility: visible;
+		z-index: 5;
+	}
+	&__button {
+		width: 191px;
+	}
+	&__list {
+		margin-bottom: 20px;
+	}
+	&__item,
+	&__quantity-input {
+		font-family: 'Montserrat';
+		font-weight: 500;
+		line-height: 120%;
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 14px 0 15px;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+	}
+	&__name {
+		width: 35.714%;
+	}
+	.quantity,
+	.quantity__btn,
+	&__footer,
+	&__total {
+		display: flex;
+		align-items: center;
+	}
+	&__icon {
+		display: block;
+	}
+	&__close {
+		display: none;
+	}
+	&__footer {
+		justify-content: flex-end;
+	}
+	&__total {
+		line-height: 120%;
+		margin: 0 12px 0 0;
+		font-weight: 700;
+		&-text {
+			font-size: 18px;
+			margin: 0 6px 0 0;
+		}
+		&-price {
+			font-family: 'Montserrat';
+			font-size: 22px;
+			color: #337D5A;
+			span {
+				font-weight: 600;
+				font-size: 14px;
+				line-height: 32px;
+			}
+		}
+	}
+}
+
+.quantity {
+	&__input {
+		width: 44px;
+		height: 28px;
+		border: 1px solid rgba(0, 0, 0, 0.15);
+		text-align: center;
+	}
+	&__btn {
+		background: transparent;
+		height: 28px;
+		padding: 0 5px;
+		img {
+			width: 10px;
+			height: 6.4px;
+		}
+	}
+}
+
 @media (max-width: 1220px) {
 	.form {
 		padding: 0;
@@ -762,6 +862,37 @@
 			width: 45%;
 		}
 	}
+
+	.popup-cart {
+		position: fixed;
+		padding: 50px 10px;
+		top: -70px;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transform: translateY(70px);
+		&__close {
+			display: block;
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			img {
+				width: 16px;
+				height: 16px;
+			}
+		}
+		&__footer {
+			flex-direction: column;
+			align-items: center;
+		}
+		&__total {
+			margin: 0 0 10px 0;
+		}
+		&__button {
+			width: 100%;
+		}
+	}
+
 }
 
 

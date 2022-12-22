@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link type="image/png" sizes="16x16" rel="icon" href="./img/favicon.png">
-	<link media="all" rel="stylesheet" type="text/css" href="./css/style.min.css?_v=20221221183357">
+	<link media="all" rel="stylesheet" type="text/css" href="./css/style.min.css">
 	<title>Оплата и доставка</title>
 </head>
 
@@ -62,7 +62,7 @@
 				</div>
 				<div class="middle-header__logo logo">
 					<div class="logo__image-wrap">
-						<picture><source srcset="img/icons/logo.webp" type="image/webp"><img loading="lazy" src="img/icons/logo.png" alt="Logo" class="logo__image"></picture>
+						<img loading="lazy" src="img/icons/logo.png" alt="Logo" class="logo__image">
 					</div>
 					<p class="logo__text">
 						ОРЕХ<br>
@@ -73,13 +73,16 @@
 					<div data-da=".top-header__request-mobile, 991, 0" class="middle-header__contacts">
 						<div class="middle-header__messengers">
 							<a href="#" class="middle-header__mess-item">
-								<img loading="lazy" src="img/icons/viber-mess.svg" alt="Viber" class="middle-header__mess-icon">
+								<img loading="lazy" src="img/icons/viber-mess.svg" alt="Viber"
+									class="middle-header__mess-icon">
 							</a>
 							<a href="#" class="middle-header__mess-item">
-								<img loading="lazy" src="img/icons/telegram-mess.svg" alt="Telegram" class="middle-header__mess-icon">
+								<img loading="lazy" src="img/icons/telegram-mess.svg" alt="Telegram"
+									class="middle-header__mess-icon">
 							</a>
 							<a href="#" class="middle-header__mess-item">
-								<img loading="lazy" src="img/icons/whats-mess.svg" alt="Whats Up" class="middle-header__mess-icon">
+								<img loading="lazy" src="img/icons/whats-mess.svg" alt="Whats Up"
+									class="middle-header__mess-icon">
 							</a>
 						</div>
 						<div class="middle-header__numbers">
@@ -103,6 +106,57 @@
 								<img loading="lazy" src="img/icons/cart.svg" alt="Cart" class="middle-header__cart-icon">
 								<span class="middle-header__cart-amount">0</span>
 							</a>
+
+							<div class="popup-cart">
+								<div class="popup-cart__close">
+									<img src="img/icons/close-menu.svg" alt="" class="">
+								</div>
+								<ul class="popup-cart__list">
+									<li class="popup-cart__item">
+										<p class="popup-cart__name">Орех соленый 80г.</p>
+										<div class="popup-cart__quantity quantity">
+											<button class="quantity__btn _minus">
+												<img src="img/icons/quantity-minus.svg" alt="minus">
+											</button>
+											<input type="number" step="1" min="1" max="27" name="quantity" value="1"  class="quantity__input">
+											<button class="quantity__btn  _plus">
+												<img src="img/icons/quantity-plus.svg" alt="plus">
+											</button>
+										</div>
+										<p class="popup-cart__item-price">100 грн.</p>
+										<a href="#" class="popup-cart__del">
+											<img src="img/icons/close-popup.svg" alt="close" class="popup-cart__icon">
+										</a>
+									</li>
+									<li class="popup-cart__item">
+										<p class="popup-cart__name">Орех соленый 80г.</p>
+										<div class="popup-cart__quantity quantity">
+											<button class="quantity__btn _minus">
+												<img src="img/icons/quantity-minus.svg" alt="minus">
+											</button>
+											<input type="number" step="1" min="1" max="27" name="quantity" value="1"  class="quantity__input">
+											<button class="quantity__btn  _plus">
+												<img src="img/icons/quantity-plus.svg" alt="plus">
+											</button>
+										</div>
+										<p class="popup-cart__item-price">100 грн.</p>
+										<a href="#" class="popup-cart__del">
+											<img src="img/icons/close-popup.svg" alt="close" class="popup-cart__icon">
+										</a>
+									</li>
+								</ul>
+								<div class="popup-cart__footer">
+									<div class="popup-cart__total">
+										<p class="popup-cart__total-text">Всего</p>
+										<p class="popup-cart__total-price">
+											175 <span>грн.</span>
+										</p>
+									</div>
+									<a href="./cart.html" class="popup-cart__button btn">
+										Перейти в корзину
+									</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -135,23 +189,23 @@
 	</div>
 
 	<div class="burger-menu">
-			<div class="burger-menu__header">
-				<div class="logo">
-					<div class="logo__image-wrap">
-						<picture><source srcset="img/icons/logo.webp" type="image/webp"><img loading="lazy" src="img/icons/logo.png" alt="Logo" class="logo__image"></picture>
-					</div>
-					<p class="logo__text">
-						ОРЕХ<br>
-						ПРИЧЕРНОМОРЬЯ
-					</p>
+		<div class="burger-menu__header">
+			<div class="logo">
+				<div class="logo__image-wrap">
+					<img loading="lazy" src="img/icons/logo.png" alt="Logo" class="logo__image">
 				</div>
-				<div class="burger-menu__close-btn">
-					<img loading="lazy" src="img/icons/close-menu.svg" alt="close" class="burger-menu__close-icon">
-				</div>
+				<p class="logo__text">
+					ОРЕХ<br>
+					ПРИЧЕРНОМОРЬЯ
+				</p>
 			</div>
-			<div class="burger-menu__middle">
+			<div class="burger-menu__close-btn">
+				<img loading="lazy" src="img/icons/close-menu.svg" alt="close" class="burger-menu__close-icon">
 			</div>
-			<div class="burger-menu__body"></div>
+		</div>
+		<div class="burger-menu__middle">
+		</div>
+		<div class="burger-menu__body"></div>
 	</div>
 </header>
 
@@ -212,7 +266,7 @@
 								<ul class="delivery-tabs__content-list">
 									<li class="delivery-tabs__content-item">
 										<h3 class="delivery-tabs__item-title">
-											<picture><source srcset="img/icons/museum.webp" type="image/webp"><img src="img/icons/museum.png" alt="Cashless" class="delivery-tabs__item-icon"></picture>
+											<img src="img/icons/museum.png" alt="Cashless" class="delivery-tabs__item-icon">
 											<span>
 												Безналичный расчет
 											</span>
@@ -224,7 +278,7 @@
 									</li>
 									<li class="delivery-tabs__content-item">
 										<h3 class="delivery-tabs__item-title">
-											<picture><source srcset="img/icons/bank-card.webp" type="image/webp"><img src="img/icons/bank-card.png" alt="Bank Card" class="delivery-tabs__item-icon"></picture>
+											<img src="img/icons/bank-card.png" alt="Bank Card" class="delivery-tabs__item-icon">
 											<span>
 												Оплата с помощью банковской карты
 											</span>
@@ -235,7 +289,7 @@
 									</li>
 									<li class="delivery-tabs__content-item">
 										<h3 class="delivery-tabs__item-title">
-											<picture><source srcset="img/icons/wallet.webp" type="image/webp"><img src="img/icons/wallet.png" alt="Cash" class="delivery-tabs__item-icon"></picture>
+											<img src="img/icons/wallet.png" alt="Cash" class="delivery-tabs__item-icon">
 											<span>
 												Наличный расчет
 											</span>
@@ -247,7 +301,7 @@
 								</ul>
 							</div>
 							<div class="delivery-tabs__content-image-wrap">
-								<picture><source srcset="img/delivery_img-1.webp" type="image/webp"><img src="img/delivery_img-1.jpg" alt="Payments Order" class="delivery-tabs__content-image"></picture>
+								<img src="img/delivery_img-1.jpg" alt="Payments Order" class="delivery-tabs__content-image">
 							</div>
 						</div>
 					</div>
@@ -260,7 +314,7 @@
 								<ul class="delivery-tabs__content-list">
 									<li class="delivery-tabs__content-item">
 										<h3 class="delivery-tabs__item-title">
-											<picture><source srcset="img/icons/bank-card.webp" type="image/webp"><img src="img/icons/bank-card.png" alt="Bank Card" class="delivery-tabs__item-icon"></picture>
+											<img src="img/icons/bank-card.png" alt="Bank Card" class="delivery-tabs__item-icon">
 											<span>
 												Оплата с помощью банковской карты
 											</span>
@@ -271,7 +325,7 @@
 									</li>
 									<li class="delivery-tabs__content-item">
 										<h3 class="delivery-tabs__item-title">
-											<picture><source srcset="img/icons/wallet.webp" type="image/webp"><img src="img/icons/wallet.png" alt="Cash" class="delivery-tabs__item-icon"></picture>
+											<img src="img/icons/wallet.png" alt="Cash" class="delivery-tabs__item-icon">
 											<span>
 												Наличный расчет
 											</span>
@@ -282,7 +336,7 @@
 									</li>
 									<li class="delivery-tabs__content-item">
 										<h3 class="delivery-tabs__item-title">
-											<picture><source srcset="img/icons/museum.webp" type="image/webp"><img src="img/icons/museum.png" alt="Cashless" class="delivery-tabs__item-icon"></picture>
+											<img src="img/icons/museum.png" alt="Cashless" class="delivery-tabs__item-icon">
 											<span>
 												Безналичный расчет
 											</span>
@@ -295,7 +349,7 @@
 								</ul>
 							</div>
 							<div class="delivery-tabs__content-image-wrap">
-								<picture><source srcset="img/wholesale_tab-img.webp" type="image/webp"><img src="img/wholesale_tab-img.jpg" alt="Cart" class="tab-slide__image"></picture>
+								<img src="img/wholesale_tab-img.jpg" alt="Cart" class="tab-slide__image">
 							</div>
 						</div>
 					</div>
@@ -308,7 +362,7 @@
 								<ul class="delivery-tabs__content-list">
 									<li class="delivery-tabs__content-item">
 										<h3 class="delivery-tabs__item-title">
-											<picture><source srcset="img/icons/museum.webp" type="image/webp"><img src="img/icons/museum.png" alt="Cashless" class="delivery-tabs__item-icon"></picture>
+											<img src="img/icons/museum.png" alt="Cashless" class="delivery-tabs__item-icon">
 											<span>
 												Безналичный расчет
 											</span>
@@ -320,7 +374,7 @@
 									</li>
 									<li class="delivery-tabs__content-item">
 										<h3 class="delivery-tabs__item-title">
-											<picture><source srcset="img/icons/wallet.webp" type="image/webp"><img src="img/icons/wallet.png" alt="Cash" class="delivery-tabs__item-icon"></picture>
+											<img src="img/icons/wallet.png" alt="Cash" class="delivery-tabs__item-icon">
 											<span>
 												Наличный расчет
 											</span>
@@ -331,7 +385,7 @@
 									</li>
 									<li class="delivery-tabs__content-item">
 										<h3 class="delivery-tabs__item-title">
-											<picture><source srcset="img/icons/bank-card.webp" type="image/webp"><img src="img/icons/bank-card.png" alt="Bank Card" class="delivery-tabs__item-icon"></picture>
+											<img src="img/icons/bank-card.png" alt="Bank Card" class="delivery-tabs__item-icon">
 											<span>
 												Оплата с помощью банковской карты
 											</span>
@@ -342,7 +396,7 @@
 									</li>
 									<li class="delivery-tabs__content-item">
 										<h3 class="delivery-tabs__item-title">
-											<picture><source srcset="img/icons/wallet.webp" type="image/webp"><img src="img/icons/wallet.png" alt="Cash" class="delivery-tabs__item-icon"></picture>
+											<img src="img/icons/wallet.png" alt="Cash" class="delivery-tabs__item-icon">
 											<span>
 												Наличный расчет
 											</span>
@@ -354,7 +408,7 @@
 								</ul>
 							</div>
 							<div class="delivery-tabs__content-image-wrap">
-								<picture><source srcset="img/delivery_img-1.webp" type="image/webp"><img src="img/delivery_img-1.jpg" alt="Payments Order" class="delivery-tabs__content-image"></picture>
+								<img src="img/delivery_img-1.jpg" alt="Payments Order" class="delivery-tabs__content-image">
 							</div>
 						</div>
 					</div>
@@ -490,7 +544,7 @@
 			<div class="top-footer__row">
 				<div class="logo">
 					<div class="logo__image-wrap">
-						<picture><source srcset="img/icons/logo.webp" type="image/webp"><img loading="lazy" src="img/icons/logo.png" alt="Logo" class="logo__image"></picture>
+						<img loading="lazy" src="img/icons/logo.png" alt="Logo" class="logo__image">
 					</div>
 					<p class="logo__text">
 						ОРЕХ<br>
@@ -546,8 +600,8 @@
 	</div>
 </footer>
 	</div>
-	<script src="js/app.min.js?_v=20221221183357" type="module"></script>
-	<script src="js/tabs.js?_v=20221221183357" type="module"></script>
+	<script src="js/app.min.js" type="module"></script>
+	<script src="js/tabs.js" type="module"></script>
 </body>
 
 </html>

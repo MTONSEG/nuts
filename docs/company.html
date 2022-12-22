@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link type="image/png" sizes="16x16" rel="icon" href="./img/favicon.png">
-	<link media="all" rel="stylesheet" type="text/css" href="./css/style.min.css?_v=20221221183357">
+	<link media="all" rel="stylesheet" type="text/css" href="./css/style.min.css">
 	<title>О компании</title>
 </head>
 
@@ -62,7 +62,7 @@
 				</div>
 				<div class="middle-header__logo logo">
 					<div class="logo__image-wrap">
-						<picture><source srcset="img/icons/logo.webp" type="image/webp"><img loading="lazy" src="img/icons/logo.png" alt="Logo" class="logo__image"></picture>
+						<img loading="lazy" src="img/icons/logo.png" alt="Logo" class="logo__image">
 					</div>
 					<p class="logo__text">
 						ОРЕХ<br>
@@ -73,13 +73,16 @@
 					<div data-da=".top-header__request-mobile, 991, 0" class="middle-header__contacts">
 						<div class="middle-header__messengers">
 							<a href="#" class="middle-header__mess-item">
-								<img loading="lazy" src="img/icons/viber-mess.svg" alt="Viber" class="middle-header__mess-icon">
+								<img loading="lazy" src="img/icons/viber-mess.svg" alt="Viber"
+									class="middle-header__mess-icon">
 							</a>
 							<a href="#" class="middle-header__mess-item">
-								<img loading="lazy" src="img/icons/telegram-mess.svg" alt="Telegram" class="middle-header__mess-icon">
+								<img loading="lazy" src="img/icons/telegram-mess.svg" alt="Telegram"
+									class="middle-header__mess-icon">
 							</a>
 							<a href="#" class="middle-header__mess-item">
-								<img loading="lazy" src="img/icons/whats-mess.svg" alt="Whats Up" class="middle-header__mess-icon">
+								<img loading="lazy" src="img/icons/whats-mess.svg" alt="Whats Up"
+									class="middle-header__mess-icon">
 							</a>
 						</div>
 						<div class="middle-header__numbers">
@@ -103,6 +106,57 @@
 								<img loading="lazy" src="img/icons/cart.svg" alt="Cart" class="middle-header__cart-icon">
 								<span class="middle-header__cart-amount">0</span>
 							</a>
+
+							<div class="popup-cart">
+								<div class="popup-cart__close">
+									<img src="img/icons/close-menu.svg" alt="" class="">
+								</div>
+								<ul class="popup-cart__list">
+									<li class="popup-cart__item">
+										<p class="popup-cart__name">Орех соленый 80г.</p>
+										<div class="popup-cart__quantity quantity">
+											<button class="quantity__btn _minus">
+												<img src="img/icons/quantity-minus.svg" alt="minus">
+											</button>
+											<input type="number" step="1" min="1" max="27" name="quantity" value="1"  class="quantity__input">
+											<button class="quantity__btn  _plus">
+												<img src="img/icons/quantity-plus.svg" alt="plus">
+											</button>
+										</div>
+										<p class="popup-cart__item-price">100 грн.</p>
+										<a href="#" class="popup-cart__del">
+											<img src="img/icons/close-popup.svg" alt="close" class="popup-cart__icon">
+										</a>
+									</li>
+									<li class="popup-cart__item">
+										<p class="popup-cart__name">Орех соленый 80г.</p>
+										<div class="popup-cart__quantity quantity">
+											<button class="quantity__btn _minus">
+												<img src="img/icons/quantity-minus.svg" alt="minus">
+											</button>
+											<input type="number" step="1" min="1" max="27" name="quantity" value="1"  class="quantity__input">
+											<button class="quantity__btn  _plus">
+												<img src="img/icons/quantity-plus.svg" alt="plus">
+											</button>
+										</div>
+										<p class="popup-cart__item-price">100 грн.</p>
+										<a href="#" class="popup-cart__del">
+											<img src="img/icons/close-popup.svg" alt="close" class="popup-cart__icon">
+										</a>
+									</li>
+								</ul>
+								<div class="popup-cart__footer">
+									<div class="popup-cart__total">
+										<p class="popup-cart__total-text">Всего</p>
+										<p class="popup-cart__total-price">
+											175 <span>грн.</span>
+										</p>
+									</div>
+									<a href="./cart.html" class="popup-cart__button btn">
+										Перейти в корзину
+									</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -135,23 +189,23 @@
 	</div>
 
 	<div class="burger-menu">
-			<div class="burger-menu__header">
-				<div class="logo">
-					<div class="logo__image-wrap">
-						<picture><source srcset="img/icons/logo.webp" type="image/webp"><img loading="lazy" src="img/icons/logo.png" alt="Logo" class="logo__image"></picture>
-					</div>
-					<p class="logo__text">
-						ОРЕХ<br>
-						ПРИЧЕРНОМОРЬЯ
-					</p>
+		<div class="burger-menu__header">
+			<div class="logo">
+				<div class="logo__image-wrap">
+					<img loading="lazy" src="img/icons/logo.png" alt="Logo" class="logo__image">
 				</div>
-				<div class="burger-menu__close-btn">
-					<img loading="lazy" src="img/icons/close-menu.svg" alt="close" class="burger-menu__close-icon">
-				</div>
+				<p class="logo__text">
+					ОРЕХ<br>
+					ПРИЧЕРНОМОРЬЯ
+				</p>
 			</div>
-			<div class="burger-menu__middle">
+			<div class="burger-menu__close-btn">
+				<img loading="lazy" src="img/icons/close-menu.svg" alt="close" class="burger-menu__close-icon">
 			</div>
-			<div class="burger-menu__body"></div>
+		</div>
+		<div class="burger-menu__middle">
+		</div>
+		<div class="burger-menu__body"></div>
 	</div>
 </header>
 
@@ -250,7 +304,7 @@
 				<div class="company-owner__row">
 					<div class="company-owner__body">
 						<div class="company-owner__photo-wrap">
-							<picture><source srcset="img/company-photo.webp" type="image/webp"><img loading="lazy" src="img/company-photo.jpg" alt="Павел Тулба" class="company-owner__photo"></picture>
+							<img loading="lazy" src="img/company-photo.jpg" alt="Павел Тулба" class="company-owner__photo">
 						</div>
 						<div class="company-owner__info">
 							<h2 class="company-owner__name">
@@ -350,7 +404,7 @@
 				</div>
 				<div class="gallery__top top-gallery">
 					<div class="top-gallery__item">
-						<picture><source srcset="img/gallery-top_1.webp" type="image/webp"><img loading="lazy" src="img/gallery-top_1.jpg" alt="SIAL Paris 2018" class="top-gallery__image"></picture>
+						<img loading="lazy" src="img/gallery-top_1.jpg" alt="SIAL Paris 2018" class="top-gallery__image">
 						<div class="company-gallery__block">
 							<h3 class="top-gallery__item-title">
 								SIAL Paris 2018
@@ -363,7 +417,7 @@
 						</div>
 					</div>
 					<div class="top-gallery__item _small">
-						<picture><source srcset="img/gallery-top_2.webp" type="image/webp"><img loading="lazy" src="img/gallery-top_2.jpg" alt="Image Top" class="top-gallery__image"></picture>
+						<img loading="lazy" src="img/gallery-top_2.jpg" alt="Image Top" class="top-gallery__image">
 					</div>
 				</div>
 
@@ -381,13 +435,13 @@
 
 				<div class="gallery__bottom bt-gallery">
 					<div class="bt-gallery__item">
-						<picture><source srcset="img/gallery-bt-1.webp" type="image/webp"><img loading="lazy" src="img/gallery-bt-1.jpg" alt="Image 1" class="bt-gallery__image"></picture>
+						<img loading="lazy" src="img/gallery-bt-1.jpg" alt="Image 1" class="bt-gallery__image">
 					</div>
 					<div class="bt-gallery__item">
-						<picture><source srcset="img/gallery-bt-2.webp" type="image/webp"><img loading="lazy" src="img/gallery-bt-2.jpg" alt="Image 2" class="bt-gallery__image"></picture>
+						<img loading="lazy" src="img/gallery-bt-2.jpg" alt="Image 2" class="bt-gallery__image">
 					</div>
 					<div class="bt-gallery__item">
-						<picture><source srcset="img/gallery-bt-3.webp" type="image/webp"><img loading="lazy" src="img/gallery-bt-3.jpg" alt="Image 3" class="bt-gallery__image"></picture>
+						<img loading="lazy" src="img/gallery-bt-3.jpg" alt="Image 3" class="bt-gallery__image">
 						<a href="#" class="company-gallery__play play">
 							<img loading="lazy" src="img/icons/play.svg" alt="Play">
 						</a>
@@ -401,7 +455,7 @@
 			<section class="eco">
 	<div class="container">
 		<div class="eco__row">
-			<picture><source srcset="img/icons/eco.webp" type="image/webp"><img loading="lazy" src="img/icons/eco.png" alt="Eco" class="eco__icon"></picture>
+			<img loading="lazy" src="img/icons/eco.png" alt="Eco" class="eco__icon">
 			<h2 class="eco__title title-block">
 				Эко продукция
 			</h2>
@@ -438,7 +492,7 @@
 			<div class="news-slider__wrapper swiper-wrapper">
 				<div class="news-slider__slide news-item swiper-slide">
 					<div class="news-item__image-wrapper">
-						<picture><source srcset="img/news-img-1.webp" type="image/webp"><img loading="lazy" src="img/news-img-1.jpg" alt="Центр поддержки экспорта" class="news-item__image"></picture>
+						<img loading="lazy" src="img/news-img-1.jpg" alt="Центр поддержки экспорта" class="news-item__image">
 					</div>
 					<div class="news-item__body">
 						<date class="news-item__date">
@@ -457,7 +511,7 @@
 				</div>
 				<div class="news-slider__slide news-item swiper-slide">
 					<div class="news-item__image-wrapper">
-						<picture><source srcset="img/news-img-2.webp" type="image/webp"><img loading="lazy" src="img/news-img-2.jpg" alt="Экспортный форум" class="news-item__image"></picture>
+						<img loading="lazy" src="img/news-img-2.jpg" alt="Экспортный форум" class="news-item__image">
 						<a href="#" class="news-item__play play">
 							<img loading="lazy" src="img/icons/play.svg" alt="Play" class="hero__icon-play">
 						</a>
@@ -500,7 +554,7 @@
 				</div>
 				<div class="news-slider__slide news-item swiper-slide">
 					<div class="news-item__image-wrapper">
-						<picture><source srcset="img/news-img-1.webp" type="image/webp"><img loading="lazy" src="img/news-img-1.jpg" alt="Центр поддержки экспорта" class="news-item__image"></picture>
+						<img loading="lazy" src="img/news-img-1.jpg" alt="Центр поддержки экспорта" class="news-item__image">
 					</div>
 					<div class="news-item__body">
 						<date class="news-item__date">
@@ -586,7 +640,7 @@
 			<div class="top-footer__row">
 				<div class="logo">
 					<div class="logo__image-wrap">
-						<picture><source srcset="img/icons/logo.webp" type="image/webp"><img loading="lazy" src="img/icons/logo.png" alt="Logo" class="logo__image"></picture>
+						<img loading="lazy" src="img/icons/logo.png" alt="Logo" class="logo__image">
 					</div>
 					<p class="logo__text">
 						ОРЕХ<br>
@@ -642,8 +696,8 @@
 	</div>
 </footer>
 	</div>
-	<script src="js/app.min.js?_v=20221221183357" type="module"></script>
-	<script src="js/swiper.js?_v=20221221183357" type="module"></script>
+	<script src="js/app.min.js" type="module"></script>
+	<script src="js/swiper.js" type="module"></script>
 </body>
 
 </html>

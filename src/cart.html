@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{"title":"Учетная запись"})
+
+<body>
+	<div class="wrapper">
+		@@include('./html/header.html',{})
+
+		<div class="breadcrumbs-wrapper">
+			<div class="container">
+				<div class="breadcrumbs _grey">
+					<div class="breadcrumbs__item">
+						<a href="#" class="breadcrumbs__link">Главная</a>
+					</div>
+					<div class="breadcrumbs__item">
+						<a href="#" class="breadcrumbs__link">Корзина</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="account">
+			<div class="container">
+				<div class="account__head">
+					<h1 class="account__title reg__title">
+						Корзина
+					</h1>
+					<p class="account__text">
+						<span>Ваш личный менеджер Олег</span>
+						<a href="tel:380677771412" class="account__number">
+							<img src="@img/icons/acc-phone.svg" alt="phone" class="account__icon-phone">
+							+38 067 777 14 12
+						</a>
+					</p>
+				</div>
+			</div>
+		</section>
+
+		@@include('./html/footer-color.html',{})
+	</div>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
