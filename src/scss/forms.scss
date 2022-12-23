@@ -8,6 +8,10 @@
 		letter-spacing: 0.01em;
 		line-height: 32px;
 		margin-bottom: 18px;
+		&._font {
+			font-family: 'Montserrat';
+			font-size: 28px;
+		}
 	}
 	&__subtitle {
 		font-family: 'Montserrat';
@@ -324,6 +328,9 @@
 		& .account {
 			&__text {
 				margin: 5px 0 0 188px;
+				&._order {
+					margin: 5px 0 0 130px;
+				}
 			}
 			&__head {
 				margin-bottom: 36px;
@@ -721,6 +728,10 @@
 		}
 	}
 	&__total {
+		&._order {
+			justify-content: flex-end;
+			font-size: 28px;
+		}
 		& .popup-cart__total {
 			margin: 0 28px 0 0;
 		}
@@ -853,9 +864,6 @@
 			&:nth-child(1){
 				font-size: 16px;
 			}
-			&:nth-child(2){
-
-			}
 			&:nth-child(3){
 				display: none;
 			}
@@ -926,6 +934,9 @@
 					margin: 0;
 				}
 			}
+		}
+		&__title._font {
+			font-family: 'Montserrat';
 		}
 	}
 

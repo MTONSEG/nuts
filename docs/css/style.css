@@ -3720,6 +3720,10 @@ body._lock {
   line-height: 32px;
   margin-bottom: 18px;
 }
+.reg__title._font {
+  font-family: "Montserrat";
+  font-size: 28px;
+}
 .reg__subtitle {
   font-family: "Montserrat";
   font-weight: 700;
@@ -4026,6 +4030,9 @@ body._lock {
 }
 .account._cart .account__text {
   margin: 5px 0 0 188px;
+}
+.account._cart .account__text._order {
+  margin: 5px 0 0 130px;
 }
 .account._cart .account__head {
   margin-bottom: 36px;
@@ -4405,6 +4412,10 @@ body._lock {
 .cart-footer__back img {
   margin: 0 12px 0 0;
 }
+.cart-footer__total._order {
+  justify-content: flex-end;
+  font-size: 28px;
+}
 .cart-footer__total .popup-cart__total {
   margin: 0 28px 0 0;
 }
@@ -4579,6 +4590,9 @@ body._lock {
   }
   .account._cart .account__text {
     margin: 0;
+  }
+  .account__title._font {
+    font-family: "Montserrat";
   }
   .user-menu {
     flex-direction: column;
