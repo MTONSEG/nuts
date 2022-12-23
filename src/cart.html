@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('html/head.html',{"title":"Учетная запись"})
+@@include('html/head.html',{"title":"Корзина"})
 
 <body>
 	<div class="wrapper">
@@ -19,7 +19,7 @@
 			</div>
 		</div>
 
-		<section class="account">
+		<section class="account _cart">
 			<div class="container">
 				<div class="account__head">
 					<h1 class="account__title reg__title">
@@ -32,6 +32,133 @@
 							+38 067 777 14 12
 						</a>
 					</p>
+				</div>
+				<div class="table-cart">
+					<div class="user-menu__table table">
+						<div class="table__head">
+							<div class="table__item-title">Товар
+								<img src="@img/icons/arr-select.svg" alt="">
+							</div>
+							<div class="table__item-title">Кол - во
+								<img src="@img/icons/arr-select.svg" alt="">
+							</div>
+							<div class="table__item-title">Цена за товар
+								<img src="@img/icons/arr-select.svg" alt="">
+							</div>
+							<div class="table__item-title">Итоговая стоимость
+								<img src="@img/icons/arr-select.svg" alt="">
+							</div>
+						</div>
+
+						<div class="table__body">
+							<div class="table__content _cart">
+								<div class="table__item">Орех соленый 80г.
+								</div>
+								<div class="table__item">
+									<div class="popup-cart__quantity quantity">
+										<button class="quantity__btn _minus">
+											<img src="@img/icons/quantity-minus.svg" alt="minus">
+										</button>
+										<input type="number" step="1" min="1" max="27" name="quantity" value="1"
+											class="quantity__input">
+										<button class="quantity__btn  _plus">
+											<img src="@img/icons/quantity-plus.svg" alt="plus">
+										</button>
+									</div>
+								</div>
+								<div class="table__item">25 грн.
+								</div>
+								<div class="table__item">100 грн.</div>
+							</div>
+
+							<div class="table__content _cart">
+								<div class="table__item">Орех соленый 80г.
+								</div>
+								<div class="table__item">
+									<div class="popup-cart__quantity quantity">
+										<button class="quantity__btn _minus">
+											<img src="@img/icons/quantity-minus.svg" alt="minus">
+										</button>
+										<input type="number" step="1" min="1" max="27" name="quantity" value="1"
+											class="quantity__input">
+										<button class="quantity__btn  _plus">
+											<img src="@img/icons/quantity-plus.svg" alt="plus">
+										</button>
+									</div>
+								</div>
+								<div class="table__item">25 грн.
+								</div>
+								<div class="table__item">25 грн.</div>
+							</div>
+
+							<div class="table__content _cart">
+								<div class="table__item">Орех соленый 80г.
+								</div>
+								<div class="table__item">
+									<div class="popup-cart__quantity quantity">
+										<button class="quantity__btn _minus">
+											<img src="@img/icons/quantity-minus.svg" alt="minus">
+										</button>
+										<input type="number" step="1" min="1" max="27" name="quantity" value="1"
+											class="quantity__input">
+										<button class="quantity__btn  _plus">
+											<img src="@img/icons/quantity-plus.svg" alt="plus">
+										</button>
+									</div>
+								</div>
+								<div class="table__item">25 грн.
+								</div>
+								<div class="table__item">25 грн.</div>
+							</div>
+
+							<div class="table__content _cart">
+								<div class="table__item">Орех соленый 80г.
+								</div>
+								<div class="table__item">
+									<div class="popup-cart__quantity quantity">
+										<button class="quantity__btn _minus">
+											<img src="@img/icons/quantity-minus.svg" alt="minus">
+										</button>
+										<input type="number" step="1" min="1" max="27" name="quantity" value="1"
+											class="quantity__input">
+										<button class="quantity__btn  _plus">
+											<img src="@img/icons/quantity-plus.svg" alt="plus">
+										</button>
+									</div>
+								</div>
+								<div class="table__item">25 грн.
+								</div>
+								<div class="table__item">25 грн.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="cart-footer">
+					<a href="#" class="cart-footer__back btn _go">
+						<img src="@img/icons/arr-cart.svg" alt="icon">
+						<span>Продолжить покупки</span>
+					</a>
+					<div class="cart-footer__total">
+						<div class="popup-cart__total">
+							<p class="popup-cart__total-text">Всего</p>
+							<p class="popup-cart__total-price">
+								175 <span>грн.</span>
+							</p>
+						</div>
+						<a href="./cart.html" class="cart-footer__order popup-cart__button btn">
+							Оформить заказ
+						</a>
+					</div>
+				</div>
+
+				<div class="cart-bottom">
+					<h2 class="cart-bottom__title">Для оформления заказа необходимо</h2>
+					<div class="cart-bottom__links">
+						<a href="enter.html" class="cart-bottom__link">Авторизоваться</a>
+						<span>или</span>
+						<a href="reg.html" class="cart-bottom__link _reg">Зарегистрироваться</a>
+					</div>
 				</div>
 			</div>
 		</section>
