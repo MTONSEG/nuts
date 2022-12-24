@@ -3732,6 +3732,9 @@ body._lock {
   letter-spacing: 0.01em;
   margin-bottom: 20px;
 }
+.reg__subtitle._delivery {
+  margin-bottom: 16px;
+}
 .reg .tabs__head {
   margin-bottom: 42px;
 }
@@ -3770,6 +3773,9 @@ body._lock {
 }
 .form__inputs_last-acc {
   margin-bottom: 18px;
+}
+.form__inputs._delivery {
+  display: none;
 }
 .form__input-wrapper {
   margin-bottom: 16px;
@@ -3814,6 +3820,8 @@ body._lock {
 }
 .form__radio-label {
   padding: 0 0 0 27px;
+  display: flex;
+  cursor: pointer;
 }
 .form__radio-label::before, .form__radio-label::after {
   content: "";
@@ -3838,6 +3846,9 @@ body._lock {
   opacity: 1;
   transform: scale(1);
 }
+.form__radio-label span {
+  position: relative;
+}
 .form__checkbox-wrapper {
   margin-bottom: 26px;
 }
@@ -3845,6 +3856,7 @@ body._lock {
   display: flex;
   align-items: center;
   padding: 0 0 0 24px;
+  cursor: pointer;
 }
 .form__checkbox::before, .form__checkbox::after {
   content: "";
@@ -3910,6 +3922,18 @@ body._lock {
   width: 92px;
   border-bottom: 1.5px solid #337D5A;
   margin: 15px auto 0;
+}
+.form__sticker {
+  display: block;
+  position: absolute;
+  width: 117px;
+  height: 38px;
+  left: calc(100% + 10px);
+  top: -4px;
+}
+
+.form__radio-input:checked ~ .form__inputs._delivery {
+  display: block;
 }
 
 .right-reg {
@@ -4033,6 +4057,9 @@ body._lock {
 }
 .account._cart .account__text._order {
   margin: 5px 0 0 130px;
+}
+.account._cart .account__text._checkout {
+  margin: 5px 0 0 66px;
 }
 .account._cart .account__head {
   margin-bottom: 36px;
@@ -4419,8 +4446,15 @@ body._lock {
 .cart-footer__total .popup-cart__total {
   margin: 0 28px 0 0;
 }
+.cart-footer__total .popup-cart__total._checkout {
+  margin: 0;
+}
 .cart-footer__total .popup-cart__total-text {
   margin: 0 8px 0 0;
+}
+.cart-footer__total._checkout {
+  justify-content: flex-end;
+  margin: 40px 14px 17px 0;
 }
 
 .cart-bottom {
@@ -4455,6 +4489,25 @@ body._lock {
 }
 .cart-bottom__link:hover {
   color: rgba(51, 125, 90, 0.7);
+}
+
+.checkout__radios {
+  margin-bottom: 44px;
+}
+.checkout .form__inputs._delivery {
+  margin: 14px 0 16px;
+}
+.checkout .form__radio-wrapper {
+  margin-bottom: 13px;
+}
+.checkout .form__radio-label {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 17px;
+  color: #1A2F3F;
+}
+.checkout .form__btn {
+  width: 249px;
 }
 
 @media (max-width: 1220px) {
@@ -4591,6 +4644,9 @@ body._lock {
   .account._cart .account__text {
     margin: 0;
   }
+  .account._cart .account__text._checkout {
+    margin: 0;
+  }
   .account__title._font {
     font-family: "Montserrat";
   }
@@ -4655,6 +4711,9 @@ body._lock {
   }
   .cart-bottom__link span {
     margin: 0;
+  }
+  .checkout .form__btn {
+    width: 100%;
   }
 }
 @media (max-width: 575px) {

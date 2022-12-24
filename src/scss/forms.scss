@@ -20,6 +20,9 @@
 		line-height: 188%;
 		letter-spacing: 0.01em;
 		margin-bottom: 20px;
+		&._delivery {
+			margin-bottom: 16px;
+		}
 	}
 	& .tabs {
 		&__head {
@@ -60,6 +63,9 @@
 		}
 		&_last-acc {
 			margin-bottom: 18px;
+		}
+		&._delivery {
+			display: none;
 		}
 	}
 	&__input-wrapper {
@@ -106,6 +112,8 @@
 	}
 	&__radio-label {
 		padding: 0 0 0 27px;
+		display: flex;
+		cursor: pointer;
 		&::before,
 		&::after {
 			content: "";
@@ -130,6 +138,9 @@
 			opacity: 1;
 			transform: scale(1);
 		}
+		span {
+			position: relative;
+		}
 	}
 	&__checkbox-wrapper {
 		margin-bottom: 26px;
@@ -138,6 +149,7 @@
 		display: flex;
 		align-items: center;
 		padding: 0 0 0 24px;
+		cursor: pointer;
 		&::before,
 		&::after {
 			content: "";
@@ -209,6 +221,18 @@
 			margin: 15px auto 0;
 		}
 	}
+	&__sticker {
+		display: block;
+		position: absolute;
+		width: 117px;
+		height: 38px;
+		left: calc(100% + 10px);
+		top: -4px;
+	}
+}
+
+.form__radio-input:checked ~ .form__inputs._delivery {
+	display: block;
 }
 
 .right-reg {
@@ -330,6 +354,9 @@
 				margin: 5px 0 0 188px;
 				&._order {
 					margin: 5px 0 0 130px;
+				}
+				&._checkout {
+					margin: 5px 0 0 66px;
 				}
 			}
 			&__head {
@@ -734,9 +761,16 @@
 		}
 		& .popup-cart__total {
 			margin: 0 28px 0 0;
+			&._checkout {
+				margin: 0;
+			}
 		}
 		& .popup-cart__total-text {
 			margin: 0 8px 0 0;
+		}
+		&._checkout {
+			justify-content: flex-end;
+			margin: 40px 14px 17px 0;
 		}
 	}
 }
@@ -771,6 +805,29 @@
 		}
 		&:hover {
 			color: rgba(51, 125, 90, 0.7);
+		}
+	}
+}
+
+.checkout {
+	&__radios {
+		margin-bottom: 44px;
+	}
+	& .form {
+		&__inputs._delivery {
+			margin: 14px 0 16px;
+		}
+		&__radio-wrapper {
+			margin-bottom: 13px;
+		}
+		&__radio-label {
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 17px;
+			color: #1A2F3F;
+		}
+		&__btn {
+			width: 249px;
 		}
 	}
 }
@@ -932,6 +989,9 @@
 			& .account {
 				&__text {
 					margin: 0;
+					&._checkout {
+						margin: 0;
+					}
 				}
 			}
 		}
@@ -1008,6 +1068,12 @@
 			span {
 				margin: 0;
 			}
+		}
+	}
+
+	.checkout {
+		& .form__btn {
+			width: 100%;
 		}
 	}
 }

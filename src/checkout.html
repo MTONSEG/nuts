@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{"title":"Оформление заказа"})
+
+<body>
+	<div class="wrapper">
+		@@include('./html/header.html',{})
+
+		<div class="breadcrumbs-wrapper">
+			<div class="container">
+				<div class="breadcrumbs _grey">
+					<div class="breadcrumbs__item">
+						<a href="#" class="breadcrumbs__link">Главная</a>
+					</div>
+					<div class="breadcrumbs__item">
+						<a href="#" class="breadcrumbs__link">Оформление заказа
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="account _cart">
+			<div class="container">
+				<div class="account__head">
+					<h1 class="account__title reg__title">
+						Оформление заказа
+					</h1>
+					<p class="account__text _checkout">
+						<span>Ваш личный менеджер Олег</span>
+						<a href="tel:380677771412" class="account__number">
+							<img src="@img/icons/acc-phone.svg" alt="phone" class="account__icon-phone">
+							+38 067 777 14 12
+						</a>
+					</p>
+				</div>
+				<div class="table-cart">
+					<div class="user-menu__table table">
+						<div class="table__head">
+							<div class="table__item-title">Товар
+								<img src="@img/icons/arr-select.svg" alt="">
+							</div>
+							<div class="table__item-title">Кол - во
+								<img src="@img/icons/arr-select.svg" alt="">
+							</div>
+							<div class="table__item-title">Цена за товар
+								<img src="@img/icons/arr-select.svg" alt="">
+							</div>
+							<div class="table__item-title">Итоговая стоимость
+								<img src="@img/icons/arr-select.svg" alt="">
+							</div>
+						</div>
+
+						<div class="table__body">
+							<div class="table__content _cart">
+								<div class="table__item">Орех соленый 80г.
+								</div>
+								<div class="table__item">
+									<div class="popup-cart__quantity quantity">
+										<button class="quantity__btn _minus">
+											<img src="@img/icons/quantity-minus.svg" alt="minus">
+										</button>
+										<input type="number" step="1" min="1" max="27" name="quantity" value="1"
+											class="quantity__input">
+										<button class="quantity__btn  _plus">
+											<img src="@img/icons/quantity-plus.svg" alt="plus">
+										</button>
+									</div>
+								</div>
+								<div class="table__item">25 грн.
+								</div>
+								<div class="table__item">100 грн.</div>
+							</div>
+
+							<div class="table__content _cart">
+								<div class="table__item">Орех соленый 80г.
+								</div>
+								<div class="table__item">
+									<div class="popup-cart__quantity quantity">
+										<button class="quantity__btn _minus">
+											<img src="@img/icons/quantity-minus.svg" alt="minus">
+										</button>
+										<input type="number" step="1" min="1" max="27" name="quantity" value="1"
+											class="quantity__input">
+										<button class="quantity__btn  _plus">
+											<img src="@img/icons/quantity-plus.svg" alt="plus">
+										</button>
+									</div>
+								</div>
+								<div class="table__item">25 грн.
+								</div>
+								<div class="table__item">25 грн.</div>
+							</div>
+
+							<div class="table__content _cart">
+								<div class="table__item">Орех соленый 80г.
+								</div>
+								<div class="table__item">
+									<div class="popup-cart__quantity quantity">
+										<button class="quantity__btn _minus">
+											<img src="@img/icons/quantity-minus.svg" alt="minus">
+										</button>
+										<input type="number" step="1" min="1" max="27" name="quantity" value="1"
+											class="quantity__input">
+										<button class="quantity__btn  _plus">
+											<img src="@img/icons/quantity-plus.svg" alt="plus">
+										</button>
+									</div>
+								</div>
+								<div class="table__item">25 грн.
+								</div>
+								<div class="table__item">25 грн.</div>
+							</div>
+
+							<div class="table__content _cart">
+								<div class="table__item">Орех соленый 80г.
+								</div>
+								<div class="table__item">
+									<div class="popup-cart__quantity quantity">
+										<button class="quantity__btn _minus">
+											<img src="@img/icons/quantity-minus.svg" alt="minus">
+										</button>
+										<input type="number" step="1" min="1" max="27" name="quantity" value="1"
+											class="quantity__input">
+										<button class="quantity__btn  _plus">
+											<img src="@img/icons/quantity-plus.svg" alt="plus">
+										</button>
+									</div>
+								</div>
+								<div class="table__item">25 грн.
+								</div>
+								<div class="table__item">25 грн.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="cart-footer__total _checkout">
+					<div class="popup-cart__total _checkout">
+						<p class="popup-cart__total-text">Всего</p>
+						<p class="popup-cart__total-price">
+							175 <span>грн.</span>
+						</p>
+					</div>
+				</div>
+
+				<div class="checkout">
+					<form action="" class="user-menu__form _addr">
+						<div class="checkout__form-body">
+							<h2 class="reg__subtitle">
+								1. Контактные данные
+							</h2>
+							<div class="form__inputs">
+								<div class="form__input-wrapper">
+									<input type="text" class="form__input" name="Name" tabindex="1" placeholder="ФИО*">
+								</div>
+								<div class="form__input-wrapper">
+									<input type="email" class="form__input" name="Email" tabindex="2" placeholder="Email*">
+								</div>
+								<div class="form__input-wrapper">
+									<input type="number" class="form__input" name="Phone" tabindex="3" placeholder="Телефон*">
+								</div>
+							</div>
+							<h2 class="reg__subtitle _delivery">
+								2. Способ доставки
+							</h2>
+
+							<div class="checkout__radios">
+								<div class="form__radio-wrapper">
+									<input type="radio" name="delivery" class="form__radio-input" id="form__radio_1" tabindex="1"
+										checked>
+									<label for="form__radio_1" class="form__radio-label">
+										Новая почта (по Украине оплата за счет Клиента)
+									</label>
+									<div class="form__inputs _delivery">
+										<div class="form__select select">
+											<div class="select__header form__input" tabindex="2">
+												<div class="select__current">Страна</div>
+												<img loading="lazy" src="@img/icons/lang-arr.svg" alt="icon" class="select__icon">
+											</div>
+											<ul class="select__body">
+												<li class="select__item">
+													<span>Украина</span>
+												</li>
+												<li class="select__item">
+													<span>Литва</span>
+												</li>
+												<li class="select__item">
+													<span>Польша</span>
+												</li>
+											</ul>
+										</div>
+										<div class="form__select select">
+											<div class="select__header form__input" tabindex="3">
+												<div class="select__current">Область</div>
+												<img loading="lazy" src="@img/icons/lang-arr.svg" alt="icon" class="select__icon">
+											</div>
+											<ul class="select__body">
+												<li class="select__item">
+													<span>Днепропетровская</span>
+												</li>
+												<li class="select__item">
+													<span>Киевская</span>
+												</li>
+												<li class="select__item">
+													<span>Одесская</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="form__radio-wrapper">
+									<input type="radio" name="delivery" class="form__radio-input" id="form__radio_2"
+										tabindex="4">
+									<label for="form__radio_2" class="form__radio-label">
+										<span> Курьер по Одессе
+										<img src="@img/sticker.png" alt="free" class="form__sticker">
+										</span>
+									</label>
+									<div class="form__inputs _delivery">
+										<div class="form__input-wrapper">
+											<input type="text" class="form__input" name="Name" tabindex="12" placeholder="Адрес*">
+										</div>
+									</div>
+								</div>
+								<div class="form__radio-wrapper">
+									<input type="radio" name="delivery" class="form__radio-input" id="form__radio_3"
+										tabindex="5">
+									<label for="form__radio_3" class="form__radio-label">
+										Самовывоз со склада
+									</label>
+								</div>
+							</div>
+							<h2 class="reg__subtitle">
+								3. Способ оплаты
+							</h2>
+							<div class="checkout__radios">
+								<div class="form__radio-wrapper">
+									<input type="radio" name="payment" class="form__radio-input" id="payment_1" tabindex="6"
+										checked>
+									<label for="payment_1" class="form__radio-label">
+										LiqPay / Приват24
+									</label>
+								</div>
+								<div class="form__radio-wrapper">
+									<input type="radio" name="payment" class="form__radio-input" id="payment_2" tabindex="7">
+									<label for="payment_2" class="form__radio-label">
+										Курьер по Одессе
+									</label>
+								</div>
+								<div class="form__radio-wrapper">
+									<input type="radio" name="payment" class="form__radio-input" id="payment_3" tabindex="8">
+									<label for="payment_3" class="form__radio-label">
+										Наличными при получении (Наложенным платежом)
+									</label>
+								</div>
+							</div>
+							<button type="submit" class="form__btn btn">Продолжить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		@@include('./html/footer-color.html',{})
+	</div>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
