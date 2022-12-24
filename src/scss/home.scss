@@ -10,9 +10,23 @@
 	}
 	&__title {
 		margin-bottom: 30px;
+		&._success {
+			font-weight: 800;
+			font-size: 45px;
+			line-height: 120%;
+			letter-spacing: 0.01em;
+			margin-bottom: 18px;
+		}
 	}
 	&__text {
 		margin-bottom: 38px;
+		&._success {
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 30px;
+			letter-spacing: 0.01em;
+			max-width: 420px;
+		}
 	}
 	&_company {
 		& .hero__row {
@@ -29,6 +43,9 @@
 	}
 	&_wholesale {
 		background-image: url('@img/wholesale-hero.jpg');
+		& .hero__row._success {
+			padding: 208px 0 141px;
+		}
 	}
 }
 
@@ -672,6 +689,41 @@
 	}
 }
 
+.not-page {
+	&__row {
+		padding: 78px 0 100px;
+	}
+	&__title {
+		margin: 0 auto 3px;
+		max-width: 530px;
+		font-family: 'Montserrat';
+		font-weight: 900;
+		font-size: 244px;
+		letter-spacing: 0.01em;
+		background: url('@img/404.jpg')  center/cover no-repeat;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	&__text {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 30px;
+		letter-spacing: 0.01em;
+		text-align: center;
+		margin-bottom: 17px;
+	}
+	&__btn {
+		width: 332px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		img {
+			margin: 0 12px 0 0;
+		}
+	}
+}
+
 @media (max-width: 1220px) {
 	.item-body {
 		&__price {
@@ -733,6 +785,15 @@
 		}
 		&__title {
 			margin-bottom: 30px;
+			&._success {
+				font-size: 32px;
+			}
+		}
+		&__text {
+			&._success {
+				font-size: 20px;
+				line-height: 120%;
+			}
 		}
 		&_company {
 			background-image: url('@img/hero-company_tab.jpg');
@@ -947,5 +1008,22 @@
 
 	.news__button {
 		margin-top: 10px;
+	}
+
+	.not-page {
+		&__row {
+			padding: 60px 0;
+		}
+		&__title {
+			text-align: center;
+			font-size: 120px;
+		}
+		&__btn {
+			width: 100%;
+			span {
+				font-size: 13px;
+				text-align: left;
+			}
+		}
 	}
 }

@@ -880,6 +880,9 @@
 					content: "шт.";
 				}
 			}
+			&._func {
+				justify-content: flex-end;
+			}
 		}
 		&__block {
 			flex-direction: column;
@@ -910,6 +913,17 @@
 			}
 		}
 	}
+
+	.table-history {
+		& .table__item {
+			width: 25%;
+		}
+		& .table__item:last-child {
+			width: 45%;
+			justify-content: flex-end;
+		}
+	}
+
 	.table-cart {
 		& .table__content {
 			padding: 20px 10px;
@@ -989,7 +1003,8 @@
 			& .account {
 				&__text {
 					margin: 0;
-					&._checkout {
+					&._checkout,
+					&._order {
 						margin: 0;
 					}
 				}
