@@ -1,69 +1,32 @@
-import { isWebp, toggleClass } from "./modules/functions.js";
-import Swiper, { Navigation } from 'swiper';
+import { isWebp } from "./modules/functions.js";
 import * as dynamicAdaptive from './modules/dynamicAdapt.js';
 import * as select from './modules/select.js';
 import * as burger from './modules/burgerMenu.js';
-import * as tabs from "./modules/tabs.js";
+import * as cartPopup from './modules/cartPopup.js';
 
 isWebp();
 
-const prodSlider = new Swiper('.slider-products', {
-	slidesPerView: 1,
-	spaceBetween: 10,
-	breakpoints: {
-		575: {
-			slidesPerView: 2,
-		},
-		991: {
-			slidesPerView: 3,
-			spaceBetween: 15
-		},
-		1220: {
-			slidesPerView: 3,
-			spaceBetween: 30,
-		}
-	},
-});
 
-const newsSlider = new Swiper('.news-slider', {
-	modules: [Navigation],
-	navigation: {
-		nextEl: '.news__next',
-		prevEl: '.news__prev',
-	},
-	slidesPerView: 1,
-	spaceBetween: 15,
-	breakpoints: {
-		600: {
-			slidesPerView: 2,
-		},
-		991: {
-			slidesPerView: 3,
-			spaceBetween: 30
-		}
-	}
-})
+// Форма колличества товаров
+const quantityBody = document.querySelectorAll('.quantity');
 
-const imageSlider = new Swiper('.image-slider', {
-	modules: [Navigation],
-	navigation: {
-		nextEl: '.image-slider__next',
-		prevEl: '.image-slider__prev',
-	},
-})
+if (quantityBody) {
+	for (let elem of quantityBody) {
+		let input = elem.querySelector('.quantity__input');
 
-const productsSliderBody = document.querySelectorAll('.slider-products__slide');
+		elem.addEventListener('click', e => {
+			let onClickMinus = e.target.closest('._minus');
+			let onClickPlus = e.target.closest('._plus');
 
-if (productsSliderBody) {
-	for (let item of productsSliderBody) {
-		let imageSliderBody = item.querySelector('.image-slider');
-		let imageSliderNav = item.querySelector('.image-slider__nav');
+			if (onClickMinus) {
+				input.value--;
+			} else if (onClickPlus) {
+				input.value++;
+			}
 
-		imageSliderBody.addEventListener('mouseenter', event => {
-			toggleClass(imageSliderNav, '_active');
-		})
-		imageSliderBody.addEventListener('mouseleave', event => {
-			toggleClass(imageSliderNav, '_active');
+			if (input.value <= 1) {
+				input.value = 1;
+			}
 		})
 	}
 }

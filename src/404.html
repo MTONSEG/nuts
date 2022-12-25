@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{"title":"Страница не найдена"})
+
+<body>
+	<div class="wrapper">
+		@@include('./html/header.html',{})
+
+		<div class="not-page">
+			<div class="container">
+				<div class="not-page__row">
+					<h1 class="not-page__title">404</h1>
+					<p class="not-page__text">Страница не найдена</p>
+					<a href="index.html" class="not-page__btn btn _go">
+						<img src="@img/icons/arr-cart.svg" alt="icon">
+						<span>
+							Вернуться на Главную страницу
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		@@include('./html/footer-color.html',{})
+	</div>
+	<script src="js/app.min.js" type="module"></script>
+</body>
+
+</html>

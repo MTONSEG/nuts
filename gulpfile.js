@@ -22,6 +22,9 @@ import { html } from "./gulp/tasks/html.js";
 import { server } from "./gulp/tasks/server.js";
 import { scss } from "./gulp/tasks/scss.js";
 import { js } from "./gulp/tasks/js.js";
+import { jsSwiper } from "./gulp/tasks/js.js";
+import { jsTabs } from "./gulp/tasks/js.js";
+import { jsForms } from "./gulp/tasks/js.js";
 import { images } from "./gulp/tasks/images.js";
 import { ttfToWoff, fontsStyle } from "./gulp/tasks/fonts.js";
 import { zip } from "./gulp/tasks/zip.js";
@@ -41,20 +44,20 @@ function watcher() {
 const fonts = gulp.series(ttfToWoff, fontsStyle);
 
 // Основные задачи
-const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images));
-// const mainTasks = gulp.series(gulp.parallel(copy, html, scss, js, images));
+const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, jsSwiper, jsTabs, jsForms, images));
 
 // Построение сценариев выполнения задач
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
 const build = gulp.series(reset, mainTasks);
+const buildC = gulp.series(reset, mainTasks, criticalStyles);
 const deployZIP = gulp.series(reset, mainTasks, zip);
 const deployFTP = gulp.series(reset, mainTasks, ftp);
 const criticalAPI = criticalStyles;
 
 // Экспорт сценариев
-// export { svgSpriteTask }
 export { dev }
 export { build }
+export { buildC }
 export { deployZIP }
 export { deployFTP }
 export { criticalAPI }

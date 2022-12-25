@@ -76,18 +76,25 @@
 		}
 	}
 	&__link,
-	&__select .select__current {
-		font-weight: 500;
-		font-size: 13px;
-		line-height: 15px;
-		color: #323232;
-		letter-spacing: 0.02em;
-		margin: 0 3px 0 0;
+	&__select {
+		& .select__current {
+			font-weight: 500;
+			font-size: 13px;
+			line-height: 15px;
+			color: #323232;
+			letter-spacing: 0.02em;
+			margin: 0 3px 0 0;
+		}
+		& .select__item {
+			font-size: 12px;
+			padding: 5px;
+		}
 	}
 	&__link {
 		display: block;
 		margin: 0 27px 0 0;
 		border-bottom: 2px solid transparent;
+		color: libs.$base-color;
 		&:last-child {
 			margin: 0;
 		}
@@ -306,6 +313,10 @@
 		& .select__current {
 			margin: 0 3px 0 0;
 		}
+		& .select__item {
+			padding: 15px 17px 13px;
+			font-size: 14px;
+		}
 		& .select__icon {
 			margin: 2px 0 0 0;
 			width: 10px;
@@ -355,6 +366,7 @@
 			max-width: 113px;
 		}
 		&__cart-wrap {
+			position: relative;
 			margin: 0 3px 6px 0;
 		}
 	}

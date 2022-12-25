@@ -24,6 +24,14 @@
 
 @font-face {
 	font-family: "Montserrat";
+	src: local("Montserrat"), url("../fonts/Montserrat-Black.woff") format("woff"), url("../fonts/Montserrat-Black.woff2") format("woff2");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Montserrat";
 	src: local("Montserrat"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.woff2") format("woff2");
 	font-weight: 500;
 	font-style: normal;
@@ -99,5 +107,13 @@
 	src: local("Raleway"), url("../fonts/Raleway-SemiBoldItalic.woff") format("woff"), url("../fonts/Raleway-SemiBoldItalic.woff2") format("woff2");
 	font-weight: 600;
 	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Raleway";
+	src: local("Raleway"), url("../fonts/Raleway-Bold.woff") format("woff"), url("../fonts/Raleway-Bold.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
 	font-display: swap;
 }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{"title":"Изменить пароль"})
+
+<body>
+	<div class="wrapper">
+		@@include('./html/header.html',{})
+
+		<div class="breadcrumbs-wrapper">
+			<div class="container">
+				<div class="breadcrumbs _grey">
+					<div class="breadcrumbs__item">
+						<a href="#" class="breadcrumbs__link">Главная</a>
+					</div>
+					<div class="breadcrumbs__item">
+						<a href="#" class="breadcrumbs__link">Пароль
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="password _restore">
+			<div class="container">
+				<form action="#" class="password__form">
+					<div class="password__block">
+						<h1 class="password__title reg__title _recovery">
+							Восстановление пароля
+						</h1>
+						<p class="password__subtitle">
+							<img src="@img/icons/lock.svg" alt="Lock" class="password__icon">
+							<span>Забыли пароль?</span>
+						</p>
+						<p class="password__text">
+							Введите Email Вашего аккаунта, Вам будет выслана
+							ссылка для восстановления пароля.
+						</p>
+
+						<div class="form__inputs">
+							<div class="form__input-wrapper">
+								<input type="email" class="form__input" name="Email" tabindex="1" placeholder="Email*">
+							</div>
+							<button type="submit" class="form__btn btn _recovery">Отправить ссылку</button>
+						</div>
+					</div>
+					<div class="password__block">
+						<p class="password__subtitle">
+							<img src="@img/icons/lock.svg" alt="Lock" class="password__icon">
+							<span>Восстановление пароля</span>
+						</p>
+						<p class="password__text">
+							Введите новый пароль для Email <span>example@gmail.com</span> 
+						</p>
+
+						<div class="form__inputs">
+							<div class="form__input-wrapper">
+								<input type="password" class="form__input" name="new password" tabindex="2" placeholder="Новый пароль*">
+							</div>
+							<div class="form__input-wrapper">
+								<input type="password" class="form__input" name="confirm password" tabindex="3" placeholder="Подтвердите новый пароль*">
+							</div>
+							<button type="submit" class="form__btn btn _recovery">Сменить пароль</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+		@@include('./html/footer-color.html',{})
+	</div>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

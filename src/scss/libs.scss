@@ -14,17 +14,17 @@ $grey-color: #8A8A8A;
 
 @mixin iconfonts() {
 	@font-face {
-		font-family: 'iconfonts';
-		src:  url('../fonts/iconfonts.eot?l3w73p');
-		src:  url('../fonts/iconfonts.eot?l3w73p#iefix') format('embedded-opentype'),
-			url('../fonts/iconfonts.ttf?l3w73p') format('truetype'),
-			url('../fonts/iconfonts.woff?l3w73p') format('woff'),
-			url('../fonts/iconfonts.svg?l3w73p#iconfonts') format('svg');
+	font-family: 'iconfonts';
+	src:  url('../fonts/iconfonts.eot?pyxqa7');
+		src:  url('../fonts/iconfonts.eot?pyxqa7#iefix') format('embedded-opentype'),
+		url('../fonts/iconfonts.ttf?pyxqa7') format('truetype'),
+		url('../fonts/iconfonts.woff?pyxqa7') format('woff'),
+		url('../fonts/iconfonts.svg?pyxqa7#iconfonts') format('svg');
 		font-weight: normal;
 		font-style: normal;
 		font-display: block;
 	}
-	
+
 	[class^="icon-"], [class*=" icon-"] {
 		/* use !important to prevent issues with browser extensions that change fonts */
 		font-family: 'iconfonts' !important;
@@ -34,12 +34,21 @@ $grey-color: #8A8A8A;
 		font-variant: normal;
 		text-transform: none;
 		line-height: 1;
-	
+		
 		/* Better Font Rendering =========== */
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 	}
-	
+	.icon-copy:before {
+		content: "\e908";
+		color: #8a8a8a;
+		font-size: 21px;
+	}
+	.icon-eye:before {
+		content: "\e909";
+		color: #8a8a8a;
+		font-size: 16px;
+	}
 	.icon-cake:before {
 		content: "\e900";
 		font-size: 38px;

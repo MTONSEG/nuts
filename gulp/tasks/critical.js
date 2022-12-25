@@ -3,12 +3,12 @@ import { stream as critical } from "critical";
 
 
 export const criticalStyles = () => {
-	return app.gulp.src('dist/*.html')
+	return app.gulp.src('docs/delivery.html')
 		.pipe(
 			critical({
-				base: 'dist/',
+				base: 'docs/',
 				inline: true,
-				css: ['dist/css/style.css'],
+				css: ['docs/css/style.min.css']
 			})
 		)
 		.on('error', err => {

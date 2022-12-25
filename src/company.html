@@ -28,7 +28,7 @@
 						выращивание фундука и грецкого ореха
 					</p>
 					<a href="#" class="hero__play play">
-						<img loading="lazy" src="@img/icons/play.svg" alt="Play" class="hero__icon-play">
+						<img loading="lazy" loading="lazy" src="@img/icons/play.svg" alt="Play" class="hero__icon-play">
 					</a>
 				</div>
 			</div>
@@ -68,33 +68,30 @@
 										class="slider-info__image">
 								</div>
 								<a href="#" class="slider-info__play play">
-									<img loading="lazy" src="@img/icons/play.svg" alt="Play" class="hero__icon-play">
+									<img loading="lazy" loading="lazy" src="@img/icons/play.svg" alt="Play"
+										class="hero__icon-play">
 								</a>
 							</div>
 							<div class="slider-info__slide swiper-slide">
-								<img src="@img/home-info-slider_img-1.jpg" alt="Video" class="slider-info__image">
+								<img loading="lazy" src="@img/home-info-slider_img-1.jpg" alt="Video"
+									class="slider-info__image">
 								<a href="#" class="slider-info__play play">
-									<img loading="lazy" src="@img/icons/play.svg" alt="Play" class="hero__icon-play">
+									<img loading="lazy" loading="lazy" src="@img/icons/play.svg" alt="Play"
+										class="hero__icon-play">
 								</a>
 							</div>
 						</div>
 						<div class="slider-info__nav">
 							<div class="image-slider__next">
-								<img loading="lazy" src="@img/icons/arr-r.svg" alt="Next Slide" class="image-slider__icon">
+								<img loading="lazy" loading="lazy" src="@img/icons/arr-r.svg" alt="Next Slide"
+									class="image-slider__icon">
 							</div>
 							<div class="image-slider__prev">
-								<img loading="lazy" src="@img/icons/arr-l.svg" alt="Preview Slide" class="image-slider__icon">
+								<img loading="lazy" loading="lazy" src="@img/icons/arr-l.svg" alt="Preview Slide"
+									class="image-slider__icon">
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="company-hero">
-			<div class="container">
-				<div class="company-hero__row">
-
 				</div>
 			</div>
 		</section>
@@ -104,7 +101,7 @@
 				<div class="company-owner__row">
 					<div class="company-owner__body">
 						<div class="company-owner__photo-wrap">
-							<img src="@img/company-photo.jpg" alt="Павел Тулба" class="company-owner__photo">
+							<img loading="lazy" src="@img/company-photo.jpg" alt="Павел Тулба" class="company-owner__photo">
 						</div>
 						<div class="company-owner__info">
 							<h2 class="company-owner__name">
@@ -117,7 +114,7 @@
 							<p class="company-owner__quote">
 								Главная наша цель – получить максимальную
 								прибыль с одного гектара.
-								<img src="@img/icons/quote.svg" alt="Quote" class="company-owner__quote-icon">
+								<img loading="lazy" src="@img/icons/quote.svg" alt="Quote" class="company-owner__quote-icon">
 							</p>
 							<a href="#" class="company-owner__button btn _go">Написать нам</a>
 						</div>
@@ -157,7 +154,7 @@
 				</div>
 				<div class="gallery__top top-gallery">
 					<div class="top-gallery__item">
-						<img src="@img/gallery-top_1.jpg" alt="SIAL Paris 2018" class="top-gallery__image">
+						<img loading="lazy" src="@img/gallery-top_1.jpg" alt="SIAL Paris 2018" class="top-gallery__image">
 						<div class="company-gallery__block">
 							<h3 class="top-gallery__item-title">
 								SIAL Paris 2018
@@ -170,7 +167,7 @@
 						</div>
 					</div>
 					<div class="top-gallery__item _small">
-						<img src="@img/gallery-top_2.jpg" alt="Image Top" class="top-gallery__image">
+						<img loading="lazy" src="@img/gallery-top_2.jpg" alt="Image Top" class="top-gallery__image">
 					</div>
 				</div>
 
@@ -178,15 +175,15 @@
 
 				<div class="gallery__bottom bt-gallery">
 					<div class="bt-gallery__item">
-						<img src="@img/gallery-bt-1.jpg" alt="Image 1" class="bt-gallery__image">
+						<img loading="lazy" src="@img/gallery-bt-1.jpg" alt="Image 1" class="bt-gallery__image">
 					</div>
 					<div class="bt-gallery__item">
-						<img src="@img/gallery-bt-2.jpg" alt="Image 2" class="bt-gallery__image">
+						<img loading="lazy" src="@img/gallery-bt-2.jpg" alt="Image 2" class="bt-gallery__image">
 					</div>
 					<div class="bt-gallery__item">
-						<img src="@img/gallery-bt-3.jpg" alt="Image 3" class="bt-gallery__image">
+						<img loading="lazy" src="@img/gallery-bt-3.jpg" alt="Image 3" class="bt-gallery__image">
 						<a href="#" class="company-gallery__play play">
-							<img src="@img/icons/play.svg" alt="Play">
+							<img loading="lazy" src="@img/icons/play.svg" alt="Play">
 						</a>
 					</div>
 				</div>
@@ -200,7 +197,8 @@
 		@@include('./html/component-news.html',{})
 		@@include('./html/footer.html',{})
 	</div>
-	<script src="js/app.min.js"></script>
+	<script src="js/app.min.js" type="module"></script>
+	<script src="js/swiper.js" type="module"></script>
 </body>
 
 </html>
