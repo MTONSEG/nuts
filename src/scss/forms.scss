@@ -192,7 +192,7 @@
 	&__btn {
 		display: block;
 		width: 100%;
-		font-size: 14.3px;
+		font-size: 16px;
 		line-height: 17px;
 		padding: 17px 10px 15px;
 		&._recovery {
@@ -269,6 +269,9 @@
 
 .password {
 	padding: 58px 0 101px;
+	&._restore {
+		padding: 58px 0 50px;
+	}
 	&__block {
 		margin-bottom: 48px;
 	}
@@ -434,6 +437,7 @@
 	}
 	&__form-body {
 		max-width: 474px;
+		width: 100%;
 		margin: 0 0 0 32px;
 		&._contacts {
 			width: 100%;
@@ -722,13 +726,13 @@
 		padding: 0 6px;
 		img {
 			width: 10px;
-			height: 6.4px;
+			height: 8px;
 		}
 	}
 }
 
 .table-cart {
-	margin-bottom: 33px;
+	margin-bottom: 31px;
 }
 
 .cart-footer,
